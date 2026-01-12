@@ -1,0 +1,257 @@
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import verdiktHf from "@/assets/verdikt-hf.png";
+import hfstavbyOld from "@/assets/hfstavbyold.png";
+import hfstavbyNew from "@/assets/hfstavbynew.png";
+
+const HFStavbyPage = () => {
+  return (
+    <>
+      <Header />
+      <main className="overflow-x-hidden">
+        {/* Hero Image */}
+        <section className="w-full">
+          <img 
+            src={verdiktHf} 
+            alt="HF Stavby"
+            className="w-full h-auto object-cover"
+          />
+        </section>
+
+        {/* O klientovi */}
+        <section className="w-full bg-white py-20 md:py-32">
+          <div className="max-w-5xl mx-auto px-8 md:px-12 lg:px-16">
+            <h1 className="font-satoshi text-4xl md:text-5xl lg:text-6xl font-black text-black mb-6">
+              HF STAVBY
+            </h1>
+            <p className="font-mono text-xl text-black/60 mb-8">
+              Stavební firma — Kompletní realizace
+            </p>
+            <div className="space-y-4 font-mono text-lg text-black/80 leading-relaxed">
+              <p>
+                Specializace na kompletní stavební realizace. Od rodinných domů po rekonstrukce.
+              </p>
+              <p>
+                Klienti: bonitní zákazníci, investoři, architekti.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Zadání klienta */}
+        <section className="w-full bg-[#F5F5F5] py-20 md:py-32">
+          <div className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16">
+            <h2 className="font-satoshi text-3xl md:text-4xl font-bold text-black mb-12">
+              ZADÁNÍ KLIENTA
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="bg-white p-8">
+                <h3 className="font-satoshi text-xl font-bold text-black mb-4">Problém #1</h3>
+                <p className="font-mono text-base text-black/70">
+                  Kvalita práce excelentní. Web působil toxicky. Nesoulad mezi řemeslem a prezentací.
+                </p>
+              </div>
+              <div className="bg-white p-8">
+                <h3 className="font-satoshi text-xl font-bold text-black mb-4">Problém #2</h3>
+                <p className="font-mono text-base text-black/70">
+                  Bonitní klienti zpochybňovali kvalitu firmy kvůli webu. Reputační brzda.
+                </p>
+              </div>
+              <div className="bg-white p-8">
+                <h3 className="font-satoshi text-xl font-bold text-black mb-4">Problém #3</h3>
+                <p className="font-mono text-base text-black/70">
+                  Žádná důvěra při první interakci. Web nevyvolával pocit spolehlivosti.
+                </p>
+              </div>
+              <div className="bg-white p-8">
+                <h3 className="font-satoshi text-xl font-bold text-black mb-4">Cíl</h3>
+                <p className="font-mono text-base text-black/70">
+                  100% konverze na důvěru. Web jako digitální vizitka pro uzavírání obchodu.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Naše role */}
+        <section className="w-full bg-white py-20 md:py-32">
+          <div className="max-w-5xl mx-auto px-8 md:px-12 lg:px-16">
+            <h2 className="font-satoshi text-3xl md:text-4xl font-bold text-black mb-8">
+              NAŠE ROLE
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div>
+                <h3 className="font-satoshi text-lg font-bold text-black mb-2">Webdesign & Vývoj</h3>
+                <p className="font-mono text-sm text-black/60">Kompletní redesign a implementace</p>
+              </div>
+              <div>
+                <h3 className="font-satoshi text-lg font-bold text-black mb-2">Branding</h3>
+                <p className="font-mono text-sm text-black/60">Vínová identita, typografie</p>
+              </div>
+              <div>
+                <h3 className="font-satoshi text-lg font-bold text-black mb-2">Strategie</h3>
+                <p className="font-mono text-sm text-black/60">Trust Anchor koncept</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Výchozí situace */}
+        <section className="w-full bg-[#1a1a1a] py-20 md:py-32">
+          <div className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+              <div className="order-2 lg:order-1">
+                <img 
+                  src={hfstavbyOld} 
+                  alt="Starý web HF Stavby"
+                  className="w-full h-auto rounded-lg"
+                />
+              </div>
+              <div className="order-1 lg:order-2">
+                <h2 className="font-satoshi text-3xl md:text-4xl font-bold text-white mb-8">
+                  VÝCHOZÍ SITUACE
+                </h2>
+                <div className="space-y-4 font-mono text-lg text-white/80 leading-relaxed">
+                  <p>
+                    <span className="text-white font-bold">První dojem:</span> Nedůvěryhodný
+                  </p>
+                  <p>
+                    <span className="text-white font-bold">Vizuální identita:</span> Neexistovala
+                  </p>
+                  <p>
+                    <span className="text-white font-bold">Konverze na důvěru:</span> Nízká
+                  </p>
+                  <p>
+                    <span className="text-white font-bold">Tržní pozice:</span> Malý hráč (vnímání)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Nový design */}
+        <section className="w-full bg-white py-20 md:py-32">
+          <div className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16">
+            <h2 className="font-satoshi text-3xl md:text-4xl font-bold text-black mb-12 text-center">
+              NOVÝ DESIGN
+            </h2>
+            <div className="space-y-16">
+              {/* Redesign webu */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                  <h3 className="font-satoshi text-2xl font-bold text-black mb-4">
+                    Digitální vizitka
+                  </h3>
+                  <p className="font-mono text-lg text-black/70 mb-6">
+                    Minimalismus jako nástroj. Vínová (Bordeaux) identita. Strukturovaná galerie realizací. Žádný balast - jen podstata.
+                  </p>
+                  <ul className="space-y-2 font-mono text-base text-black/60">
+                    <li>→ Trust Anchor design</li>
+                    <li>→ Čistá typografie</li>
+                    <li>→ Galerie jako důkaz kvality</li>
+                  </ul>
+                </div>
+                <div>
+                  <img 
+                    src={hfstavbyNew} 
+                    alt="Nový web HF Stavby"
+                    className="w-full h-auto rounded-lg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Strategie */}
+        <section className="w-full bg-[#F5F5F5] py-20 md:py-32">
+          <div className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16">
+            <h2 className="font-satoshi text-3xl md:text-4xl font-bold text-black mb-12">
+              STRATEGIE
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="bg-white p-10">
+                <h3 className="font-satoshi text-2xl font-bold text-black mb-6">Ignorovat SEO</h3>
+                <div className="space-y-4 font-mono text-base text-black/70">
+                  <p>
+                    Nepotřebný traffic. Klienti přichází z doporučení. Web slouží jako validace při rozhodování.
+                  </p>
+                </div>
+              </div>
+              <div className="bg-white p-10">
+                <h3 className="font-satoshi text-2xl font-bold text-black mb-6">100% Důvěra</h3>
+                <div className="space-y-4 font-mono text-base text-black/70">
+                  <p>
+                    Každý element komunikuje preciznost. Minimalismus jako důkaz spolehlivosti. Žádné prázdné sliby.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Výsledky */}
+        <section className="w-full bg-black py-20 md:py-32">
+          <div className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16">
+            <h2 className="font-satoshi text-3xl md:text-4xl font-bold text-white mb-16 text-center">
+              VÝSLEDKY & PŘÍNOS
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="text-center">
+                <div className="font-satoshi text-5xl md:text-6xl font-bold text-white mb-4">
+                  2×
+                </div>
+                <p className="font-mono text-white/70">
+                  Zdvojnásobení kapacity firmy
+                </p>
+              </div>
+              <div className="text-center">
+                <div className="font-satoshi text-5xl md:text-6xl font-bold text-white mb-4">
+                  100%
+                </div>
+                <p className="font-mono text-white/70">
+                  Konverze na důvěru při první interakci
+                </p>
+              </div>
+              <div className="text-center">
+                <div className="font-satoshi text-5xl md:text-6xl font-bold text-white mb-4">
+                  0
+                </div>
+                <p className="font-mono text-white/70">
+                  Reputačních bariér růstu
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Reference */}
+        <section className="w-full bg-white py-20 md:py-32">
+          <div className="max-w-4xl mx-auto px-8 md:px-12 lg:px-16">
+            <h2 className="font-satoshi text-3xl md:text-4xl font-bold text-black mb-12 text-center">
+              REFERENCE
+            </h2>
+            <div className="bg-[#F5F5F5] p-8 md:p-12 lg:p-16">
+              <p className="font-mono text-xl md:text-2xl text-black/80 leading-relaxed mb-8 italic">
+                „Nový web nám otevřel dveře k projektům, které jsme dříve nemohli získat. Klienti nás konečně berou vážně. Působíme jako velká firma, což se projevilo i na naší kapacitě."
+              </p>
+              <div className="border-t border-black/20 pt-6">
+                <p className="font-satoshi text-lg font-bold text-black">
+                  HF Stavby
+                </p>
+                <p className="font-mono text-base text-black/60">
+                  Jednatel
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <Footer />
+      </main>
+    </>
+  );
+};
+
+export default HFStavbyPage;

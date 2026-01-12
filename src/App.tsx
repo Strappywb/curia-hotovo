@@ -1,0 +1,45 @@
+import { Toaster } from "@/components/ui/toaster";
+import { Toaster as Sonner } from "@/components/ui/sonner";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Index from "./pages/Index";
+import WebdesignPage from "./pages/WebdesignPage";
+import BrandingPage from "./pages/BrandingPage";
+import MarketingPage from "./pages/MarketingPage";
+import GrafikaPage from "./pages/GrafikaPage";
+import AplikacePage from "./pages/AplikacePage";
+import AboutPage from "./pages/AboutPage";
+import MadosPage from "./pages/projects/MadosPage";
+import HFStavbyPage from "./pages/projects/HFStavbyPage";
+import NotFound from "./pages/NotFound";
+import ScrollToTop from "./components/ScrollToTop";
+
+const queryClient = new QueryClient();
+
+const App = () => (
+  <QueryClientProvider client={queryClient}>
+    <TooltipProvider>
+      <Toaster />
+      <Sonner />
+      <BrowserRouter>
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/webdesign" element={<WebdesignPage />} />
+          <Route path="/branding" element={<BrandingPage />} />
+          <Route path="/marketing" element={<MarketingPage />} />
+          <Route path="/grafika" element={<GrafikaPage />} />
+          <Route path="/aplikace" element={<AplikacePage />} />
+          <Route path="/o-nas" element={<AboutPage />} />
+          <Route path="/projekty/mados" element={<MadosPage />} />
+          <Route path="/projekty/hf-stavby" element={<HFStavbyPage />} />
+          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
+    </TooltipProvider>
+  </QueryClientProvider>
+);
+
+export default App;
