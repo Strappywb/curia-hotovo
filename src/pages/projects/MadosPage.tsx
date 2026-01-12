@@ -27,6 +27,14 @@ const MadosPage = () => {
             <p className="font-mono text-xl text-black/60 mb-8">
               Hliníková okna & fasády — Nymburk
             </p>
+            <a 
+              href="https://mados.cz" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-block font-mono text-sm text-black border border-black px-4 py-2 hover:bg-black hover:text-white transition-colors mb-8"
+            >
+              mados.cz ↗
+            </a>
             <div className="space-y-4 font-mono text-lg text-black/80 leading-relaxed">
               <p>
                 Založeno 1995. Výrobce hliníkových oken, dveří, fasád a posuvných systémů. Od rodinných domů po developerské projekty.

@@ -25,6 +25,14 @@ const SturmPage = () => {
             <p className="font-mono text-xl text-black/60 mb-8">
               Finanční poradenství — Praha
             </p>
+            <a 
+              href="https://www.filipsturm.cz/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-block font-mono text-sm text-black border border-black px-4 py-2 hover:bg-black hover:text-white transition-colors mb-8"
+            >
+              filipsturm.cz ↗
+            </a>
             <div className="space-y-4 font-mono text-lg text-black/80 leading-relaxed">
               <p>
                 Finanční poradce pro high-net-worth klienty. Expertise na úrovni instituce.

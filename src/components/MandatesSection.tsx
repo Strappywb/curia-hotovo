@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { ArrowUpRight } from "lucide-react";
 import verdiktMados from "@/assets/verdikt-mados.png";
 import verdiktHf from "@/assets/verdikt-hf.png";
 import verdiktPrint from "@/assets/verdikt-print.png";
@@ -41,6 +42,9 @@ const MandatesSection = () => {
                 alt={mandate.alt}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
+              <div className="absolute top-6 right-6 md:top-8 md:right-8 bg-white p-2 group-hover:scale-110 transition-transform">
+                <ArrowUpRight className="w-5 h-5 md:w-6 md:h-6 text-black" />
+              </div>
             </Link>
           );
         })}

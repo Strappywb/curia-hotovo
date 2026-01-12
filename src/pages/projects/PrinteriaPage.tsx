@@ -26,6 +26,14 @@ const PrinteriaPage = () => {
             <p className="font-mono text-xl text-black/60 mb-8">
               Tiskárna — Praha & Střední Čechy
             </p>
+            <a 
+              href="https://printeria.cz" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-block font-mono text-sm text-black border border-black px-4 py-2 hover:bg-black hover:text-white transition-colors mb-8"
+            >
+              printeria.cz ↗
+            </a>
             <div className="space-y-4 font-mono text-lg text-black/80 leading-relaxed">
               <p>
                 Tiskové služby pro firmy i jednotlivce. Samolepky, bannery, vizitky, tiskoviny.
