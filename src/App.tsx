@@ -13,6 +13,8 @@ import AboutPage from "./pages/AboutPage";
 import BlogPage from "./pages/BlogPage";
 import MadosPage from "./pages/projects/MadosPage";
 import HFStavbyPage from "./pages/projects/HFStavbyPage";
+import PrinteriaPage from "./pages/projects/PrinteriaPage";
+import SturmPage from "./pages/projects/SturmPage";
 import WebKteryProdavaPage from "./pages/blog/WebKteryProdavaPage";
 import StrategickyMarketingPage from "./pages/blog/StrategickyMarketingPage";
 import BudovaniZnackyPage from "./pages/blog/BudovaniZnackyPage";
@@ -39,6 +41,8 @@ const App = () => (
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/projekty/mados" element={<MadosPage />} />
           <Route path="/projekty/hf-stavby" element={<HFStavbyPage />} />
+          <Route path="/projekty/printeria" element={<PrinteriaPage />} />
+          <Route path="/projekty/sturm" element={<SturmPage />} />
           <Route path="/blog/web-ktery-prodava" element={<WebKteryProdavaPage />} />
           <Route path="/blog/strategicky-marketing" element={<StrategickyMarketingPage />} />
           <Route path="/blog/budovani-znacky" element={<BudovaniZnackyPage />} />

@@ -22,18 +22,18 @@ const MandatesSection = () => {
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         {mandates.map((mandate) => {
-          // Link for Mados and HF Stavby
-          const MandateWrapper = (mandate.id === 1 || mandate.id === 2) ? Link : 'div';
-          const wrapperProps = mandate.id === 1 
-            ? { to: '/projekty/mados' } 
-            : mandate.id === 2 
-            ? { to: '/projekty/hf-stavby' }
-            : {};
+          // All mandates are now clickable
+          const slugs: { [key: number]: string } = {
+            1: '/projekty/mados',
+            2: '/projekty/hf-stavby',
+            3: '/projekty/printeria',
+            4: '/projekty/sturm'
+          };
           
           return (
-            <MandateWrapper
+            <Link
               key={mandate.id}
-              {...wrapperProps}
+              to={slugs[mandate.id]}
               className="relative overflow-hidden min-h-[400px] md:min-h-[450px] lg:min-h-[500px] group cursor-pointer"
             >
               <img
@@ -41,7 +41,7 @@ const MandatesSection = () => {
                 alt={mandate.alt}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
-            </MandateWrapper>
+            </Link>
           );
         })}
       </div>
