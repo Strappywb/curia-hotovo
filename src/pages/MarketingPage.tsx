@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { ArrowUpRight, ChevronDown } from "lucide-react";
 import marketingImg from "@/assets/marketinghero.png";
@@ -63,6 +64,13 @@ const MarketingPage = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Digitální marketing & Reklama | CURIA Marketing Agency</title>
+        <meta name="description" content="Marketingová strategie, PPC kampaně, sociální sítě, obsahový marketing. Získáváme pozornost a konvertujeme ji na zákazníky." />
+        <meta property="og:title" content="Digitální marketing & Reklama | CURIA Marketing Agency" />
+        <meta property="og:description" content="Marketingová strategie, PPC kampaně, sociální sítě, obsahový marketing. Získáváme pozornost a konvertujeme ji na zákazníky." />
+        <link rel="canonical" href="https://curia.cz/marketing" />
+      </Helmet>
       <Header />
       <main className="overflow-x-hidden">
         {/* Hero Section - Fullscreen */}
@@ -87,10 +95,10 @@ const MarketingPage = () => {
             {/* Right - Description */}
             <div className="flex-1 flex flex-col justify-center items-start md:items-end mt-8 md:mt-0">
               <div className="max-w-md text-left md:text-right">
-                <p className="font-satoshi text-xl md:text-2xl font-bold text-black mb-4">
+                <p className="font-heading text-xl md:text-2xl text-black mb-4">
                   AKVIZICE & RETENCE
                 </p>
-                <p className="font-mono text-sm md:text-base text-black/70 leading-relaxed">
+                <p className="font-body font-semibold text-sm md:text-base text-black/70 leading-relaxed">
                   Marketing je aplikovaná matematika a psychologie. Vstup × konverze × hodnota = výstup. 
                   Data rozhodují, intuice doplňuje.
                 </p>
@@ -109,10 +117,10 @@ const MarketingPage = () => {
         {/* Showcase Section - Apple Style */}
         <section className="w-full bg-[#1a1a1a] py-20 md:py-32 lg:py-40 overflow-hidden">
           <div className="px-8 md:px-12 lg:px-16 mb-16 md:mb-24">
-            <h2 className="font-satoshi text-4xl md:text-5xl lg:text-7xl font-bold text-white leading-tight max-w-4xl">
+            <h2 className="font-heading text-4xl md:text-5xl lg:text-7xl text-white leading-tight max-w-4xl">
               Pozornost je měna.<br />My ji umíme těžit.
             </h2>
-            <p className="font-mono text-lg md:text-xl lg:text-2xl text-white/60 mt-10 md:mt-12 max-w-3xl leading-relaxed">
+            <p className="font-body font-semibold text-lg md:text-xl lg:text-2xl text-white/60 mt-10 md:mt-12 max-w-3xl leading-relaxed">
               Každý den soutěžíte o pozornost s tisíci dalších značek. Víme, jak vyhrát. Kreativa, která zastavuje scroll. Strategie, která konvertuje.
             </p>
           </div>
@@ -129,10 +137,10 @@ const MarketingPage = () => {
         {/* Manifest Section - Psychologie vs. Algoritmy */}
         <section className="w-full bg-white py-20 md:py-28 lg:py-36">
           <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
-            <h2 className="font-satoshi text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-6">
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-black mb-6">
               PSYCHOLOGIE VS. ALGORITMY
             </h2>
-            <p className="font-mono text-base md:text-lg lg:text-xl text-black/70 leading-relaxed max-w-4xl">
+            <p className="font-body font-semibold text-base md:text-lg lg:text-xl text-black/70 leading-relaxed max-w-4xl">
               Většina agentur pálí peníze na kampaně, které nikdo nevidí, nebo nikoho nezajímají. My nekupujeme lajky. Kupujeme pozornost. Ovládáme psychologii davu – víme, co přiměje 15letého kluka napsat „Slay" a co přiměje 50letého majitele stavební firmy zvednout telefon a podepsat kontrakt.
             </p>
           </div>
@@ -141,10 +149,10 @@ const MarketingPage = () => {
         {/* Divize vlivu - 3 pillars */}
         <section className="w-full bg-[#F5F5F5] py-3">
           <div className="px-6 mb-10 md:mb-16">
-            <h2 className="font-satoshi text-3xl md:text-4xl lg:text-5xl font-bold text-black">
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-black">
               DIVIZE VLIVU
             </h2>
-            <p className="font-mono text-base md:text-lg text-black/50 mt-4 max-w-2xl">
+            <p className="font-body font-semibold text-base md:text-lg text-black/50 mt-4 max-w-2xl">
               Tři pilíře, které určují, jestli vaše značka roste nebo stagnuje.
             </p>
           </div>
@@ -156,17 +164,17 @@ const MarketingPage = () => {
                 className="relative bg-[#CCFF00] min-h-[400px] md:min-h-[450px] lg:min-h-[500px] flex flex-col justify-between p-6 pt-10 pb-8 md:p-10 md:pt-12 md:pb-10 lg:p-12 lg:pt-14 lg:pb-12"
               >
                 <div>
-                  <span className="font-mono text-xs md:text-sm text-black/50 mb-3 uppercase tracking-wider block">
+                  <span className="font-body font-semibold text-xs md:text-sm text-black/50 mb-3 uppercase tracking-wider block">
                     {item.subtitle}
                   </span>
-                  <h3 className="font-satoshi text-2xl md:text-3xl lg:text-4xl font-bold text-black mb-4">
+                  <h3 className="font-heading text-2xl md:text-3xl lg:text-4xl text-black mb-4">
                     {item.title}
                   </h3>
-                  <p className="font-mono text-sm md:text-base text-black/70 leading-relaxed">
+                  <p className="font-body font-semibold text-sm md:text-base text-black/70 leading-relaxed">
                     {item.description}
                   </p>
                 </div>
-                <span className="font-satoshi text-6xl md:text-7xl lg:text-8xl font-black text-black/10 self-end">
+                <span className="font-heading text-6xl md:text-7xl lg:text-8xl font-black text-black/10 self-end">
                   0{index + 1}
                 </span>
               </div>
@@ -177,7 +185,7 @@ const MarketingPage = () => {
         {/* Reality Check - Proč vaše reklama nefunguje */}
         <section className="w-full bg-[#CCFF00] py-20 md:py-28 lg:py-36">
           <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
-            <h2 className="font-satoshi text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-12 md:mb-16">
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-black mb-12 md:mb-16">
               PROČ VAŠE REKLAMA NEFUNGUJE?
             </h2>
 
@@ -185,10 +193,10 @@ const MarketingPage = () => {
               {problemyReklamy.map((problem, index) => (
                 <div key={index} className="bg-black p-6 md:p-8">
                   <div className="mb-6">
-                    <h3 className="font-satoshi text-2xl md:text-3xl font-bold text-white mb-2">
+                    <h3 className="font-heading text-2xl md:text-3xl text-white mb-2">
                       {problem.title}
                     </h3>
-                    <p className="font-mono text-base md:text-lg text-white/60">
+                    <p className="font-body font-semibold text-base md:text-lg text-white/60">
                       {problem.description}
                     </p>
                   </div>
@@ -202,7 +210,7 @@ const MarketingPage = () => {
             </div>
 
             <div className="border-t border-black/20 pt-12">
-              <p className="font-satoshi text-xl md:text-2xl lg:text-3xl font-bold text-black">
+              <p className="font-heading text-xl md:text-2xl lg:text-3xl text-black">
                 CURIA tohle nedělá. My jdeme do rizika, které se vyplácí.
               </p>
             </div>
@@ -214,26 +222,26 @@ const MarketingPage = () => {
           <div className="max-w-7xl mx-auto px-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4">
               <div className="text-center py-8">
-                <div className="font-satoshi text-4xl md:text-5xl lg:text-6xl font-bold text-black">
+                <div className="font-heading text-4xl md:text-5xl lg:text-6xl text-black">
                   30M+
                 </div>
-                <p className="font-mono text-sm md:text-base lg:text-lg text-black/60 mt-2 md:mt-3">
+                <p className="font-body font-semibold text-sm md:text-base lg:text-lg text-black/60 mt-2 md:mt-3">
                   roční ad-spend pod naší správou
                 </p>
               </div>
               <div className="text-center py-8">
-                <div className="font-satoshi text-4xl md:text-5xl lg:text-6xl font-bold text-black">
+                <div className="font-heading text-4xl md:text-5xl lg:text-6xl text-black">
                   5,2×
                 </div>
-                <p className="font-mono text-sm md:text-base lg:text-lg text-black/60 mt-2 md:mt-3">
+                <p className="font-body font-semibold text-sm md:text-base lg:text-lg text-black/60 mt-2 md:mt-3">
                   průměrný ROAS klientů
                 </p>
               </div>
               <div className="text-center py-8">
-                <div className="font-satoshi text-4xl md:text-5xl lg:text-6xl font-bold text-black">
+                <div className="font-heading text-4xl md:text-5xl lg:text-6xl text-black">
                   +40%
                 </div>
-                <p className="font-mono text-sm md:text-base lg:text-lg text-black/60 mt-2 md:mt-3">
+                <p className="font-body font-semibold text-sm md:text-base lg:text-lg text-black/60 mt-2 md:mt-3">
                   průměrné zvýšení konverzního poměru
                 </p>
               </div>
@@ -244,7 +252,7 @@ const MarketingPage = () => {
         {/* Bold Statement Section */}
         <section className="w-full bg-black py-24 md:py-32 lg:py-40">
           <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
-            <h2 className="font-satoshi text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-white leading-tight">
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-white leading-tight">
               VĚŘÍME V SYSTÉMOVÉ ŘÍZENÍ RŮSTU. NAŠE METODIKA SPOJUJE DATA S PSYCHOLOGIÍ TRHU TAK, ABY KAŽDÁ INTERAKCE SE ZNAČKOU POSILOVALA JEJÍ POZICI A AUTORITU.
             </h2>
           </div>
@@ -253,10 +261,10 @@ const MarketingPage = () => {
         {/* Konzulát Section with Form */}
         <section className="w-full bg-[#CCFF00] py-20 md:py-32 lg:py-40">
           <div className="max-w-7xl mx-auto px-6">
-            <h2 className="font-satoshi text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6">
+            <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl text-black mb-6">
               IN DATA VERITAS.
             </h2>
-            <p className="font-mono text-base md:text-lg text-black/70 mb-12 md:mb-16 max-w-2xl">
+            <p className="font-body font-semibold text-base md:text-lg text-black/70 mb-12 md:mb-16 max-w-2xl">
               V datech je pravda. Co neměříte, neřídíte. Co neřídíte, se děje náhodou.
             </p>
             
@@ -265,7 +273,7 @@ const MarketingPage = () => {
                 {/* Contact Info - Left */}
                 <div className="space-y-8">
                   <div>
-                    <h3 className="font-satoshi text-xl md:text-2xl font-bold text-black mb-2">
+                    <h3 className="font-heading text-xl md:text-2xl text-black mb-2">
                       MAGISTRATUS
                     </h3>
                     <p className="text-gray-600 mb-1">vedení společnosti</p>
@@ -284,7 +292,7 @@ const MarketingPage = () => {
                   </div>
                   
                   <div>
-                    <h3 className="font-satoshi text-xl md:text-2xl font-bold text-black mb-2">
+                    <h3 className="font-heading text-xl md:text-2xl text-black mb-2">
                       COMMERCIUM
                     </h3>
                     <p className="text-gray-600 mb-1">obchodní oddělení</p>
@@ -336,7 +344,7 @@ const MarketingPage = () => {
                   </div>
                   <Button 
                     type="submit"
-                    className="bg-black text-white hover:bg-black/90 font-satoshi font-bold text-lg px-8 py-6 h-auto rounded-none w-full md:w-auto"
+                    className="bg-black text-white hover:bg-black/90 font-heading text-lg px-8 py-6 h-auto rounded-none w-full md:w-auto"
                   >
                     AUDIENCE
                   </Button>

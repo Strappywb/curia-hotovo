@@ -16,7 +16,7 @@ const MandatesSection = () => {
   return (
     <section id="projects" className="w-full bg-background py-3">
       <div className="max-w-7xl mx-auto px-6 mb-10 md:mb-16">
-        <h2 className="font-satoshi text-3xl md:text-4xl lg:text-5xl font-bold text-black text-center">
+        <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-black text-center">
           MANDÁTY
         </h2>
       </div>

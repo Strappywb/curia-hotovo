@@ -19,7 +19,7 @@ const ConsulateSection = () => {
   return (
     <section id="contact" className="w-full bg-[#0057FF] py-20 md:py-32 lg:py-40">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="font-satoshi text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-12 md:mb-16">
+        <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl text-white mb-12 md:mb-16">
           KONZULÁT.
         </h2>
         
@@ -28,7 +28,7 @@ const ConsulateSection = () => {
             {/* Contact Info - Left */}
             <div className="space-y-8">
               <div>
-                <h3 className="font-satoshi text-xl md:text-2xl font-bold text-black mb-2">
+                <h3 className="font-heading text-xl md:text-2xl text-black mb-2">
                   MAGISTRATUS
                 </h3>
                 <p className="text-gray-600 mb-1">vedení společnosti</p>
@@ -47,7 +47,7 @@ const ConsulateSection = () => {
               </div>
               
               <div>
-                <h3 className="font-satoshi text-xl md:text-2xl font-bold text-black mb-2">
+                <h3 className="font-heading text-xl md:text-2xl text-black mb-2">
                   COMMERCIUM
                 </h3>
                 <p className="text-gray-600 mb-1">obchodní oddělení</p>
@@ -99,7 +99,7 @@ const ConsulateSection = () => {
               </div>
               <Button 
                 type="submit"
-                className="bg-black text-white hover:bg-black/90 font-satoshi font-bold text-lg px-8 py-6 h-auto rounded-none w-full md:w-auto"
+                className="bg-black text-white hover:bg-black/90 font-heading text-lg px-8 py-6 h-auto rounded-none w-full md:w-auto"
               >
                 AUDIENCE
               </Button>

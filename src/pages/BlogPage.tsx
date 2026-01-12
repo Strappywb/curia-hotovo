@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
@@ -36,15 +37,22 @@ const blogPosts = [
 const BlogPage = () => {
   return (
     <>
+      <Helmet>
+        <title>Blog | CURIA - Strategie, design a marketing</title>
+        <meta name="description" content="Poznatky z praxe. Strategie, taktiky a principy webdesignu, brandingu a marketingu. Bez buzzwordů." />
+        <meta property="og:title" content="Blog | CURIA - Strategie, design a marketing" />
+        <meta property="og:description" content="Poznatky z praxe. Strategie, taktiky a principy webdesignu, brandingu a marketingu. Bez buzzwordů." />
+        <link rel="canonical" href="https://curia.cz/blog" />
+      </Helmet>
       <Header />
       <main className="overflow-x-hidden">
         {/* Hero */}
         <section className="w-full bg-white py-20 md:py-32">
           <div className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16">
-            <h1 className="font-satoshi text-4xl md:text-5xl lg:text-6xl font-black text-black mb-6">
+            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-black text-black mb-6">
               ARCHIV POZNATKŮ
             </h1>
-            <p className="font-mono text-xl text-black/60 max-w-2xl">
+            <p className="font-body font-semibold text-xl text-black/60 max-w-2xl">
               Strategie, taktiky a principy, které používáme při práci s klienty. Bez buzzwordů, bez bullshitu.
             </p>
           </div>
@@ -69,16 +77,16 @@ const BlogPage = () => {
                   </div>
                   <div className="p-6 md:p-8">
                     <div className="flex justify-between items-start mb-4">
-                      <span className="font-mono text-sm text-black/60">{post.category}</span>
+                      <span className="font-body font-semibold text-sm text-black/60">{post.category}</span>
                       <ArrowUpRight className="w-5 h-5 text-black opacity-0 group-hover:opacity-100 transition-opacity" />
                     </div>
-                    <h2 className="font-satoshi text-xl md:text-2xl font-bold text-black mb-3">
+                    <h2 className="font-heading text-xl md:text-2xl text-black mb-3">
                       {post.title}
                     </h2>
-                    <p className="font-mono text-base text-black/70 mb-4 line-clamp-2">
+                    <p className="font-body font-semibold text-base text-black/70 mb-4 line-clamp-2">
                       {post.excerpt}
                     </p>
-                    <span className="font-mono text-sm text-black/40">{post.date}</span>
+                    <span className="font-body font-semibold text-sm text-black/40">{post.date}</span>
                   </div>
                 </Link>
               ))}
@@ -89,15 +97,15 @@ const BlogPage = () => {
         {/* CTA */}
         <section className="w-full bg-black py-20 md:py-32">
           <div className="max-w-4xl mx-auto px-8 md:px-12 lg:px-16 text-center">
-            <h2 className="font-satoshi text-3xl md:text-4xl font-bold text-white mb-6">
+            <h2 className="font-heading text-3xl md:text-4xl text-white mb-6">
               Chcete tyto principy aplikovat na váš byznys?
             </h2>
-            <p className="font-mono text-lg text-white/70 mb-8">
+            <p className="font-body font-semibold text-lg text-white/70 mb-8">
               Napište nám. Probereme, jak můžeme pomoct.
             </p>
             <Link 
               to="/#contact" 
-              className="inline-block bg-white text-black font-satoshi font-bold px-8 py-4 hover:bg-gray-100 transition-colors"
+              className="inline-block bg-white text-black font-heading px-8 py-4 hover:bg-gray-100 transition-colors"
             >
               Kontaktovat
             </Link>

@@ -35,7 +35,7 @@ const BlogSection = () => {
   return (
     <section id="blog" className="w-full bg-background py-20 md:py-32 lg:py-40">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="font-satoshi text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-12 md:mb-16">
+        <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-black mb-12 md:mb-16">
           ARCHIV POZNATKŮ
         </h2>
         
@@ -58,7 +58,7 @@ const BlogSection = () => {
                   <span className="text-sm text-gray-500">{post.category}</span>
                   <ArrowUpRight className="w-5 h-5 text-black opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
-                <h3 className="font-satoshi text-xl md:text-2xl font-bold text-black mb-3">
+                <h3 className="font-heading text-xl md:text-2xl text-black mb-3">
                   {post.title}
                 </h3>
                 <p className="text-gray-600 mb-4 line-clamp-2">

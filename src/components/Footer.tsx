@@ -23,7 +23,7 @@ const Footer = () => {
           <a 
             href="#hero" 
             onClick={(e) => { e.preventDefault(); scrollToSection("hero"); }}
-            className="font-satoshi text-3xl md:text-4xl font-black text-white"
+            className="font-heading text-3xl md:text-4xl font-black text-white"
           >
             CURIA
           </a>
@@ -32,7 +32,7 @@ const Footer = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
             {/* Navigation */}
             <div>
-              <h4 className="font-satoshi font-bold text-white mb-4">Navigace</h4>
+              <h4 className="font-heading text-white mb-4">Navigace</h4>
               <ul className="space-y-2">
                 <li>
                   <button
@@ -71,7 +71,7 @@ const Footer = () => {
 
             {/* Services */}
             <div>
-              <h4 className="font-satoshi font-bold text-white mb-4">Služby</h4>
+              <h4 className="font-heading text-white mb-4">Služby</h4>
               <ul className="space-y-2">
                 {services.map((service) => (
                   <li key={service.id}>
@@ -88,7 +88,7 @@ const Footer = () => {
 
             {/* Legal */}
             <div>
-              <h4 className="font-satoshi font-bold text-white mb-4">Právní</h4>
+              <h4 className="font-heading text-white mb-4">Právní</h4>
               <ul className="space-y-2">
                 <li>
                   <span className="text-gray-400 cursor-default">
@@ -110,7 +110,7 @@ const Footer = () => {
 
             {/* Company info */}
             <div>
-              <h4 className="font-satoshi font-bold text-white mb-4">Společnost</h4>
+              <h4 className="font-heading text-white mb-4">Společnost</h4>
               <p className="text-gray-400">
                 IČO: 21062897
               </p>

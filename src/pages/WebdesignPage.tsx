@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 import { ChevronDown } from "lucide-react";
@@ -109,6 +110,13 @@ const WebdesignPage = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Tvorba webových stránek | CURIA Webdesign Studio</title>
+        <meta name="description" content="Profesionální tvorba webů na míru. Weby, které prodávají a konvertují. React, Next.js, Webflow, e-commerce řešení. Webdesign Praha." />
+        <meta property="og:title" content="Tvorba webových stránek | CURIA Webdesign Studio" />
+        <meta property="og:description" content="Profesionální tvorba webů na míru. Weby, které prodávají a konvertují. React, Next.js, Webflow, e-commerce řešení." />
+        <link rel="canonical" href="https://curia.cz/webdesign" />
+      </Helmet>
       <Header />
       <main className="overflow-x-hidden">
         {/* Hero Section - Fullscreen */}
@@ -126,10 +134,10 @@ const WebdesignPage = () => {
             {/* Right - Description */}
             <div className="flex-1 flex flex-col justify-center items-start md:items-end mt-8 md:mt-0">
               <div className="max-w-md text-left md:text-right">
-                <p className="font-satoshi text-xl md:text-2xl font-bold text-white mb-4">
+                <p className="font-heading text-xl md:text-2xl text-white mb-4">
                   TECHNICKÁ INFRASTRUKTURA
                 </p>
-                <p className="font-mono text-sm md:text-base text-white leading-relaxed">
+                <p className="font-body font-semibold text-sm md:text-base text-white leading-relaxed">
                   Web jako software, ne jako brožura. Každý prvek plní funkci v rámci obchodního cíle. Architektura postavená na datech, ne na estetických preferencích.
                 </p>
               </div>
@@ -155,17 +163,17 @@ const WebdesignPage = () => {
         {/* Showcase Section - Apple Style */}
         <section className="w-full bg-[#1a1a1a] py-20 md:py-32 lg:py-40 overflow-hidden">
           <div className="px-8 md:px-12 lg:px-16 mb-16 md:mb-24">
-            <h2 className="font-satoshi text-4xl md:text-5xl lg:text-7xl font-bold text-white leading-tight max-w-4xl">
+            <h2 className="font-heading text-4xl md:text-5xl lg:text-7xl text-white leading-tight max-w-4xl">
               Web, který prodává.<br />Ne jen vypadá.
             </h2>
-            <p className="font-mono text-lg md:text-xl lg:text-2xl text-white/60 mt-10 md:mt-12 max-w-3xl leading-relaxed">
+            <p className="font-body font-semibold text-lg md:text-xl lg:text-2xl text-white/60 mt-10 md:mt-12 max-w-3xl leading-relaxed">
               Jestli začínáte nebo podnikáte roky — s CURIA se vaše firma zařadí mezi weby, které skutečně fungují. Design odvozený od strategie. Každý pixel má důvod.
             </p>
             
             {/* Awwwards Badge */}
             <div className="mt-12 md:mt-16 flex items-center gap-4">
-              <span className="font-satoshi text-white font-bold text-xl tracking-wider">AWWWARDS</span>
-              <span className="font-mono text-white/40 text-base">Site of the Day Winner</span>
+              <span className="font-heading text-white text-xl tracking-wider">AWWWARDS</span>
+              <span className="font-body font-semibold text-white/40 text-base">Site of the Day Winner</span>
             </div>
           </div>
           
@@ -181,10 +189,10 @@ const WebdesignPage = () => {
         {/* Manifest Section */}
         <section className="min-h-screen w-full bg-white px-8 md:px-12 lg:px-16 py-24 lg:py-32 flex items-center justify-center">
           <div className="max-w-4xl text-center">
-            <h2 className="font-satoshi text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-8">
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-black mb-8">
               Rozhraní je nástroj. Ne dekorace.
             </h2>
-            <div className="space-y-6 font-mono text-lg md:text-xl lg:text-2xl text-black leading-relaxed">
+            <div className="space-y-6 font-body font-semibold text-lg md:text-xl lg:text-2xl text-black leading-relaxed">
               <p>
                 Většina webů vzniká obráceně — nejdřív se řeší jak to bude vypadat, pak se řeší co to má dělat. Výsledkem jsou weby, které dobře vypadají a špatně fungují.
               </p>
@@ -207,43 +215,43 @@ const WebdesignPage = () => {
                 <div className="grid grid-cols-2 gap-3">
                   {/* Analytica */}
                   <div className="bg-white p-6 md:p-8">
-                    <h3 className="font-satoshi text-lg md:text-xl font-bold text-black mb-2">Analýza</h3>
-                    <p className="font-mono text-sm text-black/70">Rozbor trhu, konkurence a cílové skupiny</p>
+                    <h3 className="font-heading text-lg md:text-xl text-black mb-2">Analýza</h3>
+                    <p className="font-body font-semibold text-sm text-black/70">Rozbor trhu, konkurence a cílové skupiny</p>
                   </div>
                   {/* Architektura */}
                   <div className="bg-white p-6 md:p-8">
-                    <h3 className="font-satoshi text-lg md:text-xl font-bold text-black mb-2">Architektura</h3>
-                    <p className="font-mono text-sm text-black/70">Informační struktura a uživatelské cesty</p>
+                    <h3 className="font-heading text-lg md:text-xl text-black mb-2">Architektura</h3>
+                    <p className="font-body font-semibold text-sm text-black/70">Informační struktura a uživatelské cesty</p>
                   </div>
                   {/* Design */}
                   <div className="bg-white p-6 md:p-8">
-                    <h3 className="font-satoshi text-lg md:text-xl font-bold text-black mb-2">Design</h3>
-                    <p className="font-mono text-sm text-black/70">UI/UX odvozený od strategie značky</p>
+                    <h3 className="font-heading text-lg md:text-xl text-black mb-2">Design</h3>
+                    <p className="font-body font-semibold text-sm text-black/70">UI/UX odvozený od strategie značky</p>
                   </div>
                   {/* Vývoj */}
                   <div className="bg-white p-6 md:p-8">
-                    <h3 className="font-satoshi text-lg md:text-xl font-bold text-black mb-2">Vývoj</h3>
-                    <p className="font-mono text-sm text-black/70">React, Next.js, Framer, Webflow</p>
+                    <h3 className="font-heading text-lg md:text-xl text-black mb-2">Vývoj</h3>
+                    <p className="font-body font-semibold text-sm text-black/70">React, Next.js, Framer, Webflow</p>
                   </div>
                   {/* E-commerce */}
                   <div className="bg-white p-6 md:p-8">
-                    <h3 className="font-satoshi text-lg md:text-xl font-bold text-black mb-2">E-commerce</h3>
-                    <p className="font-mono text-sm text-black/70">Shopify, custom řešení</p>
+                    <h3 className="font-heading text-lg md:text-xl text-black mb-2">E-commerce</h3>
+                    <p className="font-body font-semibold text-sm text-black/70">Shopify, custom řešení</p>
                   </div>
                   {/* Integrace */}
                   <div className="bg-white p-6 md:p-8">
-                    <h3 className="font-satoshi text-lg md:text-xl font-bold text-black mb-2">Integrace</h3>
-                    <p className="font-mono text-sm text-black/70">CRM, ERP, platební brány, API</p>
+                    <h3 className="font-heading text-lg md:text-xl text-black mb-2">Integrace</h3>
+                    <p className="font-body font-semibold text-sm text-black/70">CRM, ERP, platební brány, API</p>
                   </div>
                   {/* SEO */}
                   <div className="bg-white p-6 md:p-8">
-                    <h3 className="font-satoshi text-lg md:text-xl font-bold text-black mb-2">SEO</h3>
-                    <p className="font-mono text-sm text-black/70">Technické SEO, rychlost, struktura</p>
+                    <h3 className="font-heading text-lg md:text-xl text-black mb-2">SEO</h3>
+                    <p className="font-body font-semibold text-sm text-black/70">Technické SEO, rychlost, struktura</p>
                   </div>
                   {/* Analytika */}
                   <div className="bg-white p-6 md:p-8">
-                    <h3 className="font-satoshi text-lg md:text-xl font-bold text-black mb-2">Analytika</h3>
-                    <p className="font-mono text-sm text-black/70">Tracking, heatmapy, konverze</p>
+                    <h3 className="font-heading text-lg md:text-xl text-black mb-2">Analytika</h3>
+                    <p className="font-body font-semibold text-sm text-black/70">Tracking, heatmapy, konverze</p>
                   </div>
                 </div>
               </div>
@@ -265,26 +273,26 @@ const WebdesignPage = () => {
           <div className="max-w-7xl mx-auto px-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4">
               <div className="text-center py-8">
-                <div className="font-satoshi text-4xl md:text-5xl lg:text-6xl font-bold text-white">
+                <div className="font-heading text-4xl md:text-5xl lg:text-6xl text-white">
                   150+
                 </div>
-                <p className="font-satoshi text-sm md:text-base lg:text-lg text-white/70 mt-2 md:mt-3">
+                <p className="font-body font-semibold text-sm md:text-base lg:text-lg text-white/70 mt-2 md:mt-3">
                   Realizovaných webů
                 </p>
               </div>
               <div className="text-center py-8">
-                <div className="font-satoshi text-4xl md:text-5xl lg:text-6xl font-bold text-white">
+                <div className="font-heading text-4xl md:text-5xl lg:text-6xl text-white">
                   3.2×
                 </div>
-                <p className="font-satoshi text-sm md:text-base lg:text-lg text-white/70 mt-2 md:mt-3">
+                <p className="font-body font-semibold text-sm md:text-base lg:text-lg text-white/70 mt-2 md:mt-3">
                   Průměrný nárůst konverze
                 </p>
               </div>
               <div className="text-center py-8">
-                <div className="font-satoshi text-4xl md:text-5xl lg:text-6xl font-bold text-white">
+                <div className="font-heading text-4xl md:text-5xl lg:text-6xl text-white">
                   68%
                 </div>
-                <p className="font-satoshi text-sm md:text-base lg:text-lg text-white/70 mt-2 md:mt-3">
+                <p className="font-body font-semibold text-sm md:text-base lg:text-lg text-white/70 mt-2 md:mt-3">
                   Klientů z doporučení
                 </p>
               </div>
@@ -297,41 +305,41 @@ const WebdesignPage = () => {
           <div className="max-w-7xl mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="bg-[#0057FF] p-8 md:p-12 min-h-[400px] md:min-h-[450px] flex flex-col justify-end relative overflow-hidden">
-                <span className="font-satoshi text-[120px] md:text-[180px] font-black text-white/10 absolute top-4 right-4 leading-none select-none">01</span>
-                <h3 className="font-satoshi text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-3 relative z-10">
+                <span className="font-heading text-[120px] md:text-[180px] font-black text-white/10 absolute top-4 right-4 leading-none select-none">01</span>
+                <h3 className="font-heading text-2xl md:text-3xl lg:text-4xl text-white mb-3 relative z-10">
                   Validace zadání
                 </h3>
-                <p className="font-mono text-sm md:text-base text-white/70 relative z-10">
+                <p className="font-body font-semibold text-sm md:text-base text-white/70 relative z-10">
                   Analýza byznys logiky, tržního kontextu a KPI. Nedefinujeme, jak má web vypadat, ale co má doručit. Pokud zadání nedává ekonomický smysl, vracíme ho k přepracování.
                 </p>
               </div>
 
               <div className="bg-[#0057FF] p-8 md:p-12 min-h-[400px] md:min-h-[450px] flex flex-col justify-end relative overflow-hidden">
-                <span className="font-satoshi text-[120px] md:text-[180px] font-black text-white/10 absolute top-4 right-4 leading-none select-none">02</span>
-                <h3 className="font-satoshi text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-3 relative z-10">
+                <span className="font-heading text-[120px] md:text-[180px] font-black text-white/10 absolute top-4 right-4 leading-none select-none">02</span>
+                <h3 className="font-heading text-2xl md:text-3xl lg:text-4xl text-white mb-3 relative z-10">
                   Architektura systému
                 </h3>
-                <p className="font-mono text-sm md:text-base text-white/70 relative z-10">
+                <p className="font-body font-semibold text-sm md:text-base text-white/70 relative z-10">
                   Stavba informační struktury a wireframů. Vizuální vrstva je u nás pouze logickým vyústěním strategie, nikoliv estetickým experimentem.
                 </p>
               </div>
 
               <div className="bg-[#0057FF] p-8 md:p-12 min-h-[400px] md:min-h-[450px] flex flex-col justify-end relative overflow-hidden">
-                <span className="font-satoshi text-[120px] md:text-[180px] font-black text-white/10 absolute top-4 right-4 leading-none select-none">03</span>
-                <h3 className="font-satoshi text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-3 relative z-10">
+                <span className="font-heading text-[120px] md:text-[180px] font-black text-white/10 absolute top-4 right-4 leading-none select-none">03</span>
+                <h3 className="font-heading text-2xl md:text-3xl lg:text-4xl text-white mb-3 relative z-10">
                   Technická exekuce
                 </h3>
-                <p className="font-mono text-sm md:text-base text-white/70 relative z-10">
+                <p className="font-body font-semibold text-sm md:text-base text-white/70 relative z-10">
                   Nasazení čistého, škálovatelného kódu. Prioritou je stabilita, rychlost načítání a čistý SEO základ. Žádný balast, jen výkon.
                 </p>
               </div>
 
               <div className="bg-[#0057FF] p-8 md:p-12 min-h-[400px] md:min-h-[450px] flex flex-col justify-end relative overflow-hidden">
-                <span className="font-satoshi text-[120px] md:text-[180px] font-black text-white/10 absolute top-4 right-4 leading-none select-none">04</span>
-                <h3 className="font-satoshi text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-3 relative z-10">
+                <span className="font-heading text-[120px] md:text-[180px] font-black text-white/10 absolute top-4 right-4 leading-none select-none">04</span>
+                <h3 className="font-heading text-2xl md:text-3xl lg:text-4xl text-white mb-3 relative z-10">
                   Kontrola a iterace
                 </h3>
-                <p className="font-mono text-sm md:text-base text-white/70 relative z-10">
+                <p className="font-body font-semibold text-sm md:text-base text-white/70 relative z-10">
                   Spuštěním proces nekončí. Nasazujeme analytické protokoly a na základě reálných dat ladíme výkon rozhraní. Web je živý nástroj, ne statický soubor.
                 </p>
               </div>
@@ -342,10 +350,10 @@ const WebdesignPage = () => {
         {/* Konzulát Section with Form */}
         <section className="w-full bg-[#0057FF] py-20 md:py-32 lg:py-40">
           <div className="max-w-7xl mx-auto px-6">
-            <h2 className="font-satoshi text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+            <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl text-white mb-6">
               FORMA SEQUITUR FUNCTIONEM.
             </h2>
-            <p className="font-mono text-base md:text-lg text-white/70 mb-12 md:mb-16 max-w-2xl">
+            <p className="font-body font-semibold text-base md:text-lg text-white/70 mb-12 md:mb-16 max-w-2xl">
               Forma následuje funkci. Každý pixel, každá interakce, každý řádek kódu existuje proto, aby plnil konkrétní účel.
             </p>
             
@@ -354,7 +362,7 @@ const WebdesignPage = () => {
                 {/* Contact Info - Left */}
                 <div className="space-y-8">
                   <div>
-                    <h3 className="font-satoshi text-xl md:text-2xl font-bold text-black mb-2">
+                    <h3 className="font-heading text-xl md:text-2xl text-black mb-2">
                       MAGISTRATUS
                     </h3>
                     <p className="text-gray-600 mb-1">vedení společnosti</p>
@@ -373,7 +381,7 @@ const WebdesignPage = () => {
                   </div>
                   
                   <div>
-                    <h3 className="font-satoshi text-xl md:text-2xl font-bold text-black mb-2">
+                    <h3 className="font-heading text-xl md:text-2xl text-black mb-2">
                       COMMERCIUM
                     </h3>
                     <p className="text-gray-600 mb-1">obchodní oddělení</p>
@@ -425,7 +433,7 @@ const WebdesignPage = () => {
                   </div>
                   <Button 
                     type="submit"
-                    className="bg-black text-white hover:bg-black/90 font-satoshi font-bold text-lg px-8 py-6 h-auto rounded-none w-full md:w-auto"
+                    className="bg-black text-white hover:bg-black/90 font-heading text-lg px-8 py-6 h-auto rounded-none w-full md:w-auto"
                   >
                     AUDIENCE
                   </Button>

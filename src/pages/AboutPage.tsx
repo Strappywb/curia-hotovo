@@ -1,19 +1,27 @@
+import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const AboutPage = () => {
   return (
     <>
+      <Helmet>
+        <title>O nás | CURIA - Kreativní studio Praha</title>
+        <meta name="description" content="CURIA je studio zaměřené na strategický design a technickou exekuci. Webdesign, branding, marketing a aplikace pro ambiciózní firmy." />
+        <meta property="og:title" content="O nás | CURIA - Kreativní studio Praha" />
+        <meta property="og:description" content="CURIA je studio zaměřené na strategický design a technickou exekuci. Webdesign, branding, marketing a aplikace pro ambiciózní firmy." />
+        <link rel="canonical" href="https://curia.cz/o-nas" />
+      </Helmet>
       <Header />
       <main className="overflow-x-hidden">
         {/* Hero Section */}
         <section className="relative min-h-screen w-full bg-[#1a1a1a] flex items-center justify-center px-8 py-32 md:px-12 lg:px-16">
           <div className="max-w-4xl">
-            <h1 className="font-satoshi text-4xl md:text-5xl lg:text-7xl font-black text-white mb-12 leading-tight">
+            <h1 className="font-heading text-4xl md:text-5xl lg:text-7xl font-black text-white mb-12 leading-tight">
               O NÁS
             </h1>
             
-            <div className="space-y-8 font-mono text-lg md:text-xl lg:text-2xl text-white/80 leading-relaxed">
+            <div className="space-y-8 font-body font-semibold text-lg md:text-xl lg:text-2xl text-white/80 leading-relaxed">
               <p>
                 CURIA je studio zaměřené na strategický design a technickou exekuci. Webdesign, branding, marketing, grafiku a vývoj aplikací stavíme jako nástroje obchodního úspěchu.
               </p>
@@ -42,7 +50,7 @@ const AboutPage = () => {
             {/* Contact Info */}
             <div className="mt-16 pt-12 border-t border-white/20 grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
-                <h3 className="font-satoshi text-xl font-bold text-white mb-4">
+                <h3 className="font-heading text-xl text-white mb-4">
                   MAGISTRATUS
                 </h3>
                 <p className="text-white/60 mb-2">vedení společnosti</p>
@@ -61,7 +69,7 @@ const AboutPage = () => {
               </div>
               
               <div>
-                <h3 className="font-satoshi text-xl font-bold text-white mb-4">
+                <h3 className="font-heading text-xl text-white mb-4">
                   COMMERCIUM
                 </h3>
                 <p className="text-white/60 mb-2">obchodní oddělení</p>

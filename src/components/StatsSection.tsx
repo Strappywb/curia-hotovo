@@ -43,10 +43,10 @@ const StatItem = ({ endValue, suffix, label, duration = 2000 }: StatItemProps) =
 
   return (
     <div ref={ref} className="text-center py-8 md:py-12">
-      <div className="font-satoshi text-4xl md:text-5xl lg:text-6xl font-bold text-white">
+      <div className="font-heading text-4xl md:text-5xl lg:text-6xl text-white">
         {count}{suffix}
       </div>
-      <p className="font-satoshi text-sm md:text-base lg:text-lg text-white/70 mt-2 md:mt-3 max-w-xs mx-auto">
+      <p className="font-body font-semibold text-sm md:text-base lg:text-lg text-white/70 mt-2 md:mt-3 max-w-xs mx-auto">
         {label}
       </p>
     </div>

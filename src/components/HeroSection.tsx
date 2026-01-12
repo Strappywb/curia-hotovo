@@ -18,10 +18,10 @@ const HeroSection = () => {
         {/* Right - Description */}
         <div className="flex-1 flex flex-col justify-center items-start md:items-end mt-12 md:mt-0">
           <div className="max-w-md text-left md:text-right">
-            <p className="font-satoshi text-xl md:text-2xl font-bold text-white mb-4">
+            <p className="font-heading text-xl md:text-2xl text-white mb-4">
               DIGITÁLNÍ ARCHITEKTURA
             </p>
-            <p className="font-mono text-sm md:text-base text-white leading-relaxed">
+            <p className="font-body font-semibold text-sm md:text-base text-white leading-relaxed">
               Sjednocujeme branding, design a technologii do funkčního řádu. Od stavby webů a mobilních aplikací po strategické řízení marketingu a propagace.
             </p>
           </div>

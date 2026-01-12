@@ -67,7 +67,7 @@ const Header = () => {
           <Link 
             to="/"
             onClick={() => { setMobileMenuOpen(false); }}
-            className={`font-satoshi text-2xl md:text-3xl font-black transition-colors ${
+            className={`font-heading text-2xl md:text-3xl font-black transition-colors ${
               scrolled || !isHomePage ? "text-black" : "text-white"
             }`}
           >
