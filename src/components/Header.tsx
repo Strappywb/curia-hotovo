@@ -147,6 +147,15 @@ const Header = () => {
             >
               Blog
             </Link>
+            
+            <Link
+              to="/faq"
+              className={`font-medium hover:opacity-70 transition-all ${
+                scrolled || !isHomePage ? "text-black" : "text-white"
+              }`}
+            >
+              FAQ
+            </Link>
           </nav>
 
           {/* Mobile Hamburger */}
@@ -231,6 +240,14 @@ const Header = () => {
               className="text-black text-xl font-medium text-left hover:opacity-70 transition-opacity"
             >
               Blog
+            </Link>
+            
+            <Link
+              to="/faq"
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-black text-xl font-medium text-left hover:opacity-70 transition-opacity"
+            >
+              FAQ
             </Link>
           </div>
         </div>
