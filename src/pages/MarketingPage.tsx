@@ -1,12 +1,12 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { ArrowUpRight, ChevronDown } from "lucide-react";
-import marketingImg from "@/assets/marketinghero.png";
-import marketingMobileImg from "@/assets/marketingheromobile.png";
-import marketing10Img from "@/assets/marketin10.png";
-import jenudaImg from "@/assets/jenuda.png";
-import provsechnyImg from "@/assets/provsechny.png";
-import nemakouleImg from "@/assets/nemakoule.png";
+import marketingImg from "@/assets/marketinghero.webp";
+import marketingMobileImg from "@/assets/marketingheromobile.webp";
+import marketing10Img from "@/assets/marketin10.webp";
+import jenudaImg from "@/assets/jenuda.webp";
+import provsechnyImg from "@/assets/provsechny.webp";
+import nemakouleImg from "@/assets/nemakoule.webp";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";

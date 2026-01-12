@@ -1,9 +1,9 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { ArrowUpRight, ChevronDown } from "lucide-react";
-import brandingImg from "@/assets/branding.png";
-import branding2Img from "@/assets/branding2.png";
-import identifikacniImg from "@/assets/Identifikačnísignatura.png";
+import brandingImg from "@/assets/branding.webp";
+import branding2Img from "@/assets/branding2.webp";
+import identifikacniImg from "@/assets/Identifikačnísignatura.webp";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";

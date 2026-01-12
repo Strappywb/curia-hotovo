@@ -1,9 +1,9 @@
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import verdiktHf from "@/assets/verdikt-hf.png";
-import hfstavbyOld from "@/assets/hfstavbyold.png";
-import hfstavbyNew from "@/assets/hfstavbynew.png";
+import verdiktHf from "@/assets/verdikt-hf.webp";
+import hfstavbyOld from "@/assets/hfstavbyold.webp";
+import hfstavbyNew from "@/assets/hfstavbynew.webp";
 
 const HFStavbyPage = () => {
   return (

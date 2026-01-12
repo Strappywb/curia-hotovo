@@ -1,8 +1,8 @@
 import { Helmet } from "react-helmet-async";
 import { ChevronDown } from "lucide-react";
-import aplikaceImg from "@/assets/aplikace.png";
-import aplikace2Img from "@/assets/aplikace2.png";
-import aplikace3Img from "@/assets/aplikace3.png";
+import aplikaceImg from "@/assets/aplikace.webp";
+import aplikace2Img from "@/assets/aplikace2.webp";
+import aplikace3Img from "@/assets/aplikace3.webp";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";

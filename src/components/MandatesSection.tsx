@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
-import verdiktMados from "@/assets/verdikt-mados.png";
-import verdiktHf from "@/assets/verdikt-hf.png";
-import verdiktPrint from "@/assets/verdikt-print.png";
-import verdiktSturm from "@/assets/verdikt-sturm.png";
+import verdiktMados from "@/assets/verdikt-mados.webp";
+import verdiktHf from "@/assets/verdikt-hf.webp";
+import verdiktPrint from "@/assets/verdikt-print.webp";
+import verdiktSturm from "@/assets/verdikt-sturm.webp";
 
 const mandates = [
   { id: 1, image: verdiktMados, alt: "Mados projekt" },

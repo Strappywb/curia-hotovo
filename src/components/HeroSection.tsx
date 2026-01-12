@@ -1,5 +1,5 @@
 import { ChevronDown } from "lucide-react";
-import curiaHero from "@/assets/curiahero.png";
+import curiaHero from "@/assets/curiahero.webp";
 
 const HeroSection = () => {
   return (

@@ -1,11 +1,11 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { ArrowUpRight, ChevronDown } from "lucide-react";
-import grafikaImg from "@/assets/grafika.png";
-import logaaImg from "@/assets/logaa.png";
-import marketin10Img from "@/assets/marketin10.png";
-import bannerImg from "@/assets/banner.png";
-import tiskexterierImg from "@/assets/tiskexterier.png";
+import grafikaImg from "@/assets/grafika.webp";
+import logaaImg from "@/assets/logaa.webp";
+import marketin10Img from "@/assets/marketin10.webp";
+import bannerImg from "@/assets/banner.webp";
+import tiskexterierImg from "@/assets/tiskexterier.webp";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";

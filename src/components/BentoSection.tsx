@@ -1,10 +1,10 @@
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import webdesignImg from "@/assets/webdesigncuria.png";
-import brandingImg from "@/assets/branding.png";
-import marketingImg from "@/assets/marketing.png";
-import grafikaImg from "@/assets/grafika.png";
-import aplikaceImg from "@/assets/aplikace.png";
+import webdesignImg from "@/assets/webdesigncuria.webp";
+import brandingImg from "@/assets/branding.webp";
+import marketingImg from "@/assets/marketing.webp";
+import grafikaImg from "@/assets/grafika.webp";
+import aplikaceImg from "@/assets/aplikace.webp";
 
 const BentoSection = () => {
   return (

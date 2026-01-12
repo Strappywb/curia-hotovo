@@ -1,9 +1,9 @@
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import verdiktMados from "@/assets/verdikt-mados.png";
-import madosOld from "@/assets/madosold.png";
-import madosNew from "@/assets/madosnew.png";
+import verdiktMados from "@/assets/verdikt-mados.webp";
+import madosOld from "@/assets/madosold.webp";
+import madosNew from "@/assets/madosnew.webp";
 
 const MadosPage = () => {
   return (
