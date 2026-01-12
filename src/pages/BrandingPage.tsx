@@ -236,9 +236,7 @@ const BrandingPage = () => {
                   Je váš vizuální systém připraven na expanzi do nových segmentů, nebo vás vaše současné logo drží v minulosti?
                 </p>
               </div>
-              <span className="font-heading text-7xl md:text-8xl lg:text-9xl font-black text-white/10 self-end">
-                ↗
-              </span>
+              <ArrowUpRight className="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 text-white/10 self-end" strokeWidth={1.5} />
             </div>
             
             <div className="relative bg-[#722F37] min-h-[400px] md:min-h-[500px] flex flex-col justify-between p-8 md:p-12 lg:p-16">
