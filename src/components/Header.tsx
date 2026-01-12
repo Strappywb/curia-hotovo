@@ -139,14 +139,14 @@ const Header = () => {
               Kontakt
             </button>
             
-            <button
-              onClick={() => handleNavClick("blog")}
+            <Link
+              to="/blog"
               className={`font-medium hover:opacity-70 transition-all ${
                 scrolled || !isHomePage ? "text-black" : "text-white"
               }`}
             >
-              Archiv poznatků
-            </button>
+              Blog
+            </Link>
           </nav>
 
           {/* Mobile Hamburger */}
@@ -225,12 +225,13 @@ const Header = () => {
               Kontakt
             </button>
             
-            <button
-              onClick={() => handleNavClick("blog")}
+            <Link
+              to="/blog"
+              onClick={() => setMobileMenuOpen(false)}
               className="text-black text-xl font-medium text-left hover:opacity-70 transition-opacity"
             >
-              Archiv poznatků
-            </button>
+              Blog
+            </Link>
           </div>
         </div>
 

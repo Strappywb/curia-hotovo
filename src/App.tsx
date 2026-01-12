@@ -10,8 +10,12 @@ import MarketingPage from "./pages/MarketingPage";
 import GrafikaPage from "./pages/GrafikaPage";
 import AplikacePage from "./pages/AplikacePage";
 import AboutPage from "./pages/AboutPage";
+import BlogPage from "./pages/BlogPage";
 import MadosPage from "./pages/projects/MadosPage";
 import HFStavbyPage from "./pages/projects/HFStavbyPage";
+import WebKteryProdavaPage from "./pages/blog/WebKteryProdavaPage";
+import StrategickyMarketingPage from "./pages/blog/StrategickyMarketingPage";
+import BudovaniZnackyPage from "./pages/blog/BudovaniZnackyPage";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -32,8 +36,12 @@ const App = () => (
           <Route path="/grafika" element={<GrafikaPage />} />
           <Route path="/aplikace" element={<AplikacePage />} />
           <Route path="/o-nas" element={<AboutPage />} />
+          <Route path="/blog" element={<BlogPage />} />
           <Route path="/projekty/mados" element={<MadosPage />} />
           <Route path="/projekty/hf-stavby" element={<HFStavbyPage />} />
+          <Route path="/blog/web-ktery-prodava" element={<WebKteryProdavaPage />} />
+          <Route path="/blog/strategicky-marketing" element={<StrategickyMarketingPage />} />
+          <Route path="/blog/budovani-znacky" element={<BudovaniZnackyPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

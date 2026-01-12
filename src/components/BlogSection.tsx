@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const blogPosts = [
   {
@@ -7,7 +8,8 @@ const blogPosts = [
     excerpt: "Moderní webdesign není jen o estetice. Úspěšný web kombinuje vizuální přitažlivost s funkčností a konverzní strategií.",
     date: "15. 1. 2024",
     category: "Webdesign",
-    image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop"
+    image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop",
+    slug: "/blog/web-ktery-prodava"
   },
   {
     id: 2,
@@ -15,7 +17,8 @@ const blogPosts = [
     excerpt: "Efektivní marketing začíná pochopením vašeho publika. Jak vybudovat kampaň, která rezonuje a přináší výsledky.",
     date: "10. 1. 2024",
     category: "Marketing",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop"
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
+    slug: "/blog/strategicky-marketing"
   },
   {
     id: 3,
@@ -23,7 +26,8 @@ const blogPosts = [
     excerpt: "Silná značka je víc než logo. Je to příběh, hodnoty a emoce, které vytváříte u svých zákazníků.",
     date: "5. 1. 2024",
     category: "Branding",
-    image: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=600&h=400&fit=crop"
+    image: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=600&h=400&fit=crop",
+    slug: "/blog/budovani-znacky"
   }
 ];
 
@@ -37,8 +41,9 @@ const BlogSection = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {blogPosts.map((post) => (
-            <article
+            <Link
               key={post.id}
+              to={post.slug}
               className="bg-white group cursor-pointer hover:bg-gray-50 transition-colors overflow-hidden"
             >
               <div className="aspect-video overflow-hidden">
@@ -61,7 +66,7 @@ const BlogSection = () => {
                 </p>
                 <span className="text-sm text-gray-400">{post.date}</span>
               </div>
-            </article>
+            </Link>
           ))}
         </div>
       </div>
