@@ -96,14 +96,14 @@ const Footer = () => {
                   </span>
                 </li>
                 <li>
-                  <span className="text-gray-400 cursor-default">
+                  <a href="https://support.google.com/google-ads/answer/7687725?hl=cs" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                     GDPR
-                  </span>
+                  </a>
                 </li>
                 <li>
-                  <span className="text-gray-400 cursor-default">
+                  <a href="https://policies.google.com/privacy?hl=cs" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                     Ochrana údajů
-                  </span>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -121,7 +121,7 @@ const Footer = () => {
         {/* Bottom divider and copyright */}
         <div className="border-t border-gray-800 pt-8">
           <p className="text-gray-500 text-sm text-center md:text-left">
-            © 2024 CURIA. Všechna práva vyhrazena.
+            © 2025 CURIA. Všechna práva vyhrazena.
           </p>
         </div>
       </div>
