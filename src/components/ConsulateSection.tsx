@@ -39,10 +39,10 @@ const ConsulateSection = () => {
                   +420 606 237 743
                 </a>
                 <a 
-                  href="mailto:magistratus@lorem.cz" 
+                  href="mailto:michal@curia.cz" 
                   className="text-black font-medium hover:underline block mt-1"
                 >
-                  magistratus@lorem.cz
+                  michal@curia.cz
                 </a>
               </div>
               
@@ -58,10 +58,10 @@ const ConsulateSection = () => {
                   +420 777 561 050
                 </a>
                 <a 
-                  href="mailto:commercium@lorem.cz" 
+                  href="mailto:adam@curia.cz" 
                   className="text-black font-medium hover:underline block mt-1"
                 >
-                  commercium@lorem.cz
+                  adam@curia.cz
                 </a>
               </div>
             </div>
