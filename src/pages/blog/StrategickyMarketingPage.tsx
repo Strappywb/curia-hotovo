@@ -13,6 +13,18 @@ const StrategickyMarketingPage = () => {
         <meta property="og:title" content="Síla strategického marketingu | CURIA Blog" />
         <meta property="og:description" content="Efektivní marketing začíná pochopením vašeho publika. Jak vybudovat kampaň, která rezonuje a přináší výsledky." />
         <link rel="canonical" href="https://curia.cz/blog/strategicky-marketing" />
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Síla strategického marketingu",
+            "description": "Efektivní marketing začíná pochopením vašeho publika. Jak vybudovat kampaň, která rezonuje a přináší výsledky.",
+            "author": {"@type": "Organization", "name": "CURIA"},
+            "publisher": {"@type": "Organization", "name": "CURIA", "logo": {"@type": "ImageObject", "url": "https://curia.cz/favicon.svg"}},
+            "datePublished": "2024-01-10",
+            "mainEntityOfPage": "https://curia.cz/blog/strategicky-marketing"
+          }
+        `}</script>
       </Helmet>
       <Header />
       <main className="overflow-x-hidden">

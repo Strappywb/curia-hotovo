@@ -30,12 +30,17 @@ const Footer = () => {
         {/* Top section with logo and navigation */}
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-12 md:gap-8 mb-12 md:mb-16">
           {/* Logo */}
-          <Link 
-            to="/"
-            className="font-heading text-3xl md:text-4xl font-black text-white"
-          >
-            CURIA
-          </Link>
+          <div>
+            <Link 
+              to="/"
+              className="font-heading text-3xl md:text-4xl font-black text-white block"
+            >
+              CURIA
+            </Link>
+            <p className="text-gray-400 mt-2 text-sm max-w-[200px]">
+              Kreativní studio pro webdesign, branding a marketing.
+            </p>
+          </div>
 
           {/* Navigation columns */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">

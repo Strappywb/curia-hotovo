@@ -13,6 +13,18 @@ const WebKteryProdavaPage = () => {
         <meta property="og:title" content="Jak vytvořit web, který prodává | CURIA Blog" />
         <meta property="og:description" content="Moderní webdesign není jen o estetice. Úspěšný web kombinuje vizuální přitažlivost s funkčností a konverzní strategií." />
         <link rel="canonical" href="https://curia.cz/blog/web-ktery-prodava" />
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Jak vytvořit web, který prodává",
+            "description": "Moderní webdesign není jen o estetice. Úspěšný web kombinuje vizuální přitažlivost s funkčností a konverzní strategií.",
+            "author": {"@type": "Organization", "name": "CURIA"},
+            "publisher": {"@type": "Organization", "name": "CURIA", "logo": {"@type": "ImageObject", "url": "https://curia.cz/favicon.svg"}},
+            "datePublished": "2024-01-15",
+            "mainEntityOfPage": "https://curia.cz/blog/web-ktery-prodava"
+          }
+        `}</script>
       </Helmet>
       <Header />
       <main className="overflow-x-hidden">

@@ -1,0 +1,78 @@
+# CURIA - Kreativní studio
+
+> CURIA je české kreativní studio specializující se na webdesign, branding, digitální marketing, grafický design a vývoj aplikací.
+
+## O nás
+
+CURIA pomáhá firmám budovat silnou digitální přítomnost a růst online. Nabízíme kompletní služby od strategie přes design až po technickou realizaci.
+
+## Služby
+
+### Webdesign & Vývoj
+- Tvorba moderních responzivních webových stránek
+- Technologie: React, Next.js, TypeScript, Framer, Webflow
+- Hosting a údržba v ceně prvního roku
+- Mobile-first přístup
+
+### Branding
+- Tvorba vizuální identity a loga
+- Brand strategie a positioning
+- Firemní design manuály
+- Naming a tone of voice
+
+### Marketing
+- Digitální marketingové strategie
+- SEO optimalizace
+- Sociální sítě a content marketing
+- Výkonnostní kampaně
+
+### Grafika
+- Grafický design pro print i digital
+- Prezentace a tiskoviny
+- Sociální média grafika
+- Produktová grafika
+
+### Aplikace
+- Webové a mobilní aplikace
+- UI/UX design
+- Prototyping
+- Custom software řešení
+
+## Kontakt
+
+- Web: https://curia.cz
+- Email vedení: michal@curia.cz
+- Email obchod: adam@curia.cz
+- Telefon: +420 606 237 743
+- IČO: 21062897
+- Lokace: Česká republika
+
+## Jak spolupracujeme
+
+1. Analýza a strategie - pochopení byznysu, cílů a cílové skupiny
+2. Návrh a iterace - design na základě zpětné vazby
+3. Realizace - technická implementace
+4. Spuštění a podpora
+
+## Doba dodání
+
+- Weby: dny až týdny
+- Grafika: dny až týdny
+- Branding: týdny až měsíce
+
+## FAQ
+
+### Co CURIA dělá?
+Jsme studio zaměřené na webdesign, branding, marketing a vývoj aplikací. Pomáháme firmám budovat silnou digitální přítomnost.
+
+### Na jakých technologiích stavíte weby?
+Pracujeme s vlastním kódem (React, Next.js, TypeScript), Framer a Webflow. Technologii volíme podle potřeb projektu.
+
+### Je v ceně webu i hosting?
+Ano, cena zahrnuje hosting a základní údržbu po dobu prvního roku.
+
+### Jak rychle dokážete dodat projekt?
+Weby dodáváme v řádu dnů až týdnů. Grafické práce od dnů po týdny. Komplexní branding typicky týdny až měsíce.
+
+### S jakými klienty pracujete?
+Spolupracujeme s firmami všech velikostí — od startupů po zavedené společnosti.
