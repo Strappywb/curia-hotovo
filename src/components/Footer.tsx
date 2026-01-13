@@ -51,7 +51,7 @@ const Footer = () => {
                 <li>
                   <button
                     onClick={() => handleNavClick("hero")}
-                    className="text-gray-400 hover:text-white transition-colors"
+                    className="font-heading text-gray-400 hover:text-white transition-colors"
                   >
                     Domů
                   </button>
@@ -59,7 +59,7 @@ const Footer = () => {
                 <li>
                   <button
                     onClick={() => handleNavClick("projects")}
-                    className="text-gray-400 hover:text-white transition-colors"
+                    className="font-heading text-gray-400 hover:text-white transition-colors"
                   >
                     Projekty
                   </button>
@@ -67,7 +67,7 @@ const Footer = () => {
                 <li>
                   <button
                     onClick={() => handleNavClick("contact")}
-                    className="text-gray-400 hover:text-white transition-colors"
+                    className="font-heading text-gray-400 hover:text-white transition-colors"
                   >
                     Kontakt
                   </button>
@@ -75,7 +75,7 @@ const Footer = () => {
                 <li>
                   <Link
                     to="/blog"
-                    className="text-gray-400 hover:text-white transition-colors"
+                    className="font-heading text-gray-400 hover:text-white transition-colors"
                   >
                     Archiv poznatků
                   </Link>
@@ -91,7 +91,7 @@ const Footer = () => {
                   <li key={service.path}>
                     <Link
                       to={service.path}
-                      className="text-gray-400 hover:text-white transition-colors"
+                      className="font-heading text-gray-400 hover:text-white transition-colors"
                     >
                       {service.name}
                     </Link>
@@ -110,12 +110,12 @@ const Footer = () => {
                   </span>
                 </li>
                 <li>
-                  <a href="https://support.google.com/google-ads/answer/7687725?hl=cs" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                  <a href="https://support.google.com/google-ads/answer/7687725?hl=cs" target="_blank" rel="noopener noreferrer" className="font-heading text-gray-400 hover:text-white transition-colors">
                     GDPR
                   </a>
                 </li>
                 <li>
-                  <a href="https://policies.google.com/privacy?hl=cs" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                  <a href="https://policies.google.com/privacy?hl=cs" target="_blank" rel="noopener noreferrer" className="font-heading text-gray-400 hover:text-white transition-colors">
                     Ochrana údajů
                   </a>
                 </li>

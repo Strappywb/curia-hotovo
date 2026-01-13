@@ -78,7 +78,7 @@ const Header = () => {
           <nav className="hidden md:flex items-center space-x-8">
             <button
               onClick={() => handleNavClick("hero")}
-              className={`font-medium hover:opacity-70 transition-all ${
+              className={`font-heading font-medium hover:opacity-70 transition-all ${
                 scrolled || !isHomePage ? "text-black" : "text-white"
               }`}
             >
@@ -87,7 +87,7 @@ const Header = () => {
             
             <Link
               to="/o-nas"
-              className={`font-medium hover:opacity-70 transition-all ${
+              className={`font-heading font-medium hover:opacity-70 transition-all ${
                 scrolled || !isHomePage ? "text-black" : "text-white"
               }`}
             >
@@ -98,7 +98,7 @@ const Header = () => {
             <div className="relative">
               <button
                 onClick={() => setServicesOpen(!servicesOpen)}
-                className={`font-medium hover:opacity-70 transition-all flex items-center gap-1 ${
+                className={`font-heading font-medium hover:opacity-70 transition-all flex items-center gap-1 ${
                   scrolled || !isHomePage ? "text-black" : "text-white"
                 }`}
               >
@@ -123,7 +123,7 @@ const Header = () => {
             
             <button
               onClick={() => handleNavClick("projects")}
-              className={`font-medium hover:opacity-70 transition-all ${
+              className={`font-heading font-medium hover:opacity-70 transition-all ${
                 scrolled || !isHomePage ? "text-black" : "text-white"
               }`}
             >
@@ -132,7 +132,7 @@ const Header = () => {
             
             <button
               onClick={() => handleNavClick("contact")}
-              className={`font-medium hover:opacity-70 transition-all ${
+              className={`font-heading font-medium hover:opacity-70 transition-all ${
                 scrolled || !isHomePage ? "text-black" : "text-white"
               }`}
             >
@@ -141,7 +141,7 @@ const Header = () => {
             
             <Link
               to="/blog"
-              className={`font-medium hover:opacity-70 transition-all ${
+              className={`font-heading font-medium hover:opacity-70 transition-all ${
                 scrolled || !isHomePage ? "text-black" : "text-white"
               }`}
             >
@@ -150,7 +150,7 @@ const Header = () => {
             
             <Link
               to="/faq"
-              className={`font-medium hover:opacity-70 transition-all ${
+              className={`font-heading font-medium hover:opacity-70 transition-all ${
                 scrolled || !isHomePage ? "text-black" : "text-white"
               }`}
             >
