@@ -1,16 +1,26 @@
+import { Link, useLocation, useNavigate } from "react-router-dom";
+
 const services = [
-  { name: "Webdesign & Vývoj", id: "webdesign" },
-  { name: "Branding", id: "branding" },
-  { name: "Marketing", id: "marketing" },
-  { name: "Grafika", id: "grafika" },
-  { name: "Aplikace", id: "aplikace" },
+  { name: "Webdesign & Vývoj", path: "/webdesign" },
+  { name: "Branding", path: "/branding" },
+  { name: "Marketing", path: "/marketing" },
+  { name: "Grafika", path: "/grafika" },
+  { name: "Aplikace", path: "/aplikace" },
 ];
 
 const Footer = () => {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+  const location = useLocation();
+  const navigate = useNavigate();
+  const isHomePage = location.pathname === "/";
+
+  const handleNavClick = (sectionId: string) => {
+    if (isHomePage) {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      navigate(`/#${sectionId}`);
     }
   };
 
@@ -20,13 +30,12 @@ const Footer = () => {
         {/* Top section with logo and navigation */}
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-12 md:gap-8 mb-12 md:mb-16">
           {/* Logo */}
-          <a 
-            href="#hero" 
-            onClick={(e) => { e.preventDefault(); scrollToSection("hero"); }}
+          <Link 
+            to="/"
             className="font-heading text-3xl md:text-4xl font-black text-white"
           >
             CURIA
-          </a>
+          </Link>
 
           {/* Navigation columns */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
@@ -36,7 +45,7 @@ const Footer = () => {
               <ul className="space-y-2">
                 <li>
                   <button
-                    onClick={() => scrollToSection("hero")}
+                    onClick={() => handleNavClick("hero")}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     Domů
@@ -44,7 +53,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <button
-                    onClick={() => scrollToSection("projects")}
+                    onClick={() => handleNavClick("projects")}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     Projekty
@@ -52,19 +61,19 @@ const Footer = () => {
                 </li>
                 <li>
                   <button
-                    onClick={() => scrollToSection("contact")}
+                    onClick={() => handleNavClick("contact")}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     Kontakt
                   </button>
                 </li>
                 <li>
-                  <button
-                    onClick={() => scrollToSection("blog")}
+                  <Link
+                    to="/blog"
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     Archiv poznatků
-                  </button>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -74,13 +83,13 @@ const Footer = () => {
               <h4 className="font-heading text-white mb-4">Služby</h4>
               <ul className="space-y-2">
                 {services.map((service) => (
-                  <li key={service.id}>
-                    <button
-                      onClick={() => scrollToSection("services")}
+                  <li key={service.path}>
+                    <Link
+                      to={service.path}
                       className="text-gray-400 hover:text-white transition-colors"
                     >
                       {service.name}
-                    </button>
+                    </Link>
                   </li>
                 ))}
               </ul>
