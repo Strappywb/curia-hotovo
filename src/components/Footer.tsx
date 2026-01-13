@@ -121,7 +121,7 @@ const Footer = () => {
         {/* Bottom divider and copyright */}
         <div className="border-t border-gray-800 pt-8">
           <p className="text-gray-500 text-sm text-center md:text-left">
-            © 2025 CURIA. Všechna práva vyhrazena.
+            © 2026 CURIA. Všechna práva vyhrazena.
           </p>
         </div>
       </div>
