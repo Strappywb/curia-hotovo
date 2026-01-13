@@ -5,7 +5,7 @@ const MottoSection = () => {
         <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-black mb-4 md:mb-6 tracking-wide">
           AUT VINCERE, AUT MORI.
         </h2>
-        <p className="font-satoshi text-base md:text-lg lg:text-xl text-black/80 leading-relaxed">
+        <p className="font-body text-base md:text-lg lg:text-xl text-black/80 leading-relaxed">
           Buď zvítězit, nebo padnout. V digitálním prostoru neexistuje druhé místo – buď trhu vládnete, nebo v něm zaniknete.
         </p>
       </div>
