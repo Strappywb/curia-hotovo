@@ -1,7 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import webdesignImg from "@/assets/webdesign.png";
-import brandingImg from "@/assets/CURIAbranding.png";
+import webdesignImg from "@/assets/webdesign.webp";
+import brandingImg from "@/assets/CURIAbranding.webp";
 import marketingImg from "@/assets/marketinghero.webp";
 import grafikaImg from "@/assets/grafika.webp";
 import aplikaceImg from "@/assets/aplikace.webp";

@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 import { ChevronDown } from "lucide-react";
-import webdesignImg from "@/assets/webdesign.png";
+import webdesignImg from "@/assets/webdesign.webp";
 import curiawebImg from "@/assets/curiaweb3.webp";
 import webhero3Img from "@/assets/webhero3.webp";
 import analytikaImg from "@/assets/analytika.webp";
