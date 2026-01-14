@@ -26,14 +26,6 @@ const HeroSection = () => {
               Sjednocujeme branding, design a technologii do funkčního řádu. Od stavby webů a mobilních aplikací po strategické řízení marketingu a propagace.
             </p>
           </div>
-
-          {/* Scroll indicator with rotating element */}
-          <div className="mt-12 flex flex-col items-center md:items-end">
-            <div className="w-10 h-10 bg-white animate-rotate" style={{
-              clipPath: 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)'
-            }} />
-            <ChevronDown className="w-8 h-8 text-white mt-4 animate-bounce-slow" />
-          </div>
         </div>
       </div>
 

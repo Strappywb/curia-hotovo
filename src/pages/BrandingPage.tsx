@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { ArrowUpRight, ChevronDown } from "lucide-react";
-import brandingImg from "@/assets/branding.webp";
+import brandingImg from "@/assets/CURIAbranding.png";
 import branding2Img from "@/assets/branding2.webp";
 import identifikacniImg from "@/assets/Identifikačnísignatura.webp";
 import Header from "@/components/Header";

@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 import { ChevronDown } from "lucide-react";
-import webdesignImg from "@/assets/webdesigncuria.webp";
+import webdesignImg from "@/assets/webdesign.png";
 import curiawebImg from "@/assets/curiaweb3.webp";
 import webhero3Img from "@/assets/webhero3.webp";
 import analytikaImg from "@/assets/analytika.webp";
@@ -162,14 +162,6 @@ const WebdesignPage = () => {
                 <p className="font-body font-semibold text-sm md:text-base text-white leading-relaxed">
                   Web jako software, ne jako brožura. Každý prvek plní funkci v rámci obchodního cíle. Architektura postavená na datech, ne na estetických preferencích.
                 </p>
-              </div>
-
-              {/* Scroll indicator */}
-              <div className="mt-12 flex flex-col items-center md:items-end">
-                <div className="w-10 h-10 bg-white animate-rotate" style={{
-                  clipPath: 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)'
-                }} />
-                <ChevronDown className="w-8 h-8 text-white mt-4 animate-bounce-slow" />
               </div>
             </div>
           </div>

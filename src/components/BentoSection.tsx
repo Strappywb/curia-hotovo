@@ -1,8 +1,8 @@
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import webdesignImg from "@/assets/webdesigncuria.webp";
-import brandingImg from "@/assets/branding.webp";
-import marketingImg from "@/assets/marketing.webp";
+import webdesignImg from "@/assets/webdesign.png";
+import brandingImg from "@/assets/CURIAbranding.png";
+import marketingImg from "@/assets/marketinghero.webp";
 import grafikaImg from "@/assets/grafika.webp";
 import aplikaceImg from "@/assets/aplikace.webp";
 
@@ -45,7 +45,7 @@ const BentoSection = () => {
           <img 
             src={brandingImg} 
             alt="Branding" 
-            className="max-w-[55%] md:max-w-[50%] lg:max-w-[45%] h-auto object-contain"
+            className="max-w-[70%] md:max-w-[60%] h-auto object-contain mt-6 md:mt-8 rounded-xl md:rounded-2xl"
           />
         </Link>
 
@@ -62,7 +62,7 @@ const BentoSection = () => {
           <img 
             src={marketingImg} 
             alt="Marketing" 
-            className="max-w-[70%] md:max-w-[60%] h-auto object-contain"
+            className="max-w-full md:max-w-[90%] h-auto object-contain rounded-lg md:rounded-xl -mt-4 md:-mt-6"
           />
         </Link>
 

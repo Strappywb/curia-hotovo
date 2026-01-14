@@ -77,11 +77,6 @@ const AplikacePage = () => {
                   Mobilní a webové aplikace, které řeší reálné problémy. Od prvního wireframu po deployment. Váš produkt v kapsách a prohlížečích zákazníků.
                 </p>
               </div>
-
-              {/* Scroll indicator */}
-              <div className="mt-12 flex flex-col items-center md:items-end">
-                <ChevronDown className="w-8 h-8 text-white animate-bounce-slow" />
-              </div>
             </div>
           </div>
 
