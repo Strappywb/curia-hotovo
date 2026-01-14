@@ -8,9 +8,10 @@ import aplikaceImg from "@/assets/aplikace.webp";
 
 const BentoSection = () => {
   return (
-    <section id="services" className="w-full bg-background py-3">
+    <section id="services" className="w-full bg-background py-4 md:py-4 px-4 md:px-6">
+      <div className="max-w-7xl mx-auto">
       {/* WEBY & UI/UX - Full width like AirPods Pro card */}
-      <div className="relative w-full bg-[#0057FF] min-h-[450px] md:min-h-[500px] lg:min-h-[600px] flex flex-col justify-between items-center p-6 pt-10 pb-8 md:p-12 md:pt-16 md:pb-10 lg:p-16 lg:pt-20 lg:pb-12 group">
+      <div className="relative w-full bg-[#0047CC] min-h-[450px] md:min-h-[500px] lg:min-h-[600px] flex flex-col justify-between items-center p-6 pt-10 pb-8 md:p-12 md:pt-16 md:pb-10 lg:p-16 lg:pt-20 lg:pb-12 group rounded-3xl md:rounded-[2.5rem] overflow-hidden ring-4 ring-white">
         <Link to="/webdesign" className="absolute top-6 right-6 md:top-8 md:right-8 hover:scale-110 transition-transform">
           <ArrowUpRight className="w-6 h-6 md:w-8 md:h-8 text-white" />
         </Link>
@@ -29,9 +30,9 @@ const BentoSection = () => {
         />
       </div>
 
-      {/* 2x2 Grid - Apple style with minimal gap */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-3">
-        <Link to="/branding" className="relative bg-[#0057FF] min-h-[400px] md:min-h-[450px] lg:min-h-[500px] flex flex-col justify-between items-center p-6 pt-10 pb-8 md:p-12 md:pt-14 md:pb-10 lg:p-16 lg:pt-16 lg:pb-12 group">
+      {/* 2x2 Grid - Rounded style */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-4 mt-4 md:mt-4">
+        <Link to="/branding" className="relative bg-[#0047CC] min-h-[400px] md:min-h-[450px] lg:min-h-[500px] flex flex-col justify-between items-center p-6 pt-10 pb-8 md:p-12 md:pt-14 md:pb-10 lg:p-16 lg:pt-16 lg:pb-12 group rounded-3xl md:rounded-[2.5rem] overflow-hidden ring-4 ring-white">
           <ArrowUpRight className="absolute top-6 right-6 md:top-8 md:right-8 w-6 h-6 md:w-8 md:h-8 text-white group-hover:scale-110 transition-transform" />
           <div className="text-center">
             <h3 className="font-heading text-2xl md:text-4xl lg:text-5xl text-white">
@@ -48,7 +49,7 @@ const BentoSection = () => {
           />
         </Link>
 
-        <Link to="/marketing" className="relative bg-[#0057FF] min-h-[400px] md:min-h-[450px] lg:min-h-[500px] flex flex-col justify-between items-center p-6 pt-10 pb-8 md:p-12 md:pt-14 md:pb-10 lg:p-16 lg:pt-16 lg:pb-12 group">
+        <Link to="/marketing" className="relative bg-[#0047CC] min-h-[400px] md:min-h-[450px] lg:min-h-[500px] flex flex-col justify-between items-center p-6 pt-10 pb-8 md:p-12 md:pt-14 md:pb-10 lg:p-16 lg:pt-16 lg:pb-12 group rounded-3xl md:rounded-[2.5rem] overflow-hidden ring-4 ring-white">
           <ArrowUpRight className="absolute top-6 right-6 md:top-8 md:right-8 w-6 h-6 md:w-8 md:h-8 text-white group-hover:scale-110 transition-transform" />
           <div className="text-center">
             <h3 className="font-heading text-2xl md:text-4xl lg:text-5xl text-white">
@@ -65,7 +66,7 @@ const BentoSection = () => {
           />
         </Link>
 
-        <Link to="/grafika" className="relative bg-[#0057FF] min-h-[400px] md:min-h-[450px] lg:min-h-[500px] flex flex-col justify-between items-center p-6 pt-10 pb-8 md:p-12 md:pt-14 md:pb-10 lg:p-16 lg:pt-16 lg:pb-12 group">
+        <Link to="/grafika" className="relative bg-[#0047CC] min-h-[400px] md:min-h-[450px] lg:min-h-[500px] flex flex-col justify-between items-center p-6 pt-10 pb-8 md:p-12 md:pt-14 md:pb-10 lg:p-16 lg:pt-16 lg:pb-12 group rounded-3xl md:rounded-[2.5rem] overflow-hidden ring-4 ring-white">
           <ArrowUpRight className="absolute top-6 right-6 md:top-8 md:right-8 w-6 h-6 md:w-8 md:h-8 text-white group-hover:scale-110 transition-transform" />
           <div className="text-center">
             <h3 className="font-heading text-2xl md:text-4xl lg:text-5xl text-white">
@@ -82,7 +83,7 @@ const BentoSection = () => {
           />
         </Link>
 
-        <Link to="/aplikace" className="relative bg-[#0057FF] min-h-[400px] md:min-h-[450px] lg:min-h-[500px] flex flex-col justify-between items-center p-6 pt-10 pb-8 md:p-12 md:pt-14 md:pb-10 lg:p-16 lg:pt-16 lg:pb-12 group">
+        <Link to="/aplikace" className="relative bg-[#0047CC] min-h-[400px] md:min-h-[450px] lg:min-h-[500px] flex flex-col justify-between items-center p-6 pt-10 pb-8 md:p-12 md:pt-14 md:pb-10 lg:p-16 lg:pt-16 lg:pb-12 group rounded-3xl md:rounded-[2.5rem] overflow-hidden ring-4 ring-white">
           <ArrowUpRight className="absolute top-6 right-6 md:top-8 md:right-8 w-6 h-6 md:w-8 md:h-8 text-white group-hover:scale-110 transition-transform" />
           <div className="text-center">
             <h3 className="font-heading text-2xl md:text-4xl lg:text-5xl text-white">
@@ -98,6 +99,7 @@ const BentoSection = () => {
             className="max-w-[70%] md:max-w-[60%] h-auto object-contain"
           />
         </Link>
+      </div>
       </div>
     </section>
   );

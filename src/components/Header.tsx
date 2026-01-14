@@ -58,11 +58,11 @@ const Header = () => {
   };
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled || !isHomePage ? "bg-white shadow-md py-4" : "bg-transparent py-6"
+    <header className={`fixed top-4 left-4 right-4 md:top-5 md:left-1/2 md:-translate-x-1/2 md:w-auto z-50 transition-all duration-300 rounded-2xl md:rounded-full ${
+      scrolled || !isHomePage ? "bg-white shadow-lg py-3 md:py-4 md:px-10" : "bg-white/10 backdrop-blur-md py-3 md:py-4 md:px-10"
     }`}>
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 md:px-0">
+        <div className="flex items-center justify-between md:gap-12">
           {/* Logo */}
           <Link 
             to="/"
@@ -75,7 +75,7 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-6">
             <button
               onClick={() => handleNavClick("hero")}
               className={`font-heading font-medium hover:opacity-70 transition-all ${
@@ -107,7 +107,7 @@ const Header = () => {
               </button>
               
               {servicesOpen && (
-                <div className="absolute top-full left-0 mt-2 bg-white border border-gray-200 py-2 min-w-[200px] shadow-lg">
+                <div className="absolute top-full left-0 mt-2 bg-white border border-gray-200 py-2 min-w-[200px] shadow-lg rounded-xl overflow-hidden">
                   {services.map((service) => (
                     <button
                       key={service.name}

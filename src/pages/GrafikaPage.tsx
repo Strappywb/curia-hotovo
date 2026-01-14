@@ -102,8 +102,9 @@ const GrafikaPage = () => {
       <Header />
       <main className="overflow-x-hidden">
         {/* Hero Section - Fullscreen */}
-        <section className="relative h-screen w-screen bg-[#1a1a1a] overflow-hidden">
-          <div className="h-full flex flex-col md:flex-row items-center px-8 pt-24 pb-32 md:px-12 lg:px-16 lg:pt-0">
+        <section className="bg-[#ebebeb] px-4 md:px-6 pt-24 md:pt-28 pb-4 md:pb-3">
+          <div className="relative min-h-[90vh] md:h-[85vh] w-full bg-[#1a1a1a] overflow-hidden rounded-3xl md:rounded-[2.5rem] ring-4 ring-white">
+            <div className="h-full flex flex-col md:flex-row items-center px-8 pt-12 pb-32 md:px-12 lg:px-16 lg:pt-0">
             {/* Left - Hero Image */}
             <div className="flex-1 flex items-center justify-center lg:items-center">
               <img 
@@ -126,34 +127,36 @@ const GrafikaPage = () => {
             </div>
           </div>
 
-          {/* Bottom brand text */}
-          <div className="absolute bottom-0 left-0 right-0 overflow-hidden">
-            <h1 className="text-white text-[15vw] md:text-[15vw] lg:text-[13vw] whitespace-nowrap px-4 md:px-8 pb-4 font-black tracking-tight lg:tracking-[-0.02em] lg:scale-x-[1.05] origin-left">
-              GRAFIKA
-            </h1>
+            {/* Bottom brand text */}
+            <div className="absolute bottom-0 left-0 right-0 overflow-hidden">
+              <h1 className="text-white text-[15vw] md:text-[15vw] lg:text-[13vw] whitespace-nowrap px-4 md:px-8 pb-4 font-black tracking-tight lg:tracking-[-0.02em] lg:scale-x-[1.05] origin-left">
+                GRAFIKA
+              </h1>
+            </div>
           </div>
         </section>
 
         {/* Intro Section */}
-        <section className="w-full bg-white py-24 md:py-32 lg:py-40">
-          <div className="max-w-5xl mx-auto px-6 md:px-12 lg:px-16">
-            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-black text-black mb-8">
-              CO DĚLÁME
-            </h2>
-            <p className="font-body font-semibold text-lg md:text-xl lg:text-2xl text-black/60 leading-relaxed">
-              Od loga po billboard. Vše, co vaše značka potřebuje vidět.
-            </p>
+        <section className="bg-[#ebebeb] px-4 md:px-6 py-4 md:py-3">
+          <div className="w-full bg-white py-24 md:py-32 lg:py-40 rounded-3xl md:rounded-[2.5rem] ring-4 ring-white">
+            <div className="max-w-5xl mx-auto px-6 md:px-12 lg:px-16">
+              <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-black text-black mb-8">
+                CO DĚLÁME
+              </h2>
+              <p className="font-body font-semibold text-lg md:text-xl lg:text-2xl text-black/60 leading-relaxed">
+                Od loga po billboard. Vše, co vaše značka potřebuje vidět.
+              </p>
+            </div>
           </div>
         </section>
 
         {/* Kategorie - Stacked Layout */}
-        <section className="w-full bg-[#f5f5f5]">
+        <section className="bg-[#ebebeb] px-4 md:px-6 py-4 md:py-3">
           <div className="flex flex-col gap-4">
           {kategorie.map((item, index) => (
             <div 
               key={index}
-              className="grid grid-cols-1 md:grid-cols-2"
-            >
+              className="grid grid-cols-1 md:grid-cols-2 rounded-3xl md:rounded-[2.5rem] ring-4 ring-white overflow-hidden">
               {/* Text Box - vlevo na desktopu, dole na mobilu */}
               <div className={`bg-[#1a1a1a] min-h-[350px] md:min-h-[450px] lg:min-h-[550px] flex flex-col justify-center p-8 md:p-12 lg:p-16 ${index % 2 === 1 ? 'md:order-2' : ''}`}>
                 <h3 className="font-heading text-2xl md:text-3xl lg:text-4xl text-white mb-4 leading-tight">
@@ -182,8 +185,9 @@ const GrafikaPage = () => {
         </section>
 
         {/* Servisní karty - Apple Style */}
-        <section className="w-full bg-white py-20 md:py-28 lg:py-36">
-          <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
+        <section className="bg-[#ebebeb] px-4 md:px-6 py-4 md:py-3">
+          <div className="w-full bg-white py-20 md:py-28 lg:py-36 rounded-3xl md:rounded-[2.5rem] ring-4 ring-white">
+            <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-black mb-16 text-center">
               SERVISNÍ STANDARD
             </h2>
@@ -207,11 +211,13 @@ const GrafikaPage = () => {
               ))}
             </div>
           </div>
+          </div>
         </section>
 
         {/* Parametry služby - Stats */}
-        <section className="w-full bg-black py-16 md:py-20 lg:py-24">
-          <div className="max-w-7xl mx-auto px-6">
+        <section className="bg-[#ebebeb] px-4 md:px-6 py-4 md:py-3">
+          <div className="w-full bg-black py-16 md:py-20 lg:py-24 rounded-3xl md:rounded-[2.5rem] ring-4 ring-white">
+            <div className="max-w-7xl mx-auto px-6">
             <h2 className="font-heading text-2xl md:text-3xl text-white/40 mb-12 text-center">
               PARAMETRY SLUŽBY
             </h2>
@@ -242,20 +248,24 @@ const GrafikaPage = () => {
               </div>
             </div>
           </div>
+          </div>
         </section>
 
         {/* Bold Statement Section */}
-        <section className="w-full bg-[#1a1a1a] py-24 md:py-32 lg:py-40">
-          <div className="max-w-5xl mx-auto px-6 md:px-12 lg:px-16">
+        <section className="bg-[#ebebeb] px-4 md:px-6 py-4 md:py-3">
+          <div className="w-full bg-[#1a1a1a] py-24 md:py-32 lg:py-40 rounded-3xl md:rounded-[2.5rem] ring-4 ring-white">
+            <div className="max-w-5xl mx-auto px-6 md:px-12 lg:px-16">
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-white leading-tight">
               GRAFIKA BEZ STRATEGIE JE UMĚNÍ. GRAFIKA SE STRATEGIÍ JE NÁSTROJ DOMINANCE.
             </h2>
           </div>
+          </div>
         </section>
 
         {/* Konzulát Section with Form */}
-        <section className="w-full bg-[#1a1a1a] py-20 md:py-32 lg:py-40">
-          <div className="max-w-7xl mx-auto px-6">
+        <section className="bg-[#ebebeb] px-4 md:px-6 py-4 md:py-3 pb-8">
+          <div className="w-full bg-[#1a1a1a] py-20 md:py-32 lg:py-40 rounded-3xl md:rounded-[2.5rem] ring-4 ring-white">
+            <div className="max-w-7xl mx-auto px-6">
             <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl text-white mb-6">
               FORMA SEQUITUR FUNCTIONEM.
             </h2>
@@ -263,7 +273,7 @@ const GrafikaPage = () => {
               Forma následuje funkci. Každý vizuální element má svůj účel. Nic navíc, nic méně.
             </p>
             
-            <div className="bg-white p-8 md:p-12 lg:p-16">
+            <div className="bg-white p-8 md:p-12 lg:p-16 rounded-2xl md:rounded-3xl">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
                 {/* Contact Info - Left */}
                 <div className="space-y-8">
@@ -350,6 +360,7 @@ const GrafikaPage = () => {
                 </form>
               </div>
             </div>
+          </div>
           </div>
         </section>
 

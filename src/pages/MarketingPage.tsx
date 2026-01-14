@@ -93,9 +93,10 @@ const MarketingPage = () => {
         <link rel="canonical" href="https://curia.cz/marketing" />
       </Helmet>
       <Header />
-      <main className="overflow-x-hidden">
+      <main className="overflow-x-hidden bg-[#ebebeb]">
         {/* Hero Section - Fullscreen */}
-        <section className="relative h-screen w-screen bg-[#CCFF00] overflow-hidden">
+        <section className="relative w-full bg-[#ebebeb] px-4 md:px-6 pt-4 md:pt-6 pb-4 md:pb-3">
+          <div className="relative h-screen bg-[#CCFF00] overflow-hidden rounded-3xl md:rounded-[2.5rem] ring-4 ring-white">
           <div className="h-full flex flex-col md:flex-row items-center px-6 pt-24 pb-32 md:px-12 lg:px-16 lg:pt-0">
             {/* Left - Hero Image */}
             <div className="flex-1 flex items-center justify-center">
@@ -133,10 +134,12 @@ const MarketingPage = () => {
               MARKETING
             </h1>
           </div>
+          </div>
         </section>
 
         {/* Showcase Section - Apple Style */}
-        <section className="w-full bg-[#1a1a1a] py-20 md:py-32 lg:py-40 overflow-hidden">
+        <section className="w-full bg-[#ebebeb] px-4 md:px-6 py-4 md:py-3">
+          <div className="bg-[#1a1a1a] rounded-3xl md:rounded-[2.5rem] ring-4 ring-white py-20 md:py-32 lg:py-40 overflow-hidden">
           <div className="px-8 md:px-12 lg:px-16 mb-16 md:mb-24">
             <h2 className="font-heading text-4xl md:text-5xl lg:text-7xl text-white leading-tight max-w-4xl">
               Pozornost je měna.<br />My ji umíme těžit.
@@ -153,10 +156,12 @@ const MarketingPage = () => {
               className="w-full md:w-[95vw] lg:w-[100vw] max-w-none h-auto object-contain"
             />
           </div>
+          </div>
         </section>
 
         {/* Manifest Section - Psychologie vs. Algoritmy */}
-        <section className="w-full bg-white py-20 md:py-28 lg:py-36">
+        <section className="w-full bg-[#ebebeb] px-4 md:px-6 py-4 md:py-3">
+          <div className="bg-white rounded-3xl md:rounded-[2.5rem] ring-4 ring-white py-20 md:py-28 lg:py-36">
           <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-black mb-6">
               PSYCHOLOGIE VS. ALGORITMY
@@ -165,11 +170,13 @@ const MarketingPage = () => {
               Většina agentur pálí peníze na kampaně, které nikdo nevidí, nebo nikoho nezajímají. My nekupujeme lajky. Kupujeme pozornost. Ovládáme psychologii davu – víme, co přiměje 15letého kluka napsat „Slay" a co přiměje 50letého majitele stavební firmy zvednout telefon a podepsat kontrakt.
             </p>
           </div>
+          </div>
         </section>
 
         {/* Divize vlivu - 3 pillars */}
-        <section className="w-full bg-[#F5F5F5] py-3">
-          <div className="px-6 mb-10 md:mb-16">
+        <section className="w-full bg-[#ebebeb] px-4 md:px-6 py-4 md:py-3">
+          <div className="max-w-7xl mx-auto">
+          <div className="px-0 mb-10 md:mb-16">
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-black">
               DIVIZE VLIVU
             </h2>
@@ -178,11 +185,11 @@ const MarketingPage = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {divize.map((item, index) => (
               <div 
                 key={index}
-                className="relative bg-[#CCFF00] min-h-[400px] md:min-h-[450px] lg:min-h-[500px] flex flex-col justify-between p-6 pt-10 pb-8 md:p-10 md:pt-12 md:pb-10 lg:p-12 lg:pt-14 lg:pb-12"
+                className="relative bg-[#CCFF00] min-h-[400px] md:min-h-[450px] lg:min-h-[500px] flex flex-col justify-between p-6 pt-10 pb-8 md:p-10 md:pt-12 md:pb-10 lg:p-12 lg:pt-14 lg:pb-12 rounded-3xl md:rounded-[2.5rem] ring-4 ring-white"
               >
                 <div>
                   <span className="font-body font-semibold text-xs md:text-sm text-black/50 mb-3 uppercase tracking-wider block">
@@ -201,10 +208,12 @@ const MarketingPage = () => {
               </div>
             ))}
           </div>
+          </div>
         </section>
 
         {/* Reality Check - Proč vaše reklama nefunguje */}
-        <section className="w-full bg-[#CCFF00] py-20 md:py-28 lg:py-36">
+        <section className="w-full bg-[#ebebeb] px-4 md:px-6 py-4 md:py-3">
+          <div className="bg-[#CCFF00] rounded-3xl md:rounded-[2.5rem] ring-4 ring-white py-20 md:py-28 lg:py-36">
           <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-black mb-12 md:mb-16">
               PROČ VAŠE REKLAMA NEFUNGUJE?
@@ -212,7 +221,7 @@ const MarketingPage = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-16">
               {problemyReklamy.map((problem, index) => (
-                <div key={index} className="bg-black p-6 md:p-8">
+                <div key={index} className="bg-black p-6 md:p-8 rounded-2xl">
                   <div className="mb-6">
                     <h3 className="font-heading text-2xl md:text-3xl text-white mb-2">
                       {problem.title}
@@ -236,10 +245,12 @@ const MarketingPage = () => {
               </p>
             </div>
           </div>
+          </div>
         </section>
 
         {/* Social Proof - Stats */}
-        <section className="w-full bg-white py-16 md:py-20 lg:py-24">
+        <section className="w-full bg-[#ebebeb] px-4 md:px-6 py-4 md:py-3">
+          <div className="bg-white rounded-3xl md:rounded-[2.5rem] ring-4 ring-white py-16 md:py-20 lg:py-24">
           <div className="max-w-7xl mx-auto px-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4">
               <div className="text-center py-8">
@@ -268,20 +279,23 @@ const MarketingPage = () => {
               </div>
             </div>
           </div>
+          </div>
         </section>
 
         {/* Bold Statement Section */}
-        <section className="w-full bg-black py-24 md:py-32 lg:py-40">
+        <section className="w-full bg-[#ebebeb] px-4 md:px-6 py-4 md:py-3">
+          <div className="bg-black rounded-3xl md:rounded-[2.5rem] ring-4 ring-white py-24 md:py-32 lg:py-40">
           <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-white leading-tight">
               VĚŘÍME V SYSTÉMOVÉ ŘÍZENÍ RŮSTU. NAŠE METODIKA SPOJUJE DATA S PSYCHOLOGIÍ TRHU TAK, ABY KAŽDÁ INTERAKCE SE ZNAČKOU POSILOVALA JEJÍ POZICI A AUTORITU.
             </h2>
           </div>
+          </div>
         </section>
 
         {/* Konzulát Section with Form */}
-        <section className="w-full bg-[#CCFF00] py-20 md:py-32 lg:py-40">
-          <div className="max-w-7xl mx-auto px-6">
+        <section className="w-full bg-[#ebebeb] px-4 md:px-6 py-4 md:py-3">
+          <div className="bg-[#CCFF00] rounded-3xl md:rounded-[2.5rem] ring-4 ring-white py-20 md:py-32 lg:py-40 px-6 md:px-12">
             <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl text-black mb-6">
               IN DATA VERITAS.
             </h2>
@@ -289,7 +303,7 @@ const MarketingPage = () => {
               V datech je pravda. Co neměříte, neřídíte. Co neřídíte, se děje náhodou.
             </p>
             
-            <div className="bg-white p-8 md:p-12 lg:p-16">
+            <div className="bg-white p-8 md:p-12 lg:p-16 rounded-2xl md:rounded-3xl">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
                 {/* Contact Info - Left */}
                 <div className="space-y-8">

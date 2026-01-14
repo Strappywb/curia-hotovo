@@ -33,8 +33,8 @@ const blogPosts = [
 
 const BlogSection = () => {
   return (
-    <section id="blog" className="w-full bg-background py-20 md:py-32 lg:py-40">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="blog" className="w-full bg-background px-4 md:px-6 py-4 md:py-3">
+      <div className="bg-white rounded-3xl md:rounded-[2.5rem] ring-4 ring-white py-16 md:py-24 lg:py-32 px-6 md:px-12">
         <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-black mb-12 md:mb-16">
           ARCHIV POZNATKŮ
         </h2>
@@ -44,7 +44,7 @@ const BlogSection = () => {
             <Link
               key={post.id}
               to={post.slug}
-              className="bg-white group cursor-pointer hover:bg-gray-50 transition-colors overflow-hidden"
+              className="bg-gray-50 group cursor-pointer hover:bg-gray-100 transition-colors overflow-hidden rounded-2xl"
             >
               <div className="aspect-video overflow-hidden">
                 <img 

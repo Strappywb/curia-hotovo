@@ -29,8 +29,9 @@ const FAQSection = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="w-full bg-white py-20 md:py-32">
-      <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-16">
+    <section id="faq" className="w-full bg-background px-4 md:px-6 py-4 md:py-3">
+      <div className="bg-white rounded-3xl md:rounded-[2.5rem] ring-4 ring-white py-16 md:py-24 lg:py-32">
+        <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-16">
         <div className="mb-12 md:mb-16">
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-black mb-4">
             ČASTÉ DOTAZY
@@ -53,7 +54,7 @@ const FAQSection = () => {
                 <span className="font-heading text-lg md:text-xl text-black pr-8">
                   {faq.question}
                 </span>
-                <div className="flex-shrink-0 w-10 h-10 bg-black flex items-center justify-center">
+                <div className="flex-shrink-0 w-10 h-10 bg-black flex items-center justify-center rounded-xl">
                   {openIndex === index ? (
                     <Minus className="w-5 h-5 text-white" />
                   ) : (
@@ -82,10 +83,11 @@ const FAQSection = () => {
           <span className="font-heading text-lg text-black group-hover:underline">
             Více otázek a odpovědí
           </span>
-          <div className="w-10 h-10 bg-black flex items-center justify-center group-hover:bg-black/80 transition-colors">
+          <div className="w-10 h-10 bg-black flex items-center justify-center group-hover:bg-black/80 transition-colors rounded-xl">
             <ArrowRight className="w-5 h-5 text-white" />
           </div>
         </Link>
+        </div>
       </div>
     </section>
   );

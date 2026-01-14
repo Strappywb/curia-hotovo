@@ -3,7 +3,8 @@ import curiaHero from "@/assets/curiahero.webp";
 
 const HeroSection = () => {
   return (
-    <section id="hero" className="relative h-screen w-screen bg-[#0057FF] overflow-hidden">
+    <section id="hero" className="relative w-full bg-background px-4 md:px-6 pt-4 md:pt-6 pb-4 md:pb-3">
+      <div className="relative h-screen bg-[#0047CC] overflow-hidden rounded-3xl md:rounded-[2.5rem] ring-4 ring-white">
       {/* Main content */}
       <div className="h-full flex flex-col md:flex-row items-center px-8 pt-16 pb-32 md:px-12 lg:px-16 lg:pt-0">
         {/* Left - Hero Image */}
@@ -41,6 +42,7 @@ const HeroSection = () => {
         <h1 className="text-white text-[15vw] md:text-[18vw] lg:text-[16vw] whitespace-nowrap px-4 md:px-8 pb-4 font-black tracking-tight lg:tracking-[-0.02em] lg:scale-x-[1.05] origin-left">
           CURIA
         </h1>
+      </div>
       </div>
     </section>
   );

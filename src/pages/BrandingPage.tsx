@@ -77,9 +77,10 @@ const BrandingPage = () => {
         <link rel="canonical" href="https://curia.cz/branding" />
       </Helmet>
       <Header />
-      <main className="overflow-x-hidden">
+      <main className="overflow-x-hidden bg-[#ebebeb]">
         {/* Hero Section - Fullscreen */}
-        <section className="relative h-screen w-screen bg-[#722F37] overflow-hidden">
+        <section className="bg-[#ebebeb] px-4 md:px-6 pt-24 md:pt-28 pb-4 md:pb-3">
+          <div className="relative min-h-[90vh] md:h-[85vh] bg-[#722F37] overflow-hidden rounded-3xl md:rounded-[2.5rem] ring-4 ring-white">
           <div className="h-full flex flex-col md:flex-row items-center px-8 pt-24 pb-32 md:px-12 lg:px-16 lg:pt-0">
             {/* Left - Hero Image */}
             <div className="flex-1 flex items-center justify-center lg:items-center">
@@ -109,10 +110,12 @@ const BrandingPage = () => {
               BRANDING
             </h1>
           </div>
+          </div>
         </section>
 
         {/* REALITA Section - Pastier style */}
-        <section className="w-full bg-black py-24 md:py-32 lg:py-40">
+        <section className="w-full bg-[#ebebeb] px-4 md:px-6 py-4 md:py-3">
+          <div className="bg-black rounded-3xl md:rounded-[2.5rem] ring-4 ring-white py-24 md:py-32 lg:py-40">
           <div className="max-w-5xl mx-auto px-6 md:px-12 lg:px-16">
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-black text-[#722F37] mb-8">
               TVOŘÍME MENTÁLNÍ MONOPOLY.
@@ -121,10 +124,12 @@ const BrandingPage = () => {
               Značka je jediný legální způsob, jak eliminovat konkurenci bez boje. Pokud vás trh srovnává cenou, nemáte brand, ale komoditu.
             </p>
           </div>
+          </div>
         </section>
 
         {/* ARCHITEKTURA VÝSTUPU - Center image with boxes */}
-        <section className="w-full bg-white py-20 md:py-28 lg:py-36">
+        <section className="w-full bg-[#ebebeb] px-4 md:px-6 py-4 md:py-3">
+          <div className="bg-white rounded-3xl md:rounded-[2.5rem] ring-4 ring-white py-20 md:py-28 lg:py-36">
           <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-black mb-16 text-center">
               ARCHITEKTURA VÝSTUPU
@@ -197,11 +202,13 @@ const BrandingPage = () => {
               </div>
             </div>
           </div>
+          </div>
         </section>
 
         {/* AUDIT TRŽNÍ SÍLY - Grid Section */}
-        <section className="w-full bg-[#F5F5F5] py-3">
-          <div className="px-6 mb-10 md:mb-16">
+        <section className="w-full bg-[#ebebeb] px-4 md:px-6 py-4 md:py-3">
+          <div className="max-w-7xl mx-auto">
+          <div className="px-0 mb-10 md:mb-16">
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-black">
               AUDIT TRŽNÍ SÍLY
             </h2>
@@ -210,8 +217,8 @@ const BrandingPage = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-            <div className="relative bg-[#722F37] min-h-[400px] md:min-h-[500px] flex flex-col justify-between p-8 md:p-12 lg:p-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="relative bg-[#722F37] min-h-[400px] md:min-h-[500px] flex flex-col justify-between p-8 md:p-12 lg:p-16 rounded-3xl md:rounded-[2.5rem] ring-4 ring-white">
               <div>
                 <span className="font-body font-semibold text-xs md:text-sm text-white/50 mb-3 uppercase tracking-wider block">
                   01
@@ -228,7 +235,7 @@ const BrandingPage = () => {
               </span>
             </div>
             
-            <div className="relative bg-[#722F37] min-h-[400px] md:min-h-[500px] flex flex-col justify-between p-8 md:p-12 lg:p-16">
+            <div className="relative bg-[#722F37] min-h-[400px] md:min-h-[500px] flex flex-col justify-between p-8 md:p-12 lg:p-16 rounded-3xl md:rounded-[2.5rem] ring-4 ring-white">
               <div>
                 <span className="font-body font-semibold text-xs md:text-sm text-white/50 mb-3 uppercase tracking-wider block">
                   02
@@ -245,7 +252,7 @@ const BrandingPage = () => {
               </span>
             </div>
             
-            <div className="relative bg-[#722F37] min-h-[400px] md:min-h-[500px] flex flex-col justify-between p-8 md:p-12 lg:p-16">
+            <div className="relative bg-[#722F37] min-h-[400px] md:min-h-[500px] flex flex-col justify-between p-8 md:p-12 lg:p-16 rounded-3xl md:rounded-[2.5rem] ring-4 ring-white">
               <div>
                 <span className="font-body font-semibold text-xs md:text-sm text-white/50 mb-3 uppercase tracking-wider block">
                   03
@@ -260,7 +267,7 @@ const BrandingPage = () => {
               <ArrowUpRight className="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 text-white/10 self-end" strokeWidth={1.5} />
             </div>
             
-            <div className="relative bg-[#722F37] min-h-[400px] md:min-h-[500px] flex flex-col justify-between p-8 md:p-12 lg:p-16">
+            <div className="relative bg-[#722F37] min-h-[400px] md:min-h-[500px] flex flex-col justify-between p-8 md:p-12 lg:p-16 rounded-3xl md:rounded-[2.5rem] ring-4 ring-white">
               <div>
                 <span className="font-body font-semibold text-xs md:text-sm text-white/50 mb-3 uppercase tracking-wider block">
                   04
@@ -277,11 +284,13 @@ const BrandingPage = () => {
               </span>
             </div>
           </div>
+          </div>
         </section>
 
         {/* Stats Section */}
-        <section className="w-full bg-black py-16 md:py-20 lg:py-24">
-          <div className="max-w-7xl mx-auto px-6">
+        <section className="w-full bg-[#ebebeb] px-4 md:px-6 py-4 md:py-3">
+          <div className="bg-black rounded-3xl md:rounded-[2.5rem] ring-4 ring-white py-16 md:py-20 lg:py-24">
+            <div className="max-w-7xl mx-auto px-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4">
               <div className="text-center py-8">
                 <div className="font-heading text-4xl md:text-5xl lg:text-6xl text-white">
@@ -309,20 +318,23 @@ const BrandingPage = () => {
               </div>
             </div>
           </div>
+          </div>
         </section>
 
         {/* Bold Statement Section */}
-        <section className="w-full bg-[#722F37] py-24 md:py-32 lg:py-40">
+        <section className="w-full bg-[#ebebeb] px-4 md:px-6 py-4 md:py-3">
+          <div className="bg-[#722F37] rounded-3xl md:rounded-[2.5rem] ring-4 ring-white py-24 md:py-32 lg:py-40">
           <div className="max-w-5xl mx-auto px-6 md:px-12 lg:px-16">
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-white leading-tight">
               BUĎ ZNAČKU VLASTNÍTE, NEBO JSTE KOMODITA. TŘETÍ MOŽNOST NEEXISTUJE.
             </h2>
           </div>
+          </div>
         </section>
 
         {/* Konzulát Section with Form */}
-        <section className="w-full bg-[#722F37] py-20 md:py-32 lg:py-40">
-          <div className="max-w-7xl mx-auto px-6">
+        <section className="w-full bg-[#ebebeb] px-4 md:px-6 py-4 md:py-3">
+          <div className="bg-[#722F37] rounded-3xl md:rounded-[2.5rem] ring-4 ring-white py-20 md:py-32 lg:py-40 px-6 md:px-12">
             <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl text-white mb-6">
               NOMEN EST OMEN.
             </h2>
@@ -330,7 +342,7 @@ const BrandingPage = () => {
               Jméno je znamení. Vaše značka předurčuje, jak vás trh vnímá. Buď ji řídíte, nebo se děje sama.
             </p>
             
-            <div className="bg-white p-8 md:p-12 lg:p-16">
+            <div className="bg-white p-8 md:p-12 lg:p-16 rounded-2xl md:rounded-3xl">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
                 {/* Contact Info - Left */}
                 <div className="space-y-8">

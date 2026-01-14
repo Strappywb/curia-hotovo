@@ -14,14 +14,15 @@ const mandates = [
 
 const MandatesSection = () => {
   return (
-    <section id="projects" className="w-full bg-background py-3">
-      <div className="max-w-7xl mx-auto px-6 mb-10 md:mb-16">
+    <section id="projects" className="w-full bg-background py-4 md:py-4 px-4 md:px-6">
+      <div className="max-w-7xl mx-auto">
+      <div className="px-0 mb-10 md:mb-16">
         <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-black text-center">
           MANDÁTY
         </h2>
       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-4">
         {mandates.map((mandate) => {
           // All mandates are now clickable
           const slugs: { [key: number]: string } = {
@@ -35,19 +36,20 @@ const MandatesSection = () => {
             <Link
               key={mandate.id}
               to={slugs[mandate.id]}
-              className="relative overflow-hidden min-h-[400px] md:min-h-[450px] lg:min-h-[500px] group cursor-pointer"
+              className="relative overflow-hidden min-h-[400px] md:min-h-[450px] lg:min-h-[500px] group cursor-pointer rounded-3xl md:rounded-[2.5rem] ring-4 ring-white"
             >
               <img
                 src={mandate.image}
                 alt={mandate.alt}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
-              <div className="absolute top-6 right-6 md:top-8 md:right-8 bg-white p-2 group-hover:scale-110 transition-transform">
+              <div className="absolute top-6 right-6 md:top-8 md:right-8 bg-white p-2 group-hover:scale-110 transition-transform rounded-xl">
                 <ArrowUpRight className="w-5 h-5 md:w-6 md:h-6 text-black" />
               </div>
             </Link>
           );
         })}
+      </div>
       </div>
     </section>
   );

@@ -55,8 +55,8 @@ const StatItem = ({ endValue, suffix, label, duration = 2000 }: StatItemProps) =
 
 const StatsSection = () => {
   return (
-    <section className="w-full bg-black py-12 md:py-16 lg:py-20">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="w-full bg-background py-4 md:py-4 px-4 md:px-6">
+      <div className="max-w-7xl mx-auto bg-black rounded-3xl md:rounded-[2.5rem] py-12 md:py-16 lg:py-20 px-6 ring-4 ring-white">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4">
           <StatItem 
             endValue={150} 

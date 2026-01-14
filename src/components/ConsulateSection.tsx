@@ -37,13 +37,13 @@ const ConsulateSection = () => {
   };
 
   return (
-    <section id="contact" className="w-full bg-[#0057FF] py-20 md:py-32 lg:py-40">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="contact" className="w-full bg-background py-4 md:py-4 px-4 md:px-6">
+      <div className="max-w-7xl mx-auto bg-[#0047CC] rounded-3xl md:rounded-[2.5rem] py-20 md:py-32 lg:py-40 px-6 md:px-12 ring-4 ring-white">
         <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl text-white mb-12 md:mb-16">
           KONZULÁT.
         </h2>
         
-        <div className="bg-white p-8 md:p-12 lg:p-16">
+        <div className="bg-white p-8 md:p-12 lg:p-16 rounded-2xl md:rounded-3xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             {/* Contact Info - Left */}
             <div className="space-y-8">

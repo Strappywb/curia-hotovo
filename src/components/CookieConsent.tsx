@@ -28,7 +28,7 @@ const CookieConsent = () => {
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 p-4 md:p-6">
-      <div className="max-w-4xl mx-auto bg-black border border-white/10 p-6 md:p-8 shadow-2xl">
+      <div className="max-w-4xl mx-auto bg-black border border-white/10 p-6 md:p-8 shadow-2xl rounded-2xl md:rounded-3xl">
         <div className="flex flex-col md:flex-row md:items-center gap-6">
           {/* Text */}
           <div className="flex-1">
@@ -54,13 +54,13 @@ const CookieConsent = () => {
             <Button
               onClick={declineCookies}
               variant="outline"
-              className="bg-transparent border-white/30 text-white hover:bg-white/10 hover:text-white font-heading text-sm px-6 py-5 h-auto rounded-none"
+              className="bg-transparent border-white/30 text-white hover:bg-white/10 hover:text-white font-heading text-sm px-6 py-5 h-auto rounded-xl"
             >
               ODMÍTNOUT
             </Button>
             <Button
               onClick={acceptCookies}
-              className="bg-[#CCFF00] text-black hover:bg-[#b8e600] font-heading text-sm px-6 py-5 h-auto rounded-none"
+              className="bg-[#CCFF00] text-black hover:bg-[#b8e600] font-heading text-sm px-6 py-5 h-auto rounded-xl"
             >
               PŘIJMOUT
             </Button>
