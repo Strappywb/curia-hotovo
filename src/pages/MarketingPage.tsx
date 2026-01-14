@@ -56,10 +56,31 @@ const MarketingPage = () => {
     email: "",
     message: ""
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
+    setIsSubmitting(true);
+    
+    try {
+      const response = await fetch("https://formspree.io/f/mqeeaawz", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+      
+      if (response.ok) {
+        setIsSubmitted(true);
+        setFormData({ name: "", email: "", message: "" });
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -344,10 +365,14 @@ const MarketingPage = () => {
                   </div>
                   <Button 
                     type="submit"
-                    className="bg-black text-white hover:bg-black/90 font-heading text-lg px-8 py-6 h-auto rounded-none w-full md:w-auto"
+                    disabled={isSubmitting}
+                    className="bg-black text-white hover:bg-black/90 font-heading text-lg px-8 py-6 h-auto rounded-none w-full md:w-auto disabled:opacity-50"
                   >
-                    AUDIENCE
+                    {isSubmitting ? "ODESÍLÁM..." : "AUDIENCE"}
                   </Button>
+                  {isSubmitted && (
+                    <p className="text-green-600 font-body font-semibold mt-4">Děkujeme! Vaše zpráva byla odeslána.</p>
+                  )}
                 </form>
               </div>
             </div>
