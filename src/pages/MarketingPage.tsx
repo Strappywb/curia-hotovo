@@ -88,8 +88,17 @@ const MarketingPage = () => {
       <Helmet>
         <title>Digitální marketing & Reklama | CURIA Marketing Agency</title>
         <meta name="description" content="Marketingová strategie, PPC kampaně, sociální sítě, obsahový marketing. Získáváme pozornost a konvertujeme ji na zákazníky." />
+        <meta name="keywords" content="digitální marketing, PPC, sociální sítě, obsahový marketing, marketingová strategie Praha" />
         <meta property="og:title" content="Digitální marketing & Reklama | CURIA Marketing Agency" />
-        <meta property="og:description" content="Marketingová strategie, PPC kampaně, sociální sítě, obsahový marketing. Získáváme pozornost a konvertujeme ji na zákazníky." />
+        <meta property="og:description" content="Marketingová strategie, PPC kampaňě, sociální sítě, obsahový marketing. Získáváme pozornost a konvertujeme ji na zákazníky." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://curia.cz/marketing" />
+        <meta property="og:image" content="https://curia.cz/og-image.png" />
+        <meta property="og:locale" content="cs_CZ" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Digitální marketing & Reklama | CURIA Marketing Agency" />
+        <meta name="twitter:description" content="Marketingová strategie, PPC kampaňě, sociální sítě, obsahový marketing." />
+        <meta name="twitter:image" content="https://curia.cz/og-image.png" />
         <link rel="canonical" href="https://curia.cz/marketing" />
       </Helmet>
       <Header />

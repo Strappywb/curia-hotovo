@@ -48,8 +48,17 @@ const AplikacePage = () => {
       <Helmet>
         <title>Vývoj mobilních & webových aplikací | CURIA Dev Studio</title>
         <meta name="description" content="Vývoj mobilních a webových aplikací na míru. iOS, Android, React Native, PWA. Od wireframu po App Store." />
+        <meta name="keywords" content="vývoj aplikací, mobilní aplikace, webové aplikace, iOS, Android, React Native, PWA Praha" />
         <meta property="og:title" content="Vývoj mobilních & webových aplikací | CURIA Dev Studio" />
         <meta property="og:description" content="Vývoj mobilních a webových aplikací na míru. iOS, Android, React Native, PWA. Od wireframu po App Store." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://curia.cz/aplikace" />
+        <meta property="og:image" content="https://curia.cz/og-image.png" />
+        <meta property="og:locale" content="cs_CZ" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Vývoj mobilních & webových aplikací | CURIA Dev Studio" />
+        <meta name="twitter:description" content="Vývoj mobilních a webových aplikací na míru. iOS, Android, React Native, PWA." />
+        <meta name="twitter:image" content="https://curia.cz/og-image.png" />
         <link rel="canonical" href="https://curia.cz/aplikace" />
       </Helmet>
       <Header />

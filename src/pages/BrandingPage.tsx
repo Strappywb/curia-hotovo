@@ -72,8 +72,17 @@ const BrandingPage = () => {
       <Helmet>
         <title>Branding & Firemní identita | CURIA Brand Studio</title>
         <meta name="description" content="Tvoříme silné značky, které dominují trhu. Firemní identita, logo, vizuální styl, brand strategie. Budování značky od základů." />
+        <meta name="keywords" content="branding, firemní identita, logo design, brand strategie, vizuální identita Praha" />
         <meta property="og:title" content="Branding & Firemní identita | CURIA Brand Studio" />
         <meta property="og:description" content="Tvoříme silné značky, které dominují trhu. Firemní identita, logo, vizuální styl, brand strategie." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://curia.cz/branding" />
+        <meta property="og:image" content="https://curia.cz/og-image.png" />
+        <meta property="og:locale" content="cs_CZ" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Branding & Firemní identita | CURIA Brand Studio" />
+        <meta name="twitter:description" content="Tvoříme silné značky, které dominují trhu." />
+        <meta name="twitter:image" content="https://curia.cz/og-image.png" />
         <link rel="canonical" href="https://curia.cz/branding" />
       </Helmet>
       <Header />

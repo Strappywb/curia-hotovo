@@ -134,8 +134,17 @@ const WebdesignPage = () => {
       <Helmet>
         <title>Tvorba webových stránek | CURIA Webdesign Studio</title>
         <meta name="description" content="Profesionální tvorba webů na míru. Weby, které prodávají a konvertují. React, Next.js, Webflow, e-commerce řešení. Webdesign Praha." />
+        <meta name="keywords" content="tvorba webových stránek, webdesign Praha, vývoj webu, React, Next.js, Webflow, e-commerce" />
         <meta property="og:title" content="Tvorba webových stránek | CURIA Webdesign Studio" />
         <meta property="og:description" content="Profesionální tvorba webů na míru. Weby, které prodávají a konvertují. React, Next.js, Webflow, e-commerce řešení." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://curia.cz/webdesign" />
+        <meta property="og:image" content="https://curia.cz/og-image.png" />
+        <meta property="og:locale" content="cs_CZ" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Tvorba webových stránek | CURIA Webdesign Studio" />
+        <meta name="twitter:description" content="Profesionální tvorba webů na míru. Weby, které prodávají a konvertují." />
+        <meta name="twitter:image" content="https://curia.cz/og-image.png" />
         <link rel="canonical" href="https://curia.cz/webdesign" />
       </Helmet>
       <Header />

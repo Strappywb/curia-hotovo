@@ -95,8 +95,17 @@ const GrafikaPage = () => {
       <Helmet>
         <title>Grafický design & Vizuální identity | CURIA Design Studio</title>
         <meta name="description" content="Profesionální grafický design. Loga, bannery, tiskoviny, sociální sítě. Od návrhu po tiskovou přípravu." />
+        <meta name="keywords" content="grafický design, logo design, bannery, tiskoviny, grafika pro sociální sítě Praha" />
         <meta property="og:title" content="Grafický design & Vizuální identity | CURIA Design Studio" />
         <meta property="og:description" content="Profesionální grafický design. Loga, bannery, tiskoviny, sociální sítě. Od návrhu po tiskovou přípravu." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://curia.cz/grafika" />
+        <meta property="og:image" content="https://curia.cz/og-image.png" />
+        <meta property="og:locale" content="cs_CZ" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Grafický design & Vizuální identity | CURIA Design Studio" />
+        <meta name="twitter:description" content="Profesionální grafický design. Loga, bannery, tiskoviny, sociální sítě." />
+        <meta name="twitter:image" content="https://curia.cz/og-image.png" />
         <link rel="canonical" href="https://curia.cz/grafika" />
       </Helmet>
       <Header />
