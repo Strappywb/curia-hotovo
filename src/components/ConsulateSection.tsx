@@ -43,7 +43,7 @@ const ConsulateSection = () => {
           KONZULÁT.
         </h2>
         
-        <div className="bg-white p-8 md:p-12 lg:p-16 rounded-2xl md:rounded-3xl">
+        <div className="bg-white p-8 md:p-12 lg:p-16 rounded-3xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             {/* Contact Info - Left */}
             <div className="space-y-8">
@@ -94,7 +94,7 @@ const ConsulateSection = () => {
                   placeholder="Jméno"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="bg-gray-100 border-0 rounded-none h-12 text-black placeholder:text-gray-500"
+                  className="bg-gray-100 border-0 rounded-2xl h-12 text-black placeholder:text-gray-500"
                   required
                 />
               </div>
@@ -104,7 +104,7 @@ const ConsulateSection = () => {
                   placeholder="E-mail"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="bg-gray-100 border-0 rounded-none h-12 text-black placeholder:text-gray-500"
+                  className="bg-gray-100 border-0 rounded-2xl h-12 text-black placeholder:text-gray-500"
                   required
                 />
               </div>
@@ -113,7 +113,7 @@ const ConsulateSection = () => {
                   placeholder="Vaše zpráva"
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="bg-gray-100 border-0 rounded-none min-h-[150px] text-black placeholder:text-gray-500 resize-none"
+                  className="bg-gray-100 border-0 rounded-2xl min-h-[120px] text-black placeholder:text-gray-500"
                   required
                 />
               </div>

@@ -46,7 +46,7 @@ const StatItem = ({ endValue, suffix, label, duration = 2000 }: StatItemProps) =
       <div className="font-heading text-4xl md:text-5xl lg:text-6xl text-white">
         {count}{suffix}
       </div>
-      <p className="font-body font-semibold text-sm md:text-base lg:text-lg text-white/70 mt-2 md:mt-3 max-w-xs mx-auto">
+      <p className="font-body font-semibold text-sm md:text-base lg:text-lg text-white/80 mt-2 md:mt-3 max-w-xs mx-auto">
         {label}
       </p>
     </div>
