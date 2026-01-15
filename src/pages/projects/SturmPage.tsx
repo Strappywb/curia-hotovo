@@ -14,19 +14,21 @@ const SturmPage = () => {
         <link rel="canonical" href="https://curia.cz/projekty/filip-sturm" />
       </Helmet>
       <Header />
-      <main className="overflow-x-hidden">
+      <main className="overflow-x-hidden bg-[#ebebeb]">
         {/* Hero Image */}
-        <section className="w-full">
-          <img 
-            src={verdiktSturm} 
-            alt="Filip Šturm"
-            className="w-full h-auto object-cover"
-          />
-        </section>
+        <div className="px-4 md:px-6 pt-4 md:pt-3">
+          <div className="bg-white rounded-3xl md:rounded-[2.5rem] ring-4 ring-white overflow-hidden">
+            <img 
+              src={verdiktSturm} 
+              alt="Filip Šturm"
+              className="w-full h-auto object-cover"
+            />
+          </div>
+        </div>
 
         {/* O klientovi */}
-        <section className="w-full bg-white py-20 md:py-32">
-          <div className="max-w-5xl mx-auto px-8 md:px-12 lg:px-16">
+        <section className="px-4 md:px-6 py-4 md:py-3">
+          <div className="bg-white rounded-3xl md:rounded-[2.5rem] ring-4 ring-white py-20 md:py-32 px-8 md:px-12 lg:px-16">
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-black text-black mb-6">
               FILIP ŠTURM
             </h1>
@@ -53,33 +55,33 @@ const SturmPage = () => {
         </section>
 
         {/* Zadání klienta */}
-        <section className="w-full bg-[#F5F5F5] py-20 md:py-32">
-          <div className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16">
-            <h2 className="font-heading text-3xl md:text-4xl text-black mb-12">
+        <section className="px-4 md:px-6 py-4 md:py-3">
+          <div className="bg-[#2a2a2a] rounded-3xl md:rounded-[2.5rem] ring-4 ring-white py-20 md:py-32 px-8 md:px-12 lg:px-16">
+            <h2 className="font-heading text-3xl md:text-4xl text-white mb-12">
               PROBLÉM
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="bg-white p-8">
-                <h3 className="font-heading text-xl text-black mb-4">Hluk v sektoru</h3>
-                <p className="font-body font-semibold text-base text-black/70">
+              <div className="bg-white/10 p-8 rounded-2xl md:rounded-3xl">
+                <h3 className="font-heading text-xl text-white mb-4">Hluk v sektoru</h3>
+                <p className="font-body font-semibold text-base text-white/70">
                   Finanční poradenství plné spamu. Tisíce "poradců" křičí o pozornost. Žádná diferenciace.
                 </p>
               </div>
-              <div className="bg-white p-8">
-                <h3 className="font-heading text-xl text-black mb-4">Chybějící digitální prezentace</h3>
-                <p className="font-body font-semibold text-base text-black/70">
+              <div className="bg-white/10 p-8 rounded-2xl md:rounded-3xl">
+                <h3 className="font-heading text-xl text-white mb-4">Chybějící digitální prezentace</h3>
+                <p className="font-body font-semibold text-base text-white/70">
                   Expertise na úrovni instituce. Online prezentace na úrovni amatéra.
                 </p>
               </div>
-              <div className="bg-white p-8">
-                <h3 className="font-heading text-xl text-black mb-4">Nerelevantní poptávky</h3>
-                <p className="font-body font-semibold text-base text-black/70">
+              <div className="bg-white/10 p-8 rounded-2xl md:rounded-3xl">
+                <h3 className="font-heading text-xl text-white mb-4">Nerelevantí poptávky</h3>
+                <p className="font-body font-semibold text-base text-white/70">
                   Čas zabíjený retail klienty. Malé objemy, velká administrativa.
                 </p>
               </div>
-              <div className="bg-white p-8">
-                <h3 className="font-heading text-xl text-black mb-4">Cíl</h3>
-                <p className="font-body font-semibold text-base text-black/70">
+              <div className="bg-white/10 p-8 rounded-2xl md:rounded-3xl">
+                <h3 className="font-heading text-xl text-white mb-4">Cíl</h3>
+                <p className="font-body font-semibold text-base text-white/70">
                   Oddělit signál od šumu. Přitáhnout bonitní klienty, odradit zbytek.
                 </p>
               </div>
@@ -88,8 +90,8 @@ const SturmPage = () => {
         </section>
 
         {/* Naše role */}
-        <section className="w-full bg-white py-20 md:py-32">
-          <div className="max-w-5xl mx-auto px-8 md:px-12 lg:px-16">
+        <section className="px-4 md:px-6 py-4 md:py-3">
+          <div className="bg-white rounded-3xl md:rounded-[2.5rem] ring-4 ring-white py-20 md:py-32 px-8 md:px-12 lg:px-16">
             <h2 className="font-heading text-3xl md:text-4xl text-black mb-8">
               NAŠE ROLE
             </h2>
@@ -111,8 +113,8 @@ const SturmPage = () => {
         </section>
 
         {/* Koncept */}
-        <section className="w-full bg-[#1a1a1a] py-20 md:py-32">
-          <div className="max-w-5xl mx-auto px-8 md:px-12 lg:px-16">
+        <section className="px-4 md:px-6 py-4 md:py-3">
+          <div className="bg-[#1a1a1a] rounded-3xl md:rounded-[2.5rem] ring-4 ring-white py-20 md:py-32 px-8 md:px-12 lg:px-16">
             <h2 className="font-heading text-3xl md:text-4xl text-white mb-12">
               KONCEPT
             </h2>
@@ -131,8 +133,8 @@ const SturmPage = () => {
         </section>
 
         {/* Strategie */}
-        <section className="w-full bg-white py-20 md:py-32">
-          <div className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16">
+        <section className="px-4 md:px-6 py-4 md:py-3">
+          <div className="bg-white rounded-3xl md:rounded-[2.5rem] ring-4 ring-white py-20 md:py-32 px-8 md:px-12 lg:px-16">
             <h2 className="font-heading text-3xl md:text-4xl text-black mb-12">
               AMPLIFIKACE
             </h2>
@@ -148,7 +150,7 @@ const SturmPage = () => {
                   Cíl nejsou prokliky. Cíl je být v zorném poli decision-makerů. Digitální obklíčení.
                 </p>
               </div>
-              <div className="bg-[#F5F5F5] p-8">
+              <div className="bg-[#F5F5F5] p-8 rounded-2xl md:rounded-3xl">
                 <ul className="space-y-4 font-body font-semibold text-base text-black/70">
                   <li className="flex items-start gap-3">
                     <span className="text-black font-bold">→</span>
@@ -173,8 +175,8 @@ const SturmPage = () => {
         </section>
 
         {/* Výsledky */}
-        <section className="w-full bg-black py-20 md:py-32">
-          <div className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16">
+        <section className="px-4 md:px-6 py-4 md:py-3">
+          <div className="bg-black rounded-3xl md:rounded-[2.5rem] ring-4 ring-white py-20 md:py-32 px-8 md:px-12 lg:px-16">
             <h2 className="font-heading text-3xl md:text-4xl text-white mb-16 text-center">
               VÝSLEDKY
             </h2>
@@ -208,8 +210,8 @@ const SturmPage = () => {
         </section>
 
         {/* Reference */}
-        <section className="w-full bg-white py-20 md:py-32">
-          <div className="max-w-4xl mx-auto px-8 md:px-12 lg:px-16">
+        <section className="px-4 md:px-6 py-4 md:py-3">
+          <div className="bg-white rounded-3xl md:rounded-[2.5rem] ring-4 ring-white py-20 md:py-32 px-8 md:px-12 lg:px-16">
             <h2 className="font-heading text-3xl md:text-4xl text-black mb-12 text-center">
               REFERENCE
             </h2>

@@ -19,6 +19,7 @@ import SturmPage from "./pages/projects/SturmPage";
 import WebKteryProdavaPage from "./pages/blog/WebKteryProdavaPage";
 import StrategickyMarketingPage from "./pages/blog/StrategickyMarketingPage";
 import BudovaniZnackyPage from "./pages/blog/BudovaniZnackyPage";
+import GrafikaALogoPage from "./pages/blog/GrafikaALogoPage";
 import FAQPage from "./pages/FAQPage";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
@@ -48,6 +49,7 @@ const App = () => (
           <Route path="/blog/web-ktery-prodava" element={<WebKteryProdavaPage />} />
           <Route path="/blog/strategicky-marketing" element={<StrategickyMarketingPage />} />
           <Route path="/blog/budovani-znacky" element={<BudovaniZnackyPage />} />
+          <Route path="/blog/grafika-a-logo" element={<GrafikaALogoPage />} />
           <Route path="/faq" element={<FAQPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

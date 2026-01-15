@@ -4,6 +4,15 @@ import { Link } from "react-router-dom";
 const blogPosts = [
   {
     id: 1,
+    title: "Grafika a logo: Když forma následuje funkci",
+    excerpt: "Grafický design není dekorace. Je to nástroj komunikace, který musí splnit konkrétní obchodní cíl. Jak na logo, které skutečně funguje.",
+    date: "15. 1. 2026",
+    category: "Grafický design",
+    image: "https://images.unsplash.com/photo-1626785774625-ddcddc3445e9?w=600&h=400&fit=crop",
+    slug: "/blog/grafika-a-logo"
+  },
+  {
+    id: 2,
     title: "Jak vytvořit web, který prodává",
     excerpt: "Moderní webdesign není jen o estetice. Úspěšný web kombinuje vizuální přitažlivost s funkčností a konverzní strategií.",
     date: "15. 1. 2024",
@@ -12,7 +21,7 @@ const blogPosts = [
     slug: "/blog/web-ktery-prodava"
   },
   {
-    id: 2,
+    id: 3,
     title: "Síla strategického marketingu",
     excerpt: "Efektivní marketing začíná pochopením vašeho publika. Jak vybudovat kampaň, která rezonuje a přináší výsledky.",
     date: "10. 1. 2024",
@@ -21,7 +30,7 @@ const blogPosts = [
     slug: "/blog/strategicky-marketing"
   },
   {
-    id: 3,
+    id: 4,
     title: "Budování značky od základů",
     excerpt: "Silná značka je víc než logo. Je to příběh, hodnoty a emoce, které vytváříte u svých zákazníků.",
     date: "5. 1. 2024",

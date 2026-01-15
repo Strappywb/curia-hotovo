@@ -16,19 +16,21 @@ const MadosPage = () => {
         <link rel="canonical" href="https://curia.cz/projekty/mados" />
       </Helmet>
       <Header />
-      <main className="overflow-x-hidden">
+      <main className="overflow-x-hidden bg-[#ebebeb]">
         {/* Hero Image */}
-        <section className="w-full">
-          <img 
-            src={verdiktMados} 
-            alt="Mados"
-            className="w-full h-auto object-cover"
-          />
+        <section className="px-4 md:px-6 pt-24 md:pt-28 pb-4 md:pb-3">
+          <div className="rounded-3xl md:rounded-[2.5rem] ring-4 ring-white overflow-hidden">
+            <img 
+              src={verdiktMados} 
+              alt="Mados"
+              className="w-full h-auto object-cover"
+            />
+          </div>
         </section>
 
         {/* O klientovi */}
-        <section className="w-full bg-white py-20 md:py-32">
-          <div className="max-w-5xl mx-auto px-8 md:px-12 lg:px-16">
+        <section className="px-4 md:px-6 py-4 md:py-3">
+          <div className="bg-white rounded-3xl md:rounded-[2.5rem] ring-4 ring-white py-20 md:py-32 px-8 md:px-12 lg:px-16">
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-black text-black mb-6">
               MADOS
             </h1>
@@ -55,33 +57,33 @@ const MadosPage = () => {
         </section>
 
         {/* Zadání klienta */}
-        <section className="w-full bg-[#F5F5F5] py-20 md:py-32">
-          <div className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16">
-            <h2 className="font-heading text-3xl md:text-4xl text-black mb-12">
+        <section className="px-4 md:px-6 py-4 md:py-3">
+          <div className="bg-[#2a2a2a] rounded-3xl md:rounded-[2.5rem] ring-4 ring-white py-20 md:py-32 px-8 md:px-12 lg:px-16">
+            <h2 className="font-heading text-3xl md:text-4xl text-white mb-12">
               ZADÁNÍ KLIENTA
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="bg-white p-8">
-                <h3 className="font-heading text-xl text-black mb-4">Problém #1</h3>
-                <p className="font-body font-semibold text-base text-black/70">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-white/10 p-8 rounded-2xl md:rounded-3xl">
+                <h3 className="font-heading text-xl text-white mb-4">Problém #1</h3>
+                <p className="font-body font-semibold text-base text-white/70">
                   12 podstránek fungovalo jako bludiště. Uživatel hledal informace, nenašel je. Bounce rate 68%.
                 </p>
               </div>
-              <div className="bg-white p-8">
-                <h3 className="font-heading text-xl text-black mb-4">Problém #2</h3>
-                <p className="font-body font-semibold text-base text-black/70">
+              <div className="bg-white/10 p-8 rounded-2xl md:rounded-3xl">
+                <h3 className="font-heading text-xl text-white mb-4">Problém #2</h3>
+                <p className="font-body font-semibold text-base text-white/70">
                   Značka bez vizuální identity. Logo zastaralé, nekonzistentní komunikace.
                 </p>
               </div>
-              <div className="bg-white p-8">
-                <h3 className="font-heading text-xl text-black mb-4">Problém #3</h3>
-                <p className="font-body font-semibold text-base text-black/70">
+              <div className="bg-white/10 p-8 rounded-2xl md:rounded-3xl">
+                <h3 className="font-heading text-xl text-white mb-4">Problém #3</h3>
+                <p className="font-body font-semibold text-base text-white/70">
                   B2B a B2C komunikace se překrývala. Nejasné cílení obsahu.
                 </p>
               </div>
-              <div className="bg-white p-8">
-                <h3 className="font-heading text-xl text-black mb-4">Cíl</h3>
-                <p className="font-body font-semibold text-base text-black/70">
+              <div className="bg-white/10 p-8 rounded-2xl md:rounded-3xl">
+                <h3 className="font-heading text-xl text-white mb-4">Cíl</h3>
+                <p className="font-body font-semibold text-base text-white/70">
                   Dominance ve vyhledávání pro region Nymburk. Zvýšení online konverzí.
                 </p>
               </div>
@@ -90,8 +92,8 @@ const MadosPage = () => {
         </section>
 
         {/* Naše role */}
-        <section className="w-full bg-white py-20 md:py-32">
-          <div className="max-w-5xl mx-auto px-8 md:px-12 lg:px-16">
+        <section className="px-4 md:px-6 py-4 md:py-3">
+          <div className="bg-white rounded-3xl md:rounded-[2.5rem] ring-4 ring-white py-20 md:py-32 px-8 md:px-12 lg:px-16">
             <h2 className="font-heading text-3xl md:text-4xl text-black mb-8">
               NAŠE ROLE
             </h2>
@@ -113,8 +115,8 @@ const MadosPage = () => {
         </section>
 
         {/* Výchozí situace */}
-        <section className="w-full bg-[#1a1a1a] py-20 md:py-32">
-          <div className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16">
+        <section className="px-4 md:px-6 py-4 md:py-3">
+          <div className="bg-[#1a1a1a] rounded-3xl md:rounded-[2.5rem] ring-4 ring-white py-20 md:py-32 px-8 md:px-12 lg:px-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               <div className="order-2 lg:order-1">
                 <img 
@@ -147,8 +149,8 @@ const MadosPage = () => {
         </section>
 
         {/* Nový design */}
-        <section className="w-full bg-white py-20 md:py-32">
-          <div className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16">
+        <section className="px-4 md:px-6 py-4 md:py-3">
+          <div className="bg-white rounded-3xl md:rounded-[2.5rem] ring-4 ring-white py-20 md:py-32 px-8 md:px-12 lg:px-16">
             <h2 className="font-heading text-3xl md:text-4xl text-black mb-12 text-center">
               NOVÝ DESIGN
             </h2>
@@ -181,37 +183,37 @@ const MadosPage = () => {
         </section>
 
         {/* Řešení pro cílové skupiny */}
-        <section className="w-full bg-[#F5F5F5] py-20 md:py-32">
-          <div className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16">
-            <h2 className="font-heading text-3xl md:text-4xl text-black mb-12">
+        <section className="px-4 md:px-6 py-4 md:py-3">
+          <div className="bg-[#2a2a2a] rounded-3xl md:rounded-[2.5rem] ring-4 ring-white py-20 md:py-32 px-8 md:px-12 lg:px-16">
+            <h2 className="font-heading text-3xl md:text-4xl text-white mb-12">
               ŘEŠENÍ PRO CÍLOVÉ SKUPINY
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="bg-white p-10">
-                <h3 className="font-heading text-2xl text-black mb-6">B2B</h3>
-                <div className="space-y-4 font-body font-semibold text-base text-black/70">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-white/10 p-10 rounded-2xl md:rounded-3xl">
+                <h3 className="font-heading text-2xl text-white mb-6">B2B</h3>
+                <div className="space-y-4 font-body font-semibold text-base text-white/70">
                   <p>
-                    <span className="font-bold text-black">SEO Blog:</span> Technické články pro stavební firmy. Long-tail klíčová slova.
+                    <span className="font-bold text-white">SEO Blog:</span> Technické články pro stavební firmy. Long-tail klíčová slova.
                   </p>
                   <p>
-                    <span className="font-bold text-black">Lead formuláře:</span> Poptávkový systém pro velké objemy.
+                    <span className="font-bold text-white">Lead formuláře:</span> Poptávkový systém pro velké objemy.
                   </p>
                   <p>
-                    <span className="font-bold text-black">Katalog:</span> Kompletní sortiment s cenami pro registrované.
+                    <span className="font-bold text-white">Katalog:</span> Kompletní sortiment s cenami pro registrované.
                   </p>
                 </div>
               </div>
-              <div className="bg-white p-10">
-                <h3 className="font-heading text-2xl text-black mb-6">B2C</h3>
-                <div className="space-y-4 font-body font-semibold text-base text-black/70">
+              <div className="bg-white/10 p-10 rounded-2xl md:rounded-3xl">
+                <h3 className="font-heading text-2xl text-white mb-6">B2C</h3>
+                <div className="space-y-4 font-body font-semibold text-base text-white/70">
                   <p>
-                    <span className="font-bold text-black">Meta Ads:</span> Geograficky cílené kampaně na Nymburk +30 km.
+                    <span className="font-bold text-white">Meta Ads:</span> Geograficky cílené kampaně na Nymburk +30 km.
                   </p>
                   <p>
-                    <span className="font-bold text-black">Návody:</span> Praktické tipy pro kutily a rekonstrukce.
+                    <span className="font-bold text-white">Návody:</span> Praktické tipy pro kutily a rekonstrukce.
                   </p>
                   <p>
-                    <span className="font-bold text-black">Калькулátor:</span> Online výpočet potřeby materiálu.
+                    <span className="font-bold text-white">Калькулátor:</span> Online výpočet potřeby materiálu.
                   </p>
                 </div>
               </div>
@@ -220,8 +222,8 @@ const MadosPage = () => {
         </section>
 
         {/* Výsledky */}
-        <section className="w-full bg-black py-20 md:py-32">
-          <div className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16">
+        <section className="px-4 md:px-6 py-4 md:py-3">
+          <div className="bg-black rounded-3xl md:rounded-[2.5rem] ring-4 ring-white py-20 md:py-32 px-8 md:px-12 lg:px-16">
             <h2 className="font-heading text-3xl md:text-4xl text-white mb-16 text-center">
               VÝSLEDKY & PŘÍNOS
             </h2>
@@ -255,8 +257,8 @@ const MadosPage = () => {
         </section>
 
         {/* Reference */}
-        <section className="w-full bg-white py-20 md:py-32">
-          <div className="max-w-4xl mx-auto px-8 md:px-12 lg:px-16">
+        <section className="px-4 md:px-6 py-4 md:py-3">
+          <div className="bg-white rounded-3xl md:rounded-[2.5rem] ring-4 ring-white py-20 md:py-32 px-8 md:px-12 lg:px-16">
             <h2 className="font-heading text-3xl md:text-4xl text-black mb-12 text-center">
               REFERENCE
             </h2>
