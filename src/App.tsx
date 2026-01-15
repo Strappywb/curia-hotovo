@@ -2,7 +2,9 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
+import PageTransition from "./components/PageTransition";
 import CookieConsent from "./components/CookieConsent";
 import Index from "./pages/Index";
 import WebdesignPage from "./pages/WebdesignPage";
@@ -26,6 +28,35 @@ import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
+const AnimatedRoutes = () => {
+  const location = useLocation();
+  
+  return (
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" element={<PageTransition><Index /></PageTransition>} />
+        <Route path="/webdesign" element={<PageTransition><WebdesignPage /></PageTransition>} />
+        <Route path="/branding" element={<PageTransition><BrandingPage /></PageTransition>} />
+        <Route path="/marketing" element={<PageTransition><MarketingPage /></PageTransition>} />
+        <Route path="/grafika" element={<PageTransition><GrafikaPage /></PageTransition>} />
+        <Route path="/aplikace" element={<PageTransition><AplikacePage /></PageTransition>} />
+        <Route path="/o-nas" element={<PageTransition><AboutPage /></PageTransition>} />
+        <Route path="/blog" element={<PageTransition><BlogPage /></PageTransition>} />
+        <Route path="/projekty/mados" element={<PageTransition><MadosPage /></PageTransition>} />
+        <Route path="/projekty/hf-stavby" element={<PageTransition><HFStavbyPage /></PageTransition>} />
+        <Route path="/projekty/printeria" element={<PageTransition><PrinteriaPage /></PageTransition>} />
+        <Route path="/projekty/sturm" element={<PageTransition><SturmPage /></PageTransition>} />
+        <Route path="/blog/web-ktery-prodava" element={<PageTransition><WebKteryProdavaPage /></PageTransition>} />
+        <Route path="/blog/strategicky-marketing" element={<PageTransition><StrategickyMarketingPage /></PageTransition>} />
+        <Route path="/blog/budovani-znacky" element={<PageTransition><BudovaniZnackyPage /></PageTransition>} />
+        <Route path="/blog/grafika-a-logo" element={<PageTransition><GrafikaALogoPage /></PageTransition>} />
+        <Route path="/faq" element={<PageTransition><FAQPage /></PageTransition>} />
+        <Route path="*" element={<PageTransition><NotFound /></PageTransition>} />
+      </Routes>
+    </AnimatePresence>
+  );
+};
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
@@ -33,27 +64,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/webdesign" element={<WebdesignPage />} />
-          <Route path="/branding" element={<BrandingPage />} />
-          <Route path="/marketing" element={<MarketingPage />} />
-          <Route path="/grafika" element={<GrafikaPage />} />
-          <Route path="/aplikace" element={<AplikacePage />} />
-          <Route path="/o-nas" element={<AboutPage />} />
-          <Route path="/blog" element={<BlogPage />} />
-          <Route path="/projekty/mados" element={<MadosPage />} />
-          <Route path="/projekty/hf-stavby" element={<HFStavbyPage />} />
-          <Route path="/projekty/printeria" element={<PrinteriaPage />} />
-          <Route path="/projekty/sturm" element={<SturmPage />} />
-          <Route path="/blog/web-ktery-prodava" element={<WebKteryProdavaPage />} />
-          <Route path="/blog/strategicky-marketing" element={<StrategickyMarketingPage />} />
-          <Route path="/blog/budovani-znacky" element={<BudovaniZnackyPage />} />
-          <Route path="/blog/grafika-a-logo" element={<GrafikaALogoPage />} />
-          <Route path="/faq" element={<FAQPage />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <AnimatedRoutes />
         <CookieConsent />
       </BrowserRouter>
     </TooltipProvider>
