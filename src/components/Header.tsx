@@ -171,14 +171,14 @@ const Header = () => {
 
         {/* Mobile Menu */}
         <div
-          className={`fixed inset-y-0 right-0 w-full max-w-sm bg-white z-50 transform transition-transform duration-300 ease-in-out md:hidden ${
-            mobileMenuOpen ? "translate-x-0" : "translate-x-full"
+          className={`absolute top-full left-0 right-0 mt-2 bg-white rounded-2xl shadow-xl z-50 transform transition-all duration-300 ease-in-out md:hidden overflow-hidden ${
+            mobileMenuOpen ? "opacity-100 translate-y-0 max-h-[500px]" : "opacity-0 -translate-y-2 max-h-0"
           }`}
         >
-          <div className="flex flex-col pt-20 px-8 space-y-6">
+          <div className="flex flex-col py-4 px-6 space-y-4">
             <button
               onClick={() => handleNavClick("hero")}
-              className="text-black text-xl font-medium text-left hover:opacity-70 transition-opacity"
+              className="text-black text-lg font-medium text-left hover:opacity-70 transition-opacity"
             >
               Domů
             </button>
@@ -186,7 +186,7 @@ const Header = () => {
             <Link
               to="/o-nas"
               onClick={() => setMobileMenuOpen(false)}
-              className="text-black text-xl font-medium text-left hover:opacity-70 transition-opacity"
+              className="text-black text-lg font-medium text-left hover:opacity-70 transition-opacity"
             >
               O nás
             </Link>
@@ -195,23 +195,23 @@ const Header = () => {
             <div>
               <button
                 onClick={() => setServicesOpen(!servicesOpen)}
-                className="text-black text-xl font-medium flex items-center gap-2 hover:opacity-70 transition-opacity"
+                className="text-black text-lg font-medium flex items-center gap-2 hover:opacity-70 transition-opacity"
               >
                 Služby
-                {servicesOpen ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
+                {servicesOpen ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
               </button>
               
               <div
                 className={`overflow-hidden transition-all duration-300 ${
-                  servicesOpen ? "max-h-[300px] mt-4" : "max-h-0"
+                  servicesOpen ? "max-h-[300px] mt-3" : "max-h-0"
                 }`}
               >
-                <div className="pl-4 space-y-3">
+                <div className="pl-4 space-y-2">
                   {services.map((service) => (
                     <button
                       key={service.name}
                       onClick={() => handleServiceClick(service.path)}
-                      className="block text-gray-600 text-lg hover:text-black transition-colors"
+                      className="block text-gray-600 text-base hover:text-black transition-colors"
                     >
                       {service.name}
                     </button>
@@ -222,14 +222,14 @@ const Header = () => {
             
             <button
               onClick={() => handleNavClick("projects")}
-              className="text-black text-xl font-medium text-left hover:opacity-70 transition-opacity"
+              className="text-black text-lg font-medium text-left hover:opacity-70 transition-opacity"
             >
               Projekty
             </button>
             
             <button
               onClick={() => handleNavClick("contact")}
-              className="text-black text-xl font-medium text-left hover:opacity-70 transition-opacity"
+              className="text-black text-lg font-medium text-left hover:opacity-70 transition-opacity"
             >
               Kontakt
             </button>
@@ -237,7 +237,7 @@ const Header = () => {
             <Link
               to="/blog"
               onClick={() => setMobileMenuOpen(false)}
-              className="text-black text-xl font-medium text-left hover:opacity-70 transition-opacity"
+              className="text-black text-lg font-medium text-left hover:opacity-70 transition-opacity"
             >
               Blog
             </Link>
@@ -245,20 +245,14 @@ const Header = () => {
             <Link
               to="/faq"
               onClick={() => setMobileMenuOpen(false)}
-              className="text-black text-xl font-medium text-left hover:opacity-70 transition-opacity"
+              className="text-black text-lg font-medium text-left hover:opacity-70 transition-opacity"
             >
               FAQ
             </Link>
           </div>
         </div>
 
-        {/* Overlay */}
-        {mobileMenuOpen && (
-          <div
-            className="fixed inset-0 bg-black/50 z-40 md:hidden"
-            onClick={() => setMobileMenuOpen(false)}
-          />
-        )}
+        {/* Overlay - removed as no longer needed */}
       </div>
     </header>
   );
