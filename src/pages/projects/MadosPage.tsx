@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import FooterNew from "@/components/FooterNew";
 import newportfolio11 from "@/assets/newportfolio11.mp4";
 import mados2 from "@/assets/mados2.mp4";
+import madosphone from "@/assets/verdikt-mados.webp";
 
 const MadosPage = () => {
   return (
@@ -27,8 +28,8 @@ const MadosPage = () => {
         </section>
 
         {/* Video Section */}
-        <section className="container mx-auto px-6 md:px-12 lg:px-16 pb-20">
-          <div className="w-full aspect-[21/9] rounded-2xl overflow-hidden">
+        <section className="pb-20">
+          <div className="w-full aspect-[21/9] overflow-hidden">
             <video 
               src={newportfolio11} 
               autoPlay 
@@ -79,8 +80,8 @@ const MadosPage = () => {
         </section>
 
         {/* Second Video Section */}
-        <section className="container mx-auto px-6 md:px-12 lg:px-16 pb-20">
-          <div className="w-full aspect-[21/9] rounded-2xl overflow-hidden">
+        <section className="pb-20">
+          <div className="w-full aspect-[21/9] overflow-hidden">
             <video 
               src={mados2} 
               autoPlay 
@@ -109,6 +110,58 @@ const MadosPage = () => {
               </h3>
               <p className="text-lg md:text-xl text-gray-800 leading-relaxed">
                 Místo tradičního větvení stránek jsme celou architekturu překopali a postavili na systému Custom Product Popups. Toto řešení eliminuje potřebu otevírat 20 různých karet prohlížeče pro porovnání profilů. Uživatel zůstává v kontextu, veškeré technické řezy a specifikace vidí okamžitě v interaktivním okně a může rovnou přejít k poptávce. Tím jsme odstranili největší bariéru mezi produktem a zákazníkem.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Phone Image Section */}
+        <section className="pb-32 md:pb-40">
+          <div className="w-full overflow-hidden">
+            <img 
+              src={madosphone} 
+              alt="Mados mobile interface" 
+              className="w-full h-auto object-cover"
+            />
+          </div>
+        </section>
+
+        {/* Third Content Section */}
+        <section className="container mx-auto px-6 md:px-12 lg:px-16 pb-32 md:pb-40">
+          <div className="max-w-4xl space-y-12">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold text-black mb-4 leading-tight">
+                Inteligentní kvalifikace poptávek
+              </h2>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed">
+                Jedním z největších přínosů nové platformy je transformace kontaktního formuláře v inteligentní poptávkový uzel. Systém nyní automaticky rozlišuje mezi koncovým zákazníkem a B2B partnerem, přičemž vyžaduje nahrání výkresové dokumentace hned v prvním kroku. Tím jsme eliminovali nekvalitní dotazy a obchodnímu týmu MADOS ušetřili desítky hodin měsíčně, které dříve trávili doplňováním chybějících parametrů.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold text-black mb-4 leading-tight">
+                Budování autority skrze obsah
+              </h2>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed">
+                Web už neslouží jen jako katalog, ale jako vzdělávací hub. Implementovali jsme Content Marketing Hub, který cílí na odborné long-tailové dotazy z oblasti hliníkových systémů. Díky tomu se MADOS stal přirozenou autoritou pro architekty i investory, což dokazuje 312% nárůst čtenosti odborných článků a dominance ve vyhledávání na klíčová oborová hesla.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold text-black mb-4 leading-tight">
+                Technologická dominance a výkon
+              </h2>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed">
+                Pro dosažení okamžité odezvy jsme zvolili moderní technologický stack postavený na Vite. I při vykreslování objemných galerií s vysokým rozlišením a detailních technických řezů zůstává web extrémně rychlý a stabilní. Tato technická preciznost přímo reflektuje kvalitu samotné výroby MADOS a zajišťuje bezchybný zážitek na všech zařízeních – od desktopů v kancelářích až po tablety přímo na stavbě.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold text-black mb-4 leading-tight">
+                Měřitelný dopad na byznys
+              </h2>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed">
+                Výsledkem naší práce je digitální ekosystém, který přestal být pouhou vizitkou a stal se klíčovým generátorem obchodu. S nárůstem relevantních poptávek o 217 % a výrazným zkrácením obchodního cyklu se MADOS definitivně odpoutal od závislosti na pasivních doporučeních a získal plnou kontrolu nad svým růstem v digitálním prostoru.
               </p>
             </div>
           </div>
