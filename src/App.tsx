@@ -7,6 +7,7 @@ import { AnimatePresence } from "framer-motion";
 import PageTransition from "./components/PageTransition";
 import CookieConsent from "./components/CookieConsent";
 import Index from "./pages/Index";
+import SluzbyPage from "./pages/SluzbyPage";
 import WebdesignPage from "./pages/WebdesignPage";
 import BrandingPage from "./pages/BrandingPage";
 import MarketingPage from "./pages/MarketingPage";
@@ -35,6 +36,7 @@ const AnimatedRoutes = () => {
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<PageTransition><Index /></PageTransition>} />
+        <Route path="/sluzby" element={<PageTransition><SluzbyPage /></PageTransition>} />
         <Route path="/webdesign" element={<PageTransition><WebdesignPage /></PageTransition>} />
         <Route path="/branding" element={<PageTransition><BrandingPage /></PageTransition>} />
         <Route path="/marketing" element={<PageTransition><MarketingPage /></PageTransition>} />

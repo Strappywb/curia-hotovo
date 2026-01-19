@@ -1,15 +1,11 @@
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
-import ManifestSection from "@/components/ManifestSection";
-import BentoSection from "@/components/BentoSection";
-import StatsSection from "@/components/StatsSection";
-import MottoSection from "@/components/MottoSection";
-import MandatesSection from "@/components/MandatesSection";
-import ConsulateSection from "@/components/ConsulateSection";
-import FAQSection from "@/components/FAQSection";
-import BlogSection from "@/components/BlogSection";
-import Footer from "@/components/Footer";
+import PortfolioSection from "@/components/PortfolioSection";
+import TransformSection from "@/components/TransformSection";
+import FAQNewSection from "@/components/FAQNewSection";
+import ContactFormSection from "@/components/ContactFormSection";
+import FooterNew from "@/components/FooterNew";
 
 const Index = () => {
   return (
@@ -33,15 +29,11 @@ const Index = () => {
       <Header />
       <main className="overflow-x-hidden">
         <HeroSection />
-        <ManifestSection />
-        <BentoSection />
-        <StatsSection />
-        <MottoSection />
-        <MandatesSection />
-        <ConsulateSection />
-        <FAQSection />
-        <BlogSection />
-        <Footer />
+        <PortfolioSection />
+        <TransformSection />
+        <ContactFormSection />
+        <FAQNewSection />
+        <FooterNew />
       </main>
     </>
   );
