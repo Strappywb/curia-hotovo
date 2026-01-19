@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Menu, X, ChevronDown, ChevronUp } from "lucide-react";
-import curiaLogo from "@/assets/curialogo.webp";
+import newsymbol from "@/assets/newsymbol.png";
 
 const services = [
   { name: "Všechny služby", path: "/sluzby" },
@@ -69,9 +69,9 @@ const Header = () => {
           <Link 
             to="/"
             onClick={() => { setMobileMenuOpen(false); }}
-            className="flex items-center gap-3"
+            className="flex items-center gap-1.5"
           >
-            <img src={curiaLogo} alt="CURIA logo" className="w-20 h-20 object-contain" />
+            <img src={newsymbol} alt="CURIA logo" className="w-20 h-20 object-contain" />
             <span className="text-3xl font-bold tracking-tight text-black uppercase">curia</span>
           </Link>
 

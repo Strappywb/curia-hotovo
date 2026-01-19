@@ -39,9 +39,31 @@ const ContactFormSection = () => {
               <h2 className="text-6xl lg:text-8xl font-bold text-black mb-8 leading-tight">
                 CURIA. Nastavte svůj standard.
               </h2>
-              <p className="text-2xl text-gray-600 leading-relaxed">
+              <p className="text-2xl text-gray-600 leading-relaxed mb-12">
                 Integrita značky začíná zde. Kontaktujte nás pro zahájení procesu digitální konstituce.
               </p>
+              
+              <div className="space-y-8">
+                <div>
+                  <p className="text-sm font-medium text-gray-500 mb-3">Vedení společnosti</p>
+                  <a href="tel:+420606237743" className="text-lg text-black hover:opacity-70 transition-opacity block mb-2">
+                    +420 606 237 743
+                  </a>
+                  <a href="mailto:michal@curia.cz" className="text-lg text-black hover:opacity-70 transition-opacity block">
+                    michal@curia.cz
+                  </a>
+                </div>
+                
+                <div>
+                  <p className="text-sm font-medium text-gray-500 mb-3">Obchodní oddělení</p>
+                  <a href="mailto:adam@curia.cz" className="text-lg text-black hover:opacity-70 transition-opacity block mb-2">
+                    adam@curia.cz
+                  </a>
+                  <a href="tel:+420777561050" className="text-lg text-black hover:opacity-70 transition-opacity block">
+                    +420 777 561 050
+                  </a>
+                </div>
+              </div>
             </div>
 
             {/* Right - Form */}
@@ -120,9 +142,31 @@ const ContactFormSection = () => {
           <h2 className="text-5xl font-bold text-black mb-5 leading-tight">
             CURIA. Nastavte svůj standard.
           </h2>
-          <p className="text-xl text-gray-600 mb-14 leading-relaxed">
+          <p className="text-xl text-gray-600 mb-10 leading-relaxed">
             Integrita značky začíná zde. Kontaktujte nás pro zahájení procesu digitální konstituce.
           </p>
+          
+          <div className="space-y-6 mb-12">
+            <div>
+              <p className="text-xs font-medium text-gray-500 mb-2">Vedení společnosti</p>
+              <a href="tel:+420606237743" className="text-base text-black hover:opacity-70 transition-opacity block mb-1">
+                +420 606 237 743
+              </a>
+              <a href="mailto:michal@curia.cz" className="text-base text-black hover:opacity-70 transition-opacity block">
+                michal@curia.cz
+              </a>
+            </div>
+            
+            <div>
+              <p className="text-xs font-medium text-gray-500 mb-2">Obchodní oddělení</p>
+              <a href="mailto:adam@curia.cz" className="text-base text-black hover:opacity-70 transition-opacity block mb-1">
+                adam@curia.cz
+              </a>
+              <a href="tel:+420777561050" className="text-base text-black hover:opacity-70 transition-opacity block">
+                +420 777 561 050
+              </a>
+            </div>
+          </div>
 
           <form onSubmit={handleSubmit} className="space-y-8">
             <div>
