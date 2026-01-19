@@ -15,6 +15,7 @@ import GrafikaPage from "./pages/GrafikaPage";
 import AplikacePage from "./pages/AplikacePage";
 import AboutPage from "./pages/AboutPage";
 import BlogPage from "./pages/BlogPage";
+import ProjektyPage from "./pages/ProjektyPage";
 import MadosPage from "./pages/projects/MadosPage";
 import HFStavbyPage from "./pages/projects/HFStavbyPage";
 import PrinteriaPage from "./pages/projects/PrinteriaPage";
@@ -44,6 +45,7 @@ const AnimatedRoutes = () => {
         <Route path="/aplikace" element={<PageTransition><AplikacePage /></PageTransition>} />
         <Route path="/o-nas" element={<PageTransition><AboutPage /></PageTransition>} />
         <Route path="/blog" element={<PageTransition><BlogPage /></PageTransition>} />
+        <Route path="/projekty" element={<PageTransition><ProjektyPage /></PageTransition>} />
         <Route path="/projekty/mados" element={<PageTransition><MadosPage /></PageTransition>} />
         <Route path="/projekty/hf-stavby" element={<PageTransition><HFStavbyPage /></PageTransition>} />
         <Route path="/projekty/printeria" element={<PageTransition><PrinteriaPage /></PageTransition>} />

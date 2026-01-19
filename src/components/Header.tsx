@@ -77,12 +77,12 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <button
-              onClick={() => handleNavClick("projects")}
+            <Link
+              to="/projekty"
               className="text-[15px] font-normal text-black hover:opacity-60 transition-opacity"
             >
               Projekty
-            </button>
+            </Link>
             
             <Link
               to="/sluzby"
@@ -139,12 +139,13 @@ const Header = () => {
           }`}
         >
           <div className="flex flex-col py-6 px-6 space-y-5">
-            <button
-              onClick={() => handleNavClick("projects")}
+            <Link
+              to="/projekty"
+              onClick={() => setMobileMenuOpen(false)}
               className="text-black text-base font-normal text-left hover:opacity-60 transition-opacity"
             >
               Projekty
-            </button>
+            </Link>
             
             <Link
               to="/sluzby"
