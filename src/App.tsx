@@ -20,6 +20,7 @@ import WebKteryProdavaPage from "./pages/blog/WebKteryProdavaPage";
 import StrategickyMarketingPage from "./pages/blog/StrategickyMarketingPage";
 import BudovaniZnackyPage from "./pages/blog/BudovaniZnackyPage";
 import GrafikaALogoPage from "./pages/blog/GrafikaALogoPage";
+import AplikaceNaMiruPage from "./pages/blog/AplikaceNaMiruPage";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -49,6 +50,7 @@ const AnimatedRoutes = () => {
         <Route path="/blog/strategicky-marketing" element={<PageTransition><StrategickyMarketingPage /></PageTransition>} />
         <Route path="/blog/budovani-znacky" element={<PageTransition><BudovaniZnackyPage /></PageTransition>} />
         <Route path="/blog/grafika-a-logo" element={<PageTransition><GrafikaALogoPage /></PageTransition>} />
+        <Route path="/blog/aplikace-na-miru" element={<PageTransition><AplikaceNaMiruPage /></PageTransition>} />
         
         {/* 301 Redirects - staré URL služeb */}
         <Route path="/webdesign" element={<Navigate to="/sluzby" replace />} />

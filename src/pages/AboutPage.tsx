@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import FooterNew from "@/components/FooterNew";
+import ContactFormSection from "@/components/ContactFormSection";
 import onas2 from "@/assets/onas2.webp";
 
 const AboutPage = () => {
@@ -189,6 +190,8 @@ const AboutPage = () => {
             </div>
           </div>
         </section>
+
+        <ContactFormSection />
 
         <FooterNew />
       </main>

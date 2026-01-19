@@ -1,11 +1,30 @@
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import FooterNew from "@/components/FooterNew";
+import ContactFormSection from "@/components/ContactFormSection";
 import { Link } from "react-router-dom";
 
 const blogPosts = [
   {
     id: 1,
+    title: "Aplikace na míru: Kdy se vyplatí a jak na to",
+    excerpt: "Hotová řešení mají limity. Custom aplikace dávají kontrolu. Návod, kdy se vyplatí investovat do vlastního řešení a jak zajistit úspěch projektu.",
+    date: "20. 1. 2026",
+    category: "DEVELOPMENT",
+    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop",
+    slug: "/blog/aplikace-na-miru"
+  },
+  {
+    id: 2,
+    title: "Grafika a logo: Když forma následuje funkci",
+    excerpt: "Grafický design není dekorace. Je to nástroj komunikace, který musí splnit konkrétní obchodní cíl. Jak na logo, které skutečně funguje.",
+    date: "15. 1. 2026",
+    category: "GRAFIKA",
+    image: "https://images.unsplash.com/photo-1626785774625-ddcddc3445e9?w=600&h=400&fit=crop",
+    slug: "/blog/grafika-a-logo"
+  },
+  {
+    id: 3,
     title: "Jak vytvořit web, který prodává",
     excerpt: "Moderní webdesign není jen o estetice. Úspěšný web kombinuje vizuální přitažlivost s funkčností a konverzní strategií.",
     date: "15. 1. 2024",
@@ -14,7 +33,7 @@ const blogPosts = [
     slug: "/blog/web-ktery-prodava"
   },
   {
-    id: 2,
+    id: 4,
     title: "Síla strategického marketingu",
     excerpt: "Efektivní marketing začíná pochopením vašeho publika. Jak vybudovat kampaň, která rezonuje a přináší výsledky.",
     date: "10. 1. 2024",
@@ -23,7 +42,7 @@ const blogPosts = [
     slug: "/blog/strategicky-marketing"
   },
   {
-    id: 3,
+    id: 5,
     title: "Budování značky od základů",
     excerpt: "Silná značka je víc než logo. Je to příběh, hodnoty a emoce, které vytváříte u svých zákazníků.",
     date: "5. 1. 2024",
@@ -85,6 +104,8 @@ const BlogPage = () => {
             ))}
           </div>
         </section>
+
+        <ContactFormSection />
 
         <FooterNew />
       </main>

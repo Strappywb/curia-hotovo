@@ -1,28 +1,8 @@
 import { Helmet } from "react-helmet-async";
-import { useState } from "react";
 import Header from "@/components/Header";
 import FooterNew from "@/components/FooterNew";
 
 const KarieraPage = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    message: "",
-    cv: null as File | null
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission
-    console.log("Form submitted:", formData);
-  };
-
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.files && e.target.files[0]) {
-      setFormData({ ...formData, cv: e.target.files[0] });
-    }
-  };
 
   return (
     <>
@@ -50,7 +30,7 @@ const KarieraPage = () => {
         {/* Form Section */}
         <section className="container mx-auto px-6 md:px-12 lg:px-16 pb-32 md:pb-40">
           <div className="max-w-2xl mx-auto">
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form action="https://formspree.io/f/mreekvko" method="POST" encType="multipart/form-data" className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-base font-medium text-black mb-2">
                   Jméno a příjmení
@@ -58,9 +38,8 @@ const KarieraPage = () => {
                 <input
                   type="text"
                   id="name"
+                  name="name"
                   required
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent"
                   placeholder="Jan Novák"
                 />
@@ -73,9 +52,8 @@ const KarieraPage = () => {
                 <input
                   type="email"
                   id="email"
+                  name="email"
                   required
-                  value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent"
                   placeholder="jan@email.cz"
                 />
@@ -88,8 +66,7 @@ const KarieraPage = () => {
                 <input
                   type="tel"
                   id="phone"
-                  value={formData.phone}
-                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                  name="phone"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent"
                   placeholder="+420 123 456 789"
                 />
@@ -101,9 +78,8 @@ const KarieraPage = () => {
                 </label>
                 <textarea
                   id="message"
+                  name="message"
                   rows={5}
-                  value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent resize-none"
                   placeholder="Co děláš, co tě baví, proč CURIA..."
                 />
@@ -117,16 +93,11 @@ const KarieraPage = () => {
                   <input
                     type="file"
                     id="cv"
+                    name="cv"
                     accept=".pdf"
-                    onChange={handleFileChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-medium file:bg-black file:text-white hover:file:bg-gray-800 file:cursor-pointer"
                   />
                 </div>
-                {formData.cv && (
-                  <p className="mt-2 text-sm text-gray-600">
-                    Vybráno: {formData.cv.name}
-                  </p>
-                )}
               </div>
 
               <button

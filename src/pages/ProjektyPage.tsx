@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import FooterNew from "@/components/FooterNew";
+import ContactFormSection from "@/components/ContactFormSection";
 import cometaVideo from "@/assets/cometaportfolio.mp4";
 import newportfolio11 from "@/assets/newportfolio11.mp4";
 import kkvideo from "@/assets/kkvideo.mp4";

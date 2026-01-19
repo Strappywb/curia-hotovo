@@ -67,7 +67,7 @@ const ContactFormSection = () => {
             </div>
 
             {/* Right - Form */}
-            <form onSubmit={handleSubmit} className="space-y-10">
+            <form action="https://formspree.io/f/mreekvko" method="POST" className="space-y-10">
               <div>
                 <input
                   type="text"
@@ -106,31 +106,20 @@ const ContactFormSection = () => {
 
               <button
                 type="submit"
-                disabled={status === "sending"}
-                className="group relative bg-blue-500 text-white px-14 py-5 text-lg font-medium hover:bg-blue-600 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed mt-4 rounded-full"
+                className="group relative bg-blue-500 text-white px-14 py-5 text-lg font-medium hover:bg-blue-600 transition-all duration-300 mt-4 rounded-full"
               >
-                {status === "sending" && "Odesílám..."}
-                {status === "success" && "Odesláno! ✓"}
-                {(status === "idle" || status === "error") && (
-                  <span className="flex items-center gap-3">
-                    Odeslat zprávu
-                    <svg 
-                      className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" 
-                      fill="none" 
-                      stroke="currentColor" 
-                      viewBox="0 0 24 24"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                  </span>
-                )}
+                <span className="flex items-center gap-3">
+                  Odeslat zprávu
+                  <svg 
+                    className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </span>
               </button>
-
-              {status === "error" && (
-                <p className="text-red-400 text-sm">
-                  Něco se pokazilo. Zkuste to prosím znovu.
-                </p>
-              )}
             </form>
           </div>
         </div>
@@ -168,7 +157,7 @@ const ContactFormSection = () => {
             </div>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-8">
+          <form action="https://formspree.io/f/mreekvko" method="POST" className="space-y-8">
             <div>
               <input
                 type="text"
@@ -207,19 +196,10 @@ const ContactFormSection = () => {
 
             <button
               type="submit"
-              disabled={status === "sending"}
-              className="w-full bg-blue-500 text-white px-8 py-5 text-base font-medium hover:bg-blue-600 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed mt-4 rounded-full"
+              className="w-full bg-blue-500 text-white px-8 py-5 text-base font-medium hover:bg-blue-600 transition-all duration-300 mt-4 rounded-full"
             >
-              {status === "sending" && "Odesílám..."}
-              {status === "success" && "Odesláno! ✓"}
-              {(status === "idle" || status === "error") && "Odeslat zprávu"}
+              Odeslat zprávu
             </button>
-
-            {status === "error" && (
-              <p className="text-red-400 text-sm text-center">
-                Něco se pokazilo. Zkuste to prosím znovu.
-              </p>
-            )}
           </form>
         </div>
       </section>

@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import FooterNew from "@/components/FooterNew";
+import ContactFormSection from "@/components/ContactFormSection";
 import newportfolio11 from "@/assets/newportfolio11.mp4";
 import mados2 from "@/assets/mados2.mp4";
 import madosphone from "@/assets/verdikt-mados.webp";
@@ -167,6 +168,8 @@ const MadosPage = () => {
             </div>
           </div>
         </section>
+
+        <ContactFormSection />
 
         <FooterNew />
       </main>
