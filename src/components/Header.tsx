@@ -99,6 +99,13 @@ const Header = () => {
             </Link>
             
             <Link
+              to="/kariera"
+              className="text-[15px] font-normal text-black hover:opacity-60 transition-opacity"
+            >
+              Kariéra
+            </Link>
+            
+            <Link
               to="/blog"
               className="text-[15px] font-normal text-black hover:opacity-60 transition-opacity"
             >
@@ -164,6 +171,14 @@ const Header = () => {
               className="text-black text-base font-normal text-left hover:opacity-60 transition-opacity"
             >
               O nás
+            </Link>
+            
+            <Link
+              to="/kariera"
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-black text-base font-normal text-left hover:opacity-60 transition-opacity"
+            >
+              Kariéra
             </Link>
             
             <Link
