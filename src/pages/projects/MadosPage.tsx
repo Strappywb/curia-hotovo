@@ -9,10 +9,11 @@ const MadosPage = () => {
   return (
     <>
       <Helmet>
-        <title>Mados - Case study | CURIA Portfolio</title>
-        <meta name="description" content="A digital commerce and construction system platform for a building materials leader." />
-        <meta property="og:title" content="Mados - Case study | CURIA Portfolio" />
-        <meta property="og:description" content="A digital commerce and construction system platform for a building materials leader." />
+        <title>MADOS - Digitální transformace výrobce fasád | CURIA Case Study</title>
+        <meta name="description" content="Komplexní digitální platforma pro MADOS - lídra v segmentu hliníkových fasád. Custom Product Engine, B2B rozhraní a 217% nárůst relevantních poptávek." />
+        <meta name="keywords" content="case study, webdesign, MADOS, digitální platforma, B2B, CURIA" />
+        <meta property="og:title" content="MADOS - Digitální transformace výrobce fasád | CURIA Case Study" />
+        <meta property="og:description" content="Komplexní digitální platforma pro MADOS - lídra v segmentu hliníkových fasád. 217% nárůst relevantních poptávek." />
         <link rel="canonical" href="https://curia.cz/projekty/mados" />
       </Helmet>
       <Header />

@@ -43,8 +43,12 @@ const SluzbyPage = () => {
   return (
     <>
       <Helmet>
-        <title>Služby | CURIA</title>
-        <meta name="description" content="Komplexní designové a brandingové služby. Budujeme digitální identity, které definují standardy." />
+        <title>Webdesign, Branding, Marketing & Aplikace | CURIA Praha</title>
+        <meta name="description" content="Komplexní designové a digitální služby v Praze. Webdesign, branding, marketing, grafika a vývoj aplikací. Budujeme značky a weby, které definují standardy." />
+        <meta name="keywords" content="webdesign Praha, branding Praha, marketing Praha, grafika, aplikace, CURIA" />
+        <meta property="og:title" content="Webdesign, Branding, Marketing & Aplikace | CURIA Praha" />
+        <meta property="og:description" content="Komplexní designové a digitální služby v Praze. Webdesign, branding, marketing, grafika a vývoj aplikací." />
+        <link rel="canonical" href="https://curia.cz/sluzby" />
       </Helmet>
       <Header />
       
