@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import FooterNew from "@/components/FooterNew";
 import cometaVideo from "@/assets/cometaportfolio.mp4";
@@ -8,6 +9,7 @@ import kkvideo from "@/assets/kkvideo.mp4";
 
 const ProjektyPage = () => {
   const imageRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -57,35 +59,6 @@ const ProjektyPage = () => {
 
         {/* Desktop/Tablet Projects */}
         <section className="hidden md:block container mx-auto px-12 lg:px-16 pb-32">
-          {/* Cometa Project */}
-          <div className="mb-32">
-            <div className="w-full aspect-[21/9] bg-white rounded-2xl overflow-hidden mb-8">
-              <video 
-                src={cometaVideo} 
-                autoPlay 
-                loop 
-                muted 
-                playsInline
-                className="w-full h-full object-cover"
-              />
-            </div>
-
-            <div className="flex items-start justify-between">
-              <div>
-                <p className="text-sm text-gray-500 mb-2">IDENTITA</p>
-                <h3 className="text-3xl lg:text-4xl font-semibold text-black">
-                  Comet. Architektura průmyslové identity.
-                </h3>
-              </div>
-              <button className="flex items-center gap-2 text-black hover:opacity-70 transition-opacity">
-                <span className="text-base font-medium">Prozkoumat projekt</span>
-                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </button>
-            </div>
-          </div>
-
           {/* Mados Project */}
           <div className="mb-32">
             <div className="w-full aspect-[21/9] bg-white rounded-2xl overflow-hidden mb-8">
@@ -109,7 +82,39 @@ const ProjektyPage = () => {
                   Implementace vysokovýkonného digitálního rozhraní pro lídra v segmentu stavebních systémů.
                 </p>
               </div>
-              <button className="flex items-center gap-2 text-black hover:opacity-70 transition-opacity">
+              <Link to="/projekty/mados" className="flex items-center gap-2 text-black hover:opacity-70 transition-opacity">
+                <span className="text-base font-medium">Prozkoumat projekt</span>
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
+            </div>
+          </div>
+
+          {/* Cometa Project */}
+          <div className="mb-32">
+            <div className="w-full aspect-[21/9] bg-white rounded-2xl overflow-hidden mb-8">
+              <video 
+                src={cometaVideo} 
+                autoPlay 
+                loop 
+                muted 
+                playsInline
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            <div className="flex items-start justify-between">
+              <div>
+                <p className="text-sm text-gray-500 mb-2">IDENTITA</p>
+                <h3 className="text-3xl lg:text-4xl font-semibold text-black">
+                  Comet. Architektura průmyslové identity.
+                </h3>
+              </div>
+              <button 
+                onClick={() => setShowPopup(true)}
+                className="flex items-center gap-2 text-black hover:opacity-70 transition-opacity"
+              >
                 <span className="text-base font-medium">Prozkoumat projekt</span>
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -130,39 +135,20 @@ const ProjektyPage = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div>
-              <p className="text-sm text-gray-500 mb-2">IDENTITA</p>
-              <h3 className="text-3xl lg:text-4xl font-semibold text-black">
-                K+K.Kačmáček. Architektura moderní tradice.
-              </h3>
-              <p className="text-base text-gray-600 mt-2">
-                Strategická transformace a redefinice vizuálního ekosystému pro lídra v oblasti mobility.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Mobile Projects */}
-        <section className="block md:hidden pb-24 px-6">
-          {/* Cometa Project */}
-          <div className="mb-16">
-            <div className="w-full aspect-[16/9] bg-white overflow-hidden mb-6">
-              <video 
-                src={cometaVideo} 
-                autoPlay 
-                loop 
-                muted 
-                playsInline
-                className="w-full h-full object-cover"
-              />
-            </div>
-
-            <div>
-              <p className="text-sm text-gray-500 mb-2">IDENTITA</p>
-              <h3 className="text-2xl font-semibold text-black mb-4">
-                Comet. Architektura průmyslové identity.
-              </h3>
-              <button className="flex items-center gap-2 text-black hover:opacity-70 transition-opacity">
+            <div className="flex items-start justify-between">
+              <div>
+                <p className="text-sm text-gray-500 mb-2">IDENTITA</p>
+                <h3 className="text-3xl lg:text-4xl font-semibold text-black">
+                  K+K.Kačmáček. Architektura moderní tradice.
+                </h3>
+                <p className="text-base text-gray-600 mt-2">
+                  Strategická transformace a redefinice vizuálního ekosystému pro lídra v oblasti mobility.
+                </p>
+              </div>
+              <button 
+                onClick={() => setShowPopup(true)}
+                className="flex items-center gap-2 text-black hover:opacity-70 transition-opacity"
+              >
                 <span className="text-base font-medium">Prozkoumat projekt</span>
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -170,7 +156,10 @@ const ProjektyPage = () => {
               </button>
             </div>
           </div>
+        </section>
 
+        {/* Mobile Projects */}
+        <section className="block md:hidden pb-24 px-6">
           {/* Mados Project */}
           <div className="mb-16">
             <div className="w-full aspect-[16/9] bg-white overflow-hidden mb-6">
@@ -192,7 +181,37 @@ const ProjektyPage = () => {
               <p className="text-sm text-gray-600 mb-4">
                 Implementace vysokovýkonného digitálního rozhraní pro lídra v segmentu stavebních systémů.
               </p>
-              <button className="flex items-center gap-2 text-black hover:opacity-70 transition-opacity">
+              <Link to="/projekty/mados" className="flex items-center gap-2 text-black hover:opacity-70 transition-opacity">
+                <span className="text-base font-medium">Prozkoumat projekt</span>
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
+            </div>
+          </div>
+
+          {/* Cometa Project */}
+          <div className="mb-16">
+            <div className="w-full aspect-[16/9] bg-white overflow-hidden mb-6">
+              <video 
+                src={cometaVideo} 
+                autoPlay 
+                loop 
+                muted 
+                playsInline
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            <div>
+              <p className="text-sm text-gray-500 mb-2">IDENTITA</p>
+              <h3 className="text-2xl font-semibold text-black mb-4">
+                Comet. Architektura průmyslové identity.
+              </h3>
+              <button 
+                onClick={() => setShowPopup(true)}
+                className="flex items-center gap-2 text-black hover:opacity-70 transition-opacity"
+              >
                 <span className="text-base font-medium">Prozkoumat projekt</span>
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -222,9 +241,41 @@ const ProjektyPage = () => {
               <p className="text-sm text-gray-600 mb-4">
                 Strategická transformace a redefinice vizuálního ekosystému pro lídra v oblasti mobility.
               </p>
+              <button 
+                onClick={() => setShowPopup(true)}
+                className="flex items-center gap-2 text-black hover:opacity-70 transition-opacity"
+              >
+                <span className="text-base font-medium">Prozkoumat projekt</span>
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </button>
             </div>
           </div>
         </section>
+
+        {/* Popup */}
+        {showPopup && (
+          <div 
+            className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-6"
+            onClick={() => setShowPopup(false)}
+          >
+            <div 
+              className="bg-white rounded-2xl p-8 md:p-12 max-w-md w-full shadow-2xl"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <h3 className="text-2xl md:text-3xl font-bold text-black mb-4">
+                Případová studie ve výrobě.
+              </h3>
+              <button
+                onClick={() => setShowPopup(false)}
+                className="w-full px-6 py-3 bg-black text-white rounded-full hover:bg-gray-800 transition-colors font-medium"
+              >
+                Zavřít
+              </button>
+            </div>
+          </div>
+        )}
 
         <FooterNew />
       </main>

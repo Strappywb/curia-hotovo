@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import cometaVideo from "@/assets/cometaportfolio.mp4";
 import portfolio1 from "@/assets/portfolionew1.webp";
 import portfolio3 from "@/assets/portfolionew3.webp";
@@ -133,12 +134,12 @@ const PortfolioSection = () => {
                 Implementace vysokovýkonného digitálního rozhraní pro lídra v segmentu stavebních systémů.
               </p>
             </div>
-            <button className="flex items-center gap-2 text-black hover:opacity-70 transition-opacity">
+            <Link to="/projekty/mados" className="flex items-center gap-2 text-black hover:opacity-70 transition-opacity">
               <span className="text-base font-medium">Prozkoumat projekt</span>
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -275,12 +276,12 @@ const PortfolioSection = () => {
             <p className="text-sm text-gray-600 mb-4">
               Implementace vysokovýkonného digitálního rozhraní pro lídra v segmentu stavebních systémů.
             </p>
-            <button className="flex items-center gap-2 text-black hover:opacity-70 transition-opacity">
+            <Link to="/projekty/mados" className="flex items-center gap-2 text-black hover:opacity-70 transition-opacity">
               <span className="text-base font-medium">Prozkoumat projekt</span>
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
-            </button>
+            </Link>
           </div>
         </div>
 
