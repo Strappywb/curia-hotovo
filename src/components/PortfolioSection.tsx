@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import cometaVideo from "@/assets/cometaportfolio.mp4";
 import portfolio1 from "@/assets/portfolionew1.webp";
 import portfolio3 from "@/assets/portfolionew3.webp";
@@ -6,6 +7,36 @@ import newportfolio5 from "@/assets/newportfolio5.webp";
 import newportfolio6 from "@/assets/newportfolio6.webp";
 
 const PortfolioSection = () => {
+  const imageRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Only apply parallax on desktop/tablet (768px and up)
+      if (window.innerWidth < 768) return;
+
+      imageRefs.current.forEach((img) => {
+        if (!img) return;
+        const rect = img.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        
+        // Calculate how much of the element is visible
+        if (rect.top < windowHeight && rect.bottom > 0) {
+          const scrolled = windowHeight - rect.top;
+          const rate = scrolled * 0.1; // Parallax speed
+          img.style.transform = `translateY(${-rate}px)`;
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("resize", handleScroll);
+    handleScroll();
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleScroll);
+    };
+  }, []);
+
   return (
     <>
       {/* Desktop/Tablet */}
@@ -43,7 +74,7 @@ const PortfolioSection = () => {
         <div className="flex gap-16 lg:gap-20">
           {/* Project 1 - Slack (Left, Higher) */}
           <div className="flex-1 space-y-8">
-            <div className="w-full aspect-[4/3] bg-gray-100 rounded-2xl overflow-hidden">
+            <div ref={(el) => (imageRefs.current[0] = el)} className="w-full aspect-[4/3] bg-gray-100 rounded-2xl overflow-hidden transition-transform duration-100 ease-out">
               <img 
                 src={portfolio1} 
                 alt="Slack project" 
@@ -60,7 +91,7 @@ const PortfolioSection = () => {
 
           {/* Project 2 - STC Bank (Right, Lower) */}
           <div className="flex-1 mt-64 space-y-8">
-            <div className="w-full max-w-lg rounded-2xl overflow-hidden">
+            <div ref={(el) => (imageRefs.current[1] = el)} className="w-full max-w-lg rounded-2xl overflow-hidden transition-transform duration-100 ease-out">
               <img 
                 src={portfolio3} 
                 alt="STC Bank project" 
@@ -115,7 +146,7 @@ const PortfolioSection = () => {
         <div className="mt-32 flex gap-16 lg:gap-20">
           {/* Project 3 - Left, Higher */}
           <div className="flex-1 space-y-8">
-            <div className="w-full aspect-[4/3] bg-gray-100 rounded-2xl overflow-hidden">
+            <div ref={(el) => (imageRefs.current[2] = el)} className="w-full aspect-[4/3] bg-gray-100 rounded-2xl overflow-hidden transition-transform duration-100 ease-out">
               <img 
                 src={newportfolio5} 
                 alt="Project" 
@@ -135,7 +166,7 @@ const PortfolioSection = () => {
 
           {/* Project 4 - Right, Lower */}
           <div className="flex-1 mt-64 space-y-8">
-            <div className="w-full max-w-lg rounded-2xl overflow-hidden">
+            <div ref={(el) => (imageRefs.current[3] = el)} className="w-full max-w-lg rounded-2xl overflow-hidden transition-transform duration-100 ease-out">
               <img 
                 src={newportfolio6} 
                 alt="Project" 
