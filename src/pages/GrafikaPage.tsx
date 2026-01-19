@@ -7,7 +7,7 @@ import marketin10Img from "@/assets/marketin10.webp";
 import bannerImg from "@/assets/banner.webp";
 import tiskexterierImg from "@/assets/tiskexterier.webp";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import FooterNew from "@/components/FooterNew";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -373,7 +373,7 @@ const GrafikaPage = () => {
           </div>
         </section>
 
-        <Footer />
+        <FooterNew />
       </main>
     </>
   );

@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import FooterNew from "@/components/FooterNew";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 
@@ -285,7 +285,7 @@ const GrafikaALogoPage = () => {
           </div>
         </section>
 
-        <Footer />
+        <FooterNew />
       </main>
     </>
   );

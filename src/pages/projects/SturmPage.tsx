@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import FooterNew from "@/components/FooterNew";
 import verdiktSturm from "@/assets/verdikt-sturm.webp";
 
 const SturmPage = () => {
@@ -231,7 +231,7 @@ const SturmPage = () => {
           </div>
         </section>
 
-        <Footer />
+        <FooterNew />
       </main>
     </>
   );

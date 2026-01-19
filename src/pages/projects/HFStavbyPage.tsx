@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import FooterNew from "@/components/FooterNew";
 import verdiktHf from "@/assets/verdikt-hf.webp";
 import hfstavbyOld from "@/assets/hfstavbyold.webp";
 import hfstavbyNew from "@/assets/hfstavbynew.webp";
@@ -258,7 +258,7 @@ const HFStavbyPage = () => {
           </div>
         </section>
 
-        <Footer />
+        <FooterNew />
       </main>
     </>
   );

@@ -8,7 +8,7 @@ import jenudaImg from "@/assets/jenuda.webp";
 import provsechnyImg from "@/assets/provsechny.webp";
 import nemakouleImg from "@/assets/nemakoule.webp";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import FooterNew from "@/components/FooterNew";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -402,7 +402,7 @@ const MarketingPage = () => {
           </div>
         </section>
 
-        <Footer />
+        <FooterNew />
       </main>
     </>
   );

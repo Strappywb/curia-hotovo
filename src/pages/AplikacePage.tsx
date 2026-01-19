@@ -4,7 +4,7 @@ import aplikaceImg from "@/assets/aplikace.webp";
 import aplikace2Img from "@/assets/aplikace2.webp";
 import aplikace3Img from "@/assets/aplikace3.webp";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import FooterNew from "@/components/FooterNew";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -379,7 +379,7 @@ const AplikacePage = () => {
           </div>
         </section>
 
-        <Footer />
+        <FooterNew />
       </main>
     </>
   );

@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import FooterNew from "@/components/FooterNew";
+import onas2 from "@/assets/onas2.webp";
 
 const AboutPage = () => {
   return (
@@ -13,84 +14,183 @@ const AboutPage = () => {
         <link rel="canonical" href="https://curia.cz/o-nas" />
       </Helmet>
       <Header />
-      <main className="overflow-x-hidden">
+      <main className="overflow-x-hidden bg-[#2a2a2a]">
         {/* Hero Section */}
-        <section className="relative min-h-screen w-full bg-[#1a1a1a] flex items-center justify-center px-8 py-32 md:px-12 lg:px-16">
-          <div className="max-w-4xl">
-            <h1 className="font-heading text-4xl md:text-5xl lg:text-7xl font-black text-white mb-12 leading-tight">
-              O NÁS
-            </h1>
-            
-            <div className="space-y-8 font-body font-semibold text-lg md:text-xl lg:text-2xl text-white/80 leading-relaxed">
-              <p>
-                CURIA je studio zaměřené na strategický design a technickou exekuci. Webdesign, branding, marketing, grafiku a vývoj aplikací stavíme jako nástroje obchodního úspěchu.
-              </p>
-              
-              <p>
-                Naše práce stojí na třech pilířích: strategii odvozené z dat, formě následující funkci a měřitelných výsledcích.
-              </p>
-              
-              <p className="text-white font-bold text-2xl md:text-3xl pt-8">
-                FORMA SEQUITUR FUNCTIONEM.
-              </p>
-              
-              <p>
-                Design bez strategie jsou vyhozené peníze. Neděláme věci, co „hezky vypadají", ale věci, co mají mandát ovládnout pozornost.
-              </p>
-              
-              <p>
-                Jsme filtr na zbytečnosti. Jediným měřítkem je pro nás vliv vaší značky na trhu.
-              </p>
-              
-              <p>
-                Každý pixel má funkci. Každý řádek kódu má důvod. Každé rozhodnutí má data.
+        <section className="container mx-auto px-6 md:px-12 lg:px-16 py-32 md:py-40">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-stone-200 leading-tight max-w-5xl">
+            Vytváříme digitální systémy pro značky, které mají ambici vést svůj obor.
+          </h1>
+        </section>
+
+        {/* Image Section */}
+        <section className="pb-32 md:pb-40">
+          <div className="w-full overflow-hidden">
+            <img 
+              src={onas2} 
+              alt="CURIA team" 
+              className="w-full h-auto object-cover"
+            />
+          </div>
+        </section>
+
+        {/* Stats Section */}
+        <section className="container mx-auto px-6 md:px-12 lg:px-16 pb-32 md:pb-40">
+          {/* Mobile - všechny pod sebou */}
+          <div className="grid grid-cols-1 gap-12 md:hidden">
+            <div>
+              <div className="text-5xl font-bold text-stone-200 mb-4">
+                6
+              </div>
+              <p className="text-xl text-stone-400">
+                Specialistů na exekuci
               </p>
             </div>
 
-            {/* Contact Info */}
-            <div className="mt-16 pt-12 border-t border-white/20 grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="font-heading text-xl text-white mb-4">
-                  MAGISTRATUS
-                </h3>
-                <p className="text-white/60 mb-2">vedení společnosti</p>
-                <a 
-                  href="tel:+420606237743" 
-                  className="text-white font-medium hover:underline block"
-                >
-                  +420 606 237 743
-                </a>
-                <a 
-                  href="mailto:michal@curia.cz" 
-                  className="text-white font-medium hover:underline block mt-1"
-                >
-                  michal@curia.cz
-                </a>
+            <div>
+              <div className="text-5xl font-bold text-stone-200 mb-4">
+                157
               </div>
-              
-              <div>
-                <h3 className="font-heading text-xl text-white mb-4">
-                  COMMERCIUM
-                </h3>
-                <p className="text-white/60 mb-2">obchodní oddělení</p>
-                <a 
-                  href="tel:+420777561050" 
-                  className="text-white font-medium hover:underline block"
-                >
-                  +420 777 561 050
-                </a>
-                <a 
-                  href="mailto:adam@curia.cz" 
-                  className="text-white font-medium hover:underline block mt-1"
-                >
-                  adam@curia.cz
-                </a>
+              <p className="text-xl text-stone-400">
+                realizovaných projektů
+              </p>
+            </div>
+
+            <div>
+              <div className="text-5xl font-bold text-stone-200 mb-4">
+                1 mld+ Kč
               </div>
+              <p className="text-xl text-stone-400">
+                Nárůst tržeb klientů
+              </p>
+            </div>
+          </div>
+
+          {/* Desktop/Tablet - všechny 3 na jednom řádku */}
+          <div className="hidden md:flex justify-center items-start gap-24 lg:gap-32">
+            <div className="text-center">
+              <div className="text-7xl lg:text-8xl font-bold text-stone-200 mb-4">
+                6
+              </div>
+              <p className="text-xl lg:text-2xl text-stone-400">
+                Specialistů na exekuci
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="text-7xl lg:text-8xl font-bold text-stone-200 mb-4">
+                157
+              </div>
+              <p className="text-xl lg:text-2xl text-stone-400">
+                realizovaných projektů
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="text-7xl lg:text-8xl font-bold text-stone-200 mb-4">
+                1 mld+ Kč
+              </div>
+              <p className="text-xl lg:text-2xl text-stone-400">
+                Nárůst tržeb klientů
+              </p>
             </div>
           </div>
         </section>
 
-        <Footer />
+        {/* Description Section */}
+        <section className="container mx-auto px-6 md:px-12 lg:px-16 pb-32 md:pb-40">
+          <div className="max-w-4xl mx-auto space-y-8">
+            <p className="text-xl md:text-2xl lg:text-3xl text-stone-300 leading-relaxed">
+              Jsme tým specialistů na strategii, design a technickou realizaci. Stavíme značky a digitální platformy, které definují standardy v oboru.
+            </p>
+            
+            <p className="text-xl md:text-2xl lg:text-3xl text-stone-300 leading-relaxed">
+              Pracujeme s design systémy a technickou precizností. Výsledkem je konzistentní a škálovatelná identita napříč všemi kontaktními body značky.
+            </p>
+          </div>
+        </section>
+
+        {/* Capabilities Section */}
+        <section className="container mx-auto px-6 md:px-12 lg:px-16 pb-32 md:pb-40">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-stone-200 mb-16 md:mb-24">
+            Služby
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-16">
+            {/* Branding */}
+            <div className="space-y-4">
+              <h3 className="text-2xl font-bold text-stone-200 mb-6">Branding</h3>
+              <ul className="space-y-3 text-lg text-stone-400">
+                <li>Strategie značky</li>
+                <li>Vizuální identita</li>
+                <li>Slovní identita</li>
+                <li>Brand Guidelines</li>
+                <li>Positioning & Messaging</li>
+              </ul>
+            </div>
+
+            {/* Web & Digitál */}
+            <div className="space-y-4">
+              <h3 className="text-2xl font-bold text-stone-200 mb-6">Web & Digitál</h3>
+              <ul className="space-y-3 text-lg text-stone-400">
+                <li>UX/UI Design</li>
+                <li>Design systémy</li>
+                <li>Webové aplikace</li>
+                <li>E-commerce</li>
+                <li>Interaktivní prezentace</li>
+              </ul>
+            </div>
+
+            {/* Development */}
+            <div className="space-y-4">
+              <h3 className="text-2xl font-bold text-stone-200 mb-6">Development</h3>
+              <ul className="space-y-3 text-lg text-stone-400">
+                <li>Frontend vývoj</li>
+                <li>Backend & API</li>
+                <li>CMS implementace</li>
+                <li>Mobilní aplikace</li>
+                <li>Technický consulting</li>
+              </ul>
+            </div>
+
+            {/* Marketing */}
+            <div className="space-y-4">
+              <h3 className="text-2xl font-bold text-stone-200 mb-6">Marketing</h3>
+              <ul className="space-y-3 text-lg text-stone-400">
+                <li>Content strategie</li>
+                <li>SEO & technické SEO</li>
+                <li>Performance marketing</li>
+                <li>Marketing automation</li>
+                <li>Analytika & reporting</li>
+              </ul>
+            </div>
+
+            {/* Grafika */}
+            <div className="space-y-4">
+              <h3 className="text-2xl font-bold text-stone-200 mb-6">Grafika</h3>
+              <ul className="space-y-3 text-lg text-stone-400">
+                <li>Art direction</li>
+                <li>Ilustrace & grafika</li>
+                <li>Motion design</li>
+                <li>Fotografie & video</li>
+                <li>Tiskové materiály</li>
+              </ul>
+            </div>
+
+            {/* Strategie */}
+            <div className="space-y-4">
+              <h3 className="text-2xl font-bold text-stone-200 mb-6">Strategie</h3>
+              <ul className="space-y-3 text-lg text-stone-400">
+                <li>Digitální audit</li>
+                <li>User research</li>
+                <li>Konkurenční analýza</li>
+                <li>Growth strategie</li>
+                <li>Procesní optimalizace</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <FooterNew />
       </main>
     </>
   );

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const FooterNew = () => {
   return (
     <>
@@ -21,24 +23,18 @@ const FooterNew = () => {
             {/* Middle - Links */}
             <div>
               <nav className="flex flex-col gap-4">
-                <a href="/work" className="text-lg text-black hover:opacity-70 transition-opacity">
-                  Portfolio
-                </a>
-                <a href="/branding" className="text-lg text-black hover:opacity-70 transition-opacity">
-                  Branding
-                </a>
-                <a href="/webdesign" className="text-lg text-black hover:opacity-70 transition-opacity">
-                  Webdesign
-                </a>
-                <a href="/about" className="text-lg text-black hover:opacity-70 transition-opacity">
+                <Link to="/projekty" className="text-lg text-black hover:opacity-70 transition-opacity">
+                  Projekty
+                </Link>
+                <Link to="/sluzby" className="text-lg text-black hover:opacity-70 transition-opacity">
+                  Služby
+                </Link>
+                <Link to="/o-nas" className="text-lg text-black hover:opacity-70 transition-opacity">
                   O nás
-                </a>
-                <a href="/blog" className="text-lg text-black hover:opacity-70 transition-opacity">
+                </Link>
+                <Link to="/blog" className="text-lg text-black hover:opacity-70 transition-opacity">
                   Blog
-                </a>
-                <a href="/contact" className="text-lg text-black hover:opacity-70 transition-opacity">
-                  Kontakt
-                </a>
+                </Link>
               </nav>
             </div>
 
@@ -85,24 +81,18 @@ const FooterNew = () => {
           </a>
 
           <nav className="flex flex-col gap-3 mb-10">
-            <a href="/work" className="text-base text-black hover:opacity-70 transition-opacity">
-              Portfolio
-            </a>
-            <a href="/branding" className="text-base text-black hover:opacity-70 transition-opacity">
-              Branding
-            </a>
-            <a href="/webdesign" className="text-base text-black hover:opacity-70 transition-opacity">
-              Webdesign
-            </a>
-            <a href="/about" className="text-base text-black hover:opacity-70 transition-opacity">
+            <Link to="/projekty" className="text-base text-black hover:opacity-70 transition-opacity">
+              Projekty
+            </Link>
+            <Link to="/sluzby" className="text-base text-black hover:opacity-70 transition-opacity">
+              Služby
+            </Link>
+            <Link to="/o-nas" className="text-base text-black hover:opacity-70 transition-opacity">
               O nás
-            </a>
-            <a href="/blog" className="text-base text-black hover:opacity-70 transition-opacity">
+            </Link>
+            <Link to="/blog" className="text-base text-black hover:opacity-70 transition-opacity">
               Blog
-            </a>
-            <a href="/contact" className="text-base text-black hover:opacity-70 transition-opacity">
-              Kontakt
-            </a>
+            </Link>
           </nav>
 
           <div className="text-sm text-gray-700 space-y-1 mb-10">

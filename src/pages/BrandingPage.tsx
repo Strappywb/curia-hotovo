@@ -5,7 +5,7 @@ import brandingImg from "@/assets/CURIAbranding.webp";
 import branding2Img from "@/assets/branding2.webp";
 import identifikacniImg from "@/assets/Identifikačnísignatura.webp";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import FooterNew from "@/components/FooterNew";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -441,7 +441,7 @@ const BrandingPage = () => {
           </div>
         </section>
 
-        <Footer />
+        <FooterNew />
       </main>
     </>
   );

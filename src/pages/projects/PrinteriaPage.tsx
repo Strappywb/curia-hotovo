@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import FooterNew from "@/components/FooterNew";
 import { Link } from "react-router-dom";
 import verdiktPrint from "@/assets/verdikt-print.webp";
 
@@ -236,7 +236,7 @@ const PrinteriaPage = () => {
           </div>
         </section>
 
-        <Footer />
+        <FooterNew />
       </main>
     </>
   );

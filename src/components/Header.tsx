@@ -134,9 +134,12 @@ const Header = () => {
 
         {/* Mobile Menu */}
         <div
-          className={`absolute top-full left-0 right-0 bg-white border-t border-gray-100 shadow-xl z-50 transform transition-all duration-300 ease-in-out md:hidden overflow-hidden ${
-            mobileMenuOpen ? "opacity-100 translate-y-0 max-h-[500px]" : "opacity-0 -translate-y-2 max-h-0"
+          className={`absolute top-full left-0 right-0 mt-2 bg-white border border-gray-200 shadow-lg z-50 transform transition-all duration-500 ease-out md:hidden overflow-hidden ${
+            mobileMenuOpen ? "opacity-100 scale-y-100 origin-top" : "opacity-0 scale-y-0 origin-top"
           }`}
+          style={{
+            borderRadius: '1rem',
+          }}
         >
           <div className="flex flex-col py-6 px-6 space-y-5">
             <Link

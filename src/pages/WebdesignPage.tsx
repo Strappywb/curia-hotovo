@@ -14,7 +14,7 @@ import framerImg from "@/assets/framer.webp";
 import ecommerceImg from "@/assets/e-commerce.webp";
 import apiImg from "@/assets/api.webp";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import FooterNew from "@/components/FooterNew";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -479,7 +479,7 @@ const WebdesignPage = () => {
           </div>
         </section>
 
-        <Footer />
+        <FooterNew />
       </main>
     </>
   );
