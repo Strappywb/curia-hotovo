@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import cometaVideo from "@/assets/cometaportfolio.mp4";
 import cometaVideoWebm from "@/assets/cometaportfolio.webm";
@@ -11,6 +11,7 @@ import newportfolio6 from "@/assets/newportfolio6.webp";
 
 const PortfolioSection = () => {
   const imageRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -64,7 +65,10 @@ const PortfolioSection = () => {
                 Comet. Architektura průmyslové identity.
               </h3>
             </div>
-            <button className="flex items-center gap-2 text-black hover:opacity-70 transition-opacity">
+            <button 
+              onClick={() => setShowPopup(true)}
+              className="flex items-center gap-2 text-black hover:opacity-70 transition-opacity"
+            >
               <span className="text-base font-medium">Prozkoumat projekt</span>
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -109,6 +113,15 @@ const PortfolioSection = () => {
               <p className="text-base text-gray-600 mt-2">
                 Strategická transformace a redefinice vizuálního ekosystému pro lídra v oblasti mobility.
               </p>
+              <button 
+                onClick={() => setShowPopup(true)}
+                className="flex items-center gap-2 text-black hover:opacity-70 transition-opacity mt-4"
+              >
+                <span className="text-base font-medium">Prozkoumat projekt</span>
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </button>
             </div>
           </div>
         </div>
@@ -213,7 +226,10 @@ const PortfolioSection = () => {
             <h3 className="text-2xl font-semibold text-black mb-4">
               Comet. Architektura průmyslové identity.
             </h3>
-            <button className="flex items-center gap-2 text-black hover:opacity-70 transition-opacity">
+            <button 
+              onClick={() => setShowPopup(true)}
+              className="flex items-center gap-2 text-black hover:opacity-70 transition-opacity"
+            >
               <span className="text-base font-medium">Prozkoumat projekt</span>
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -258,6 +274,15 @@ const PortfolioSection = () => {
             <p className="text-sm text-gray-600 mb-4">
               Strategická transformace a redefinice vizuálního ekosystému pro lídra v oblasti mobility.
             </p>
+            <button 
+              onClick={() => setShowPopup(true)}
+              className="flex items-center gap-2 text-black hover:opacity-70 transition-opacity"
+            >
+              <span className="text-base font-medium">Prozkoumat projekt</span>
+              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </button>
           </div>
         </div>
 
@@ -335,6 +360,29 @@ const PortfolioSection = () => {
           </div>
         </div>
       </section>
+
+      {/* Popup */}
+      {showPopup && (
+        <div 
+          className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-6"
+          onClick={() => setShowPopup(false)}
+        >
+          <div 
+            className="bg-white rounded-2xl p-8 md:p-12 max-w-md w-full shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <h3 className="text-2xl md:text-3xl font-bold text-black mb-4">
+              Případová studie ve výrobě.
+            </h3>
+            <button
+              onClick={() => setShowPopup(false)}
+              className="w-full px-6 py-3 bg-black text-white rounded-full hover:bg-gray-800 transition-colors font-medium"
+            >
+              Zavřít
+            </button>
+          </div>
+        </div>
+      )}
     </>
   );
 };
