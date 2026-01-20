@@ -67,7 +67,7 @@ export default {
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
-        heading: ['Space Grotesk', 'sans-serif'],
+        heading: ['Cabinet Grotesk', 'sans-serif'],
         body: ['Inter', 'sans-serif'],
       },
       borderRadius: {

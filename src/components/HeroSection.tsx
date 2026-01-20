@@ -68,7 +68,7 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 lg:gap-28 items-center">
           {/* Left - Heading */}
           <div className="space-y-8">
-            <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.05] tracking-tight text-black">
+            <h1 className="text-5xl lg:text-6xl xl:text-7xl font-heading font-bold leading-[1.05] tracking-tight text-black">
               <span className="block whitespace-nowrap">CURIA</span>
               <span className="block whitespace-nowrap">KONSTITUCE</span>
               <span className="block whitespace-nowrap">DIGITÁLNÍ IDENTITY</span>
@@ -92,7 +92,7 @@ const HeroSection = () => {
       <div className="block md:hidden container mx-auto px-6 pt-32 pb-28">
         <div className="grid grid-cols-1 gap-28 items-start">
           <div className="space-y-2">
-            <h1 className="text-5xl font-bold leading-[1.05] tracking-tight text-black">
+            <h1 className="text-5xl font-heading font-bold leading-[1.05] tracking-tight text-black">
               <span className="block">CURIA</span>
               <span className="block">KONSTITUCE</span>
               <span className="block">DIGITÁLNÍ IDENTITY</span>
@@ -133,7 +133,7 @@ const HeroSection = () => {
 
       {/* Manifest Section - DESKTOP/TABLET */}
       <div className="hidden md:block container mx-auto px-12 lg:px-16 pb-32">
-        <h2 className="text-2xl lg:text-3xl xl:text-4xl font-bold leading-relaxed text-black text-center">
+        <h2 className="text-3xl lg:text-4xl xl:text-5xl font-heading font-bold leading-relaxed text-black text-center">
           CURIA. VÍME, CO FUNGUJE. ZBYTEK NEDĚLÁME.
         </h2>
       </div>
@@ -203,7 +203,7 @@ const HeroSection = () => {
 
       {/* Manifest Section - MOBILE */}
       <div className="block md:hidden container mx-auto px-6 pb-24">
-        <h2 className="text-xl font-bold leading-relaxed text-black text-center">
+        <h2 className="text-2xl font-heading font-bold leading-tight text-black text-center">
           CURIA. VÍME, CO FUNGUJE.
           <br />
           ZBYTEK NEDĚLÁME.

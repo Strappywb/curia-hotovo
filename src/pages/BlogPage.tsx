@@ -66,7 +66,7 @@ const BlogPage = () => {
       <main className="overflow-x-hidden bg-white">
         {/* Hero */}
         <section className="container mx-auto px-6 md:px-12 lg:px-16 py-32 md:py-40">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-black mb-8 leading-tight">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold text-black mb-8 leading-tight">
             Archiv poznatků
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 max-w-3xl leading-relaxed">
@@ -92,7 +92,7 @@ const BlogPage = () => {
                 </div>
                 <div>
                   <p className="text-sm text-gray-500 mb-3">{post.category}</p>
-                  <h2 className="text-2xl md:text-3xl font-semibold text-black mb-3 group-hover:opacity-70 transition-opacity">
+                  <h2 className="text-2xl md:text-3xl font-heading font-semibold text-black mb-3 group-hover:opacity-70 transition-opacity">
                     {post.title}
                   </h2>
                   <p className="text-base text-gray-600 mb-4 leading-relaxed">

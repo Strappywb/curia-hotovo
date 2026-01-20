@@ -53,7 +53,7 @@ const ProjektyPage = () => {
       <main className="overflow-x-hidden bg-white">
         {/* Hero */}
         <section className="container mx-auto px-6 md:px-12 lg:px-16 py-32 md:py-40">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-black mb-8 leading-tight">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold text-black mb-8 leading-tight">
             Vybrané projekty
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 max-w-3xl leading-relaxed">
@@ -81,7 +81,7 @@ const ProjektyPage = () => {
             <div className="flex items-start justify-between">
               <div>
                 <p className="text-sm text-gray-500 mb-2">PLATFORMA</p>
-                <h3 className="text-3xl lg:text-4xl font-semibold text-black">
+                <h3 className="text-3xl lg:text-4xl font-heading font-semibold text-black">
                   Mados. Architektura obchodního růstu
                 </h3>
                 <p className="text-base text-gray-600 mt-2">
@@ -115,7 +115,7 @@ const ProjektyPage = () => {
             <div className="flex items-start justify-between">
               <div>
                 <p className="text-sm text-gray-500 mb-2">IDENTITA</p>
-                <h3 className="text-3xl lg:text-4xl font-semibold text-black">
+                <h3 className="text-3xl lg:text-4xl font-heading font-semibold text-black">
                   Comet. Architektura průmyslové identity.
                 </h3>
               </div>
@@ -187,7 +187,7 @@ const ProjektyPage = () => {
 
             <div>
               <p className="text-sm text-gray-500 mb-2">PLATFORMA</p>
-              <h3 className="text-2xl font-semibold text-black mb-4">
+              <h3 className="text-2xl font-heading font-semibold text-black mb-4">
                 Mados. Architektura obchodního růstu
               </h3>
               <p className="text-sm text-gray-600 mb-4">
@@ -219,7 +219,7 @@ const ProjektyPage = () => {
 
             <div>
               <p className="text-sm text-gray-500 mb-2">IDENTITA</p>
-              <h3 className="text-2xl font-semibold text-black mb-4">
+              <h3 className="text-2xl font-heading font-semibold text-black mb-4">
                 Comet. Architektura průmyslové identity.
               </h3>
               <button 
@@ -251,7 +251,7 @@ const ProjektyPage = () => {
 
             <div>
               <p className="text-sm text-gray-500 mb-2">IDENTITA</p>
-              <h3 className="text-2xl font-semibold text-black mb-3">
+              <h3 className="text-2xl font-heading font-semibold text-black mb-3">
                 K+K.Kačmáček. Architektura moderní tradice.
               </h3>
               <p className="text-sm text-gray-600 mb-4">

@@ -17,7 +17,7 @@ const KarieraPage = () => {
       <main className="overflow-x-hidden bg-white">
         {/* Hero Section */}
         <section className="container mx-auto px-6 md:px-12 lg:px-16 py-32 md:py-40">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-black mb-8 leading-tight max-w-5xl">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold text-black mb-8 leading-tight max-w-5xl">
             Pracuj na projektech, které mají impact
           </h1>
           <div className="max-w-3xl space-y-6 text-xl md:text-2xl text-gray-600 leading-relaxed">

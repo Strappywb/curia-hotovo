@@ -56,7 +56,7 @@ const SluzbyPage = () => {
         {/* Hero Section */}
         <section className="py-32 px-6 md:px-12 lg:px-16">
           <div className="container mx-auto max-w-7xl">
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-black mb-8 leading-tight">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold text-black mb-8 leading-tight">
               Komplexní partner digitálních inovací
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 max-w-3xl leading-relaxed">
@@ -105,7 +105,7 @@ const SluzbyPage = () => {
               {/* Text - First on mobile */}
               <div className="px-6 md:px-0 mb-12 md:mb-0 lg:order-2">
                 <div className="text-sm font-medium text-gray-500 mb-4">02</div>
-                <h2 className="text-4xl md:text-6xl font-bold text-black mb-6">
+                <h2 className="text-4xl md:text-6xl font-heading font-bold text-black mb-6">
                   Systémy
                 </h2>
                 <p className="text-lg md:text-xl text-gray-600 mb-12 leading-relaxed">
@@ -137,7 +137,7 @@ const SluzbyPage = () => {
               {/* Left - Text */}
               <div className="px-6 md:px-0 mb-12 md:mb-0">
                 <div className="text-sm font-medium text-gray-500 mb-4">03</div>
-                <h2 className="text-4xl md:text-6xl font-bold text-black mb-6">
+                <h2 className="text-4xl md:text-6xl font-heading font-bold text-black mb-6">
                   Platformy
                 </h2>
 
@@ -170,7 +170,7 @@ const SluzbyPage = () => {
               {/* Text - First on mobile */}
               <div className="px-6 md:px-0 mb-12 md:mb-0 lg:order-2">
                 <div className="text-sm font-medium text-gray-500 mb-4">04</div>
-                <h2 className="text-4xl md:text-6xl font-bold text-black mb-6">
+                <h2 className="text-4xl md:text-6xl font-heading font-bold text-black mb-6">
                   Produkce
                 </h2>
                 <p className="text-lg md:text-xl text-gray-600 mb-12 leading-relaxed">
@@ -202,7 +202,7 @@ const SluzbyPage = () => {
               {/* Left - Text */}
               <div className="px-6 md:px-0 mb-16 md:mb-0">
                 <div className="text-sm font-medium text-gray-500 mb-4">05</div>
-                <h2 className="text-4xl md:text-6xl font-bold text-black mb-6">
+                <h2 className="text-4xl md:text-6xl font-heading font-bold text-black mb-6">
                   Strategie
                 </h2>
 
