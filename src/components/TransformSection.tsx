@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const TransformSection = () => {
   return (
     <>
@@ -11,12 +13,12 @@ const TransformSection = () => {
             <p className="text-xl lg:text-2xl text-gray-700 leading-relaxed mb-12">
               Jsme studio zaměřené na funkční design, moderní technologie a strategický vhled. Tvoříme ucelené vizuální identity a digitální systémy, které spojují váš záměr s lidmi skrze každý jeden detail.
             </p>
-            <button className="inline-flex items-center gap-3 text-black hover:opacity-70 transition-opacity">
+            <Link to="/sluzby" className="inline-flex items-center gap-3 text-black hover:opacity-70 transition-opacity">
               <span className="text-lg font-medium">Prozkoumat služby</span>
               <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -30,12 +32,12 @@ const TransformSection = () => {
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
             Jsme studio zaměřené na funkční design, moderní technologie a strategický vhled. Tvoříme ucelené vizuální identity a digitální systémy, které spojují váš záměr s lidmi skrze každý jeden detail.
           </p>
-          <button className="inline-flex items-center gap-2 text-black hover:opacity-70 transition-opacity">
+          <Link to="/sluzby" className="inline-flex items-center gap-2 text-black hover:opacity-70 transition-opacity">
             <span className="text-base font-medium">Prozkoumat služby</span>
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
-          </button>
+          </Link>
         </div>
       </section>
     </>
