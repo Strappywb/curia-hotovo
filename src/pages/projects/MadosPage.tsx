@@ -3,7 +3,9 @@ import Header from "@/components/Header";
 import FooterNew from "@/components/FooterNew";
 import ContactFormSection from "@/components/ContactFormSection";
 import newportfolio11 from "@/assets/newportfolio11.mp4";
+import newportfolio11Webm from "@/assets/newportfolio11.webm";
 import mados2 from "@/assets/mados2.mp4";
+import mados2Webm from "@/assets/mados2.webm";
 import madosphone from "@/assets/verdikt-mados.webp";
 
 const MadosPage = () => {
@@ -33,13 +35,15 @@ const MadosPage = () => {
         <section className="pb-20">
           <div className="w-full aspect-[21/9] overflow-hidden">
             <video 
-              src={newportfolio11} 
               autoPlay 
               loop 
               muted 
               playsInline
               className="w-full h-full object-cover"
-            />
+            >
+              <source src={newportfolio11Webm} type="video/webm" />
+              <source src={newportfolio11} type="video/mp4" />
+            </video>
           </div>
         </section>
 
@@ -85,13 +89,15 @@ const MadosPage = () => {
         <section className="pb-20">
           <div className="w-full aspect-[21/9] overflow-hidden">
             <video 
-              src={mados2} 
               autoPlay 
               loop 
               muted 
               playsInline
               className="w-full h-full object-cover"
-            />
+            >
+              <source src={mados2Webm} type="video/webm" />
+              <source src={mados2} type="video/mp4" />
+            </video>
           </div>
         </section>
 

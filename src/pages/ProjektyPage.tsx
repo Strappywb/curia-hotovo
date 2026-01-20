@@ -5,8 +5,11 @@ import Header from "@/components/Header";
 import FooterNew from "@/components/FooterNew";
 import ContactFormSection from "@/components/ContactFormSection";
 import cometaVideo from "@/assets/cometaportfolio.mp4";
+import cometaVideoWebm from "@/assets/cometaportfolio.webm";
 import newportfolio11 from "@/assets/newportfolio11.mp4";
+import newportfolio11Webm from "@/assets/newportfolio11.webm";
 import kkvideo from "@/assets/kkvideo.mp4";
+import kkvideoWebm from "@/assets/kkvideo.webm";
 
 const ProjektyPage = () => {
   const imageRefs = useRef<(HTMLDivElement | null)[]>([]);
@@ -64,13 +67,15 @@ const ProjektyPage = () => {
           <div className="mb-32">
             <div className="w-full aspect-[21/9] bg-white rounded-2xl overflow-hidden mb-8">
               <video 
-                src={newportfolio11} 
                 autoPlay 
                 loop 
                 muted 
                 playsInline
                 className="w-full h-full object-cover"
-              />
+              >
+                <source src={newportfolio11Webm} type="video/webm" />
+                <source src={newportfolio11} type="video/mp4" />
+              </video>
             </div>
 
             <div className="flex items-start justify-between">
@@ -96,13 +101,15 @@ const ProjektyPage = () => {
           <div className="mb-32">
             <div className="w-full aspect-[21/9] bg-white rounded-2xl overflow-hidden mb-8">
               <video 
-                src={cometaVideo} 
                 autoPlay 
                 loop 
                 muted 
                 playsInline
                 className="w-full h-full object-cover"
-              />
+              >
+                <source src={cometaVideoWebm} type="video/webm" />
+                <source src={cometaVideo} type="video/mp4" />
+              </video>
             </div>
 
             <div className="flex items-start justify-between">
@@ -128,13 +135,15 @@ const ProjektyPage = () => {
           <div>
             <div className="w-full aspect-[21/9] rounded-2xl overflow-hidden mb-8">
               <video 
-                src={kkvideo} 
                 autoPlay 
                 loop 
                 muted 
                 playsInline
                 className="w-full h-full object-cover"
-              />
+              >
+                <source src={kkvideoWebm} type="video/webm" />
+                <source src={kkvideo} type="video/mp4" />
+              </video>
             </div>
             <div className="flex items-start justify-between">
               <div>
@@ -165,13 +174,15 @@ const ProjektyPage = () => {
           <div className="mb-16">
             <div className="w-full aspect-[16/9] bg-white overflow-hidden mb-6">
               <video 
-                src={newportfolio11} 
                 autoPlay 
                 loop 
                 muted 
                 playsInline
                 className="w-full h-full object-cover"
-              />
+              >
+                <source src={newportfolio11Webm} type="video/webm" />
+                <source src={newportfolio11} type="video/mp4" />
+              </video>
             </div>
 
             <div>
@@ -195,13 +206,15 @@ const ProjektyPage = () => {
           <div className="mb-16">
             <div className="w-full aspect-[16/9] bg-white overflow-hidden mb-6">
               <video 
-                src={cometaVideo} 
                 autoPlay 
                 loop 
                 muted 
                 playsInline
                 className="w-full h-full object-cover"
-              />
+              >
+                <source src={cometaVideoWebm} type="video/webm" />
+                <source src={cometaVideo} type="video/mp4" />
+              </video>
             </div>
 
             <div>
@@ -225,13 +238,15 @@ const ProjektyPage = () => {
           <div>
             <div className="w-full aspect-[16/9] overflow-hidden mb-6">
               <video 
-                src={kkvideo} 
                 autoPlay 
                 loop 
                 muted 
                 playsInline
                 className="w-full h-full object-cover"
-              />
+              >
+                <source src={kkvideoWebm} type="video/webm" />
+                <source src={kkvideo} type="video/mp4" />
+              </video>
             </div>
 
             <div>

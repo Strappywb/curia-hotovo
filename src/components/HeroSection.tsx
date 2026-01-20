@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import curiaHeroNew from "@/assets/curiaheronew2.webp";
 import heroVideo from "@/assets/herovideocuria2.mp4";
+import heroVideoWebm from "@/assets/herovideocuria2.webm";
 import webdesignImg from "@/assets/webdesign.webp";
 import brandingImg from "@/assets/CURIAbranding.webp";
 import marketingImg from "@/assets/marketinghero.webp";
@@ -188,13 +189,15 @@ const HeroSection = () => {
       <div className="block md:hidden w-full pb-24">
         <div className="w-full aspect-square bg-gray-100 overflow-hidden">
           <video 
-            src={heroVideo} 
             autoPlay 
             loop 
             muted 
             playsInline
             className="w-full h-full object-cover"
-          />
+          >
+            <source src={heroVideoWebm} type="video/webm" />
+            <source src={heroVideo} type="video/mp4" />
+          </video>
         </div>
       </div>
 
