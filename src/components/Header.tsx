@@ -64,19 +64,27 @@ const Header = () => {
       <div className={`max-w-6xl mx-auto px-6 md:px-8 lg:px-12 rounded-full transition-all duration-300 ${
         scrolled ? 'bg-white/95 backdrop-blur-sm border border-gray-200' : 'bg-white/60 backdrop-blur-md border border-gray-100'
       }`}>
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link 
             to="/"
             onClick={() => { setMobileMenuOpen(false); }}
-            className="flex items-center gap-1.5"
+            className="flex items-center"
+            style={{ gap: '-4px' }}
           >
             <img src={newsymbol} alt="CURIA logo" className="w-20 h-20 object-contain" />
-            <span className="text-3xl font-bold tracking-tight text-black uppercase">curia</span>
+            <span className="text-3xl font-heading tracking-tight text-black uppercase" style={{ fontWeight: 900, marginLeft: '-22px' }}>curia</span>
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
+            <Link
+              to="/"
+              className="text-[15px] font-normal text-black hover:opacity-60 transition-opacity"
+            >
+              Domů
+            </Link>
+            
             <Link
               to="/projekty"
               className="text-[15px] font-normal text-black hover:opacity-60 transition-opacity"
