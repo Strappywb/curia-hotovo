@@ -18,7 +18,7 @@ const AboutPage = () => {
       <main className="overflow-x-hidden bg-[#2a2a2a]">
         {/* Hero Section */}
         <section className="container mx-auto px-6 md:px-12 lg:px-16 py-32 md:py-40">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-stone-200 leading-tight max-w-5xl">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold text-stone-200 leading-tight max-w-5xl">
             Vytváříme digitální systémy pro značky, které mají ambici vést svůj obor.
           </h1>
         </section>
@@ -112,14 +112,14 @@ const AboutPage = () => {
 
         {/* Capabilities Section */}
         <section className="container mx-auto px-6 md:px-12 lg:px-16 pb-32 md:pb-40">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-stone-200 mb-16 md:mb-24">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-stone-200 mb-16 md:mb-24">
             Služby
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-16">
             {/* Branding */}
             <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-stone-200 mb-6">Branding</h3>
+              <h3 className="text-2xl font-heading font-bold text-stone-200 mb-6">Branding</h3>
               <ul className="space-y-3 text-lg text-stone-400">
                 <li>Strategie značky</li>
                 <li>Vizuální identita</li>
@@ -131,7 +131,7 @@ const AboutPage = () => {
 
             {/* Web & Digitál */}
             <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-stone-200 mb-6">Web & Digitál</h3>
+              <h3 className="text-2xl font-heading font-bold text-stone-200 mb-6">Web & Digitál</h3>
               <ul className="space-y-3 text-lg text-stone-400">
                 <li>UX/UI Design</li>
                 <li>Design systémy</li>
@@ -143,7 +143,7 @@ const AboutPage = () => {
 
             {/* Development */}
             <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-stone-200 mb-6">Development</h3>
+              <h3 className="text-2xl font-heading font-bold text-stone-200 mb-6">Development</h3>
               <ul className="space-y-3 text-lg text-stone-400">
                 <li>Frontend vývoj</li>
                 <li>Backend & API</li>
@@ -155,7 +155,7 @@ const AboutPage = () => {
 
             {/* Marketing */}
             <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-stone-200 mb-6">Marketing</h3>
+              <h3 className="text-2xl font-heading font-bold text-stone-200 mb-6">Marketing</h3>
               <ul className="space-y-3 text-lg text-stone-400">
                 <li>Content strategie</li>
                 <li>SEO & technické SEO</li>
@@ -167,7 +167,7 @@ const AboutPage = () => {
 
             {/* Grafika */}
             <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-stone-200 mb-6">Grafika</h3>
+              <h3 className="text-2xl font-heading font-bold text-stone-200 mb-6">Grafika</h3>
               <ul className="space-y-3 text-lg text-stone-400">
                 <li>Art direction</li>
                 <li>Ilustrace & grafika</li>
@@ -179,7 +179,7 @@ const AboutPage = () => {
 
             {/* Strategie */}
             <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-stone-200 mb-6">Strategie</h3>
+              <h3 className="text-2xl font-heading font-bold text-stone-200 mb-6">Strategie</h3>
               <ul className="space-y-3 text-lg text-stone-400">
                 <li>Digitální audit</li>
                 <li>User research</li>
