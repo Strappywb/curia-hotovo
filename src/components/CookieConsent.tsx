@@ -36,15 +36,15 @@ const CookieConsent = () => {
               COOKIES.
             </h3>
             <p className="font-body text-sm md:text-base text-white/70 leading-relaxed">
-              Používáme cookies pro analýzu návštěvnosti a zlepšení vašeho zážitku. 
-              Pokračováním souhlasíte s jejich používáním.{" "}
+              Používáme cookies pro analytiku a optimalizaci webu. Žádné trackování, žádný spam. 
+              Jen technické nástroje, které nám pomáhají vytvářet lepší web.{" "}
               <a 
                 href="https://policies.google.com/privacy?hl=cs" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-white underline hover:text-[#CCFF00] transition-colors"
               >
-                Více informací
+                Více o cookies
               </a>
             </p>
           </div>
