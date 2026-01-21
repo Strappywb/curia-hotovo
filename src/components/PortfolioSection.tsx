@@ -45,6 +45,9 @@ const PortfolioSection = () => {
     <>
       {/* Desktop/Tablet */}
       <section className="hidden md:block bg-white container mx-auto px-12 lg:px-16 pb-32">
+        {/* Section Title - visually hidden for SEO */}
+        <h2 className="sr-only">Naše projekty</h2>
+        
         {/* Video Project */}
         <div className="mb-32">
           <div className="w-full aspect-[21/9] bg-white rounded-2xl overflow-hidden mb-8">
@@ -206,6 +209,9 @@ const PortfolioSection = () => {
 
       {/* Mobile */}
       <section className="block md:hidden bg-white pb-24">
+        {/* Section Title - visually hidden for SEO */}
+        <h2 className="sr-only">Naše projekty</h2>
+        
         {/* Video Project */}
         <div className="mb-16">
           <div className="w-full aspect-[16/9] bg-white overflow-hidden mb-6">
