@@ -6,21 +6,21 @@ import Header from "@/components/Header";
 import Footer from "@/components/FooterNew";
 import TalkCtaSection from "@/components/TalkCtaSection";
 import ClientsSection from "@/components/ClientsSection";
-import webdesignCard from "@/assets/sluzby/webdesign.png";
-import brandingCard from "@/assets/sluzby/branding.png";
-import marketingCard from "@/assets/sluzby/marketing2.png";
-import grafikaCard from "@/assets/sluzby/Grafika.png";
-import aplikaceCard from "@/assets/sluzby/aplikace2.png";
+import webdesignCard from "@/assets/sluzby/webdesign.webp";
+import brandingCard from "@/assets/sluzby/branding.webp";
+import marketingCard from "@/assets/sluzby/marketing2.webp";
+import grafikaCard from "@/assets/sluzby/Grafika.webp";
+import aplikaceCard from "@/assets/sluzby/aplikace2.webp";
 
-import heroImg from "@/assets/sluzby/30/50.png";
-import hero2Img from "@/assets/sluzby/30/51.png";
-import hero3Img from "@/assets/sluzby/30/52.png";
-import featureImg1 from "@/assets/sluzby/30/56.png";
-import featureImg2 from "@/assets/sluzby/30/57.png";
-import featureImg3 from "@/assets/sluzby/30/58.png";
-import testimonialImg1 from "@/assets/sluzby/30/50.png";
-import testimonialImg2 from "@/assets/sluzby/30/54.png";
-import testimonialImg3 from "@/assets/sluzby/30/55.png";
+import heroImg from "@/assets/sluzby/30/50.webp";
+import hero2Img from "@/assets/sluzby/30/51.webp";
+import hero3Img from "@/assets/sluzby/30/52.webp";
+import featureImg1 from "@/assets/sluzby/30/56.webp";
+import featureImg2 from "@/assets/sluzby/30/57.webp";
+import featureImg3 from "@/assets/sluzby/30/58.webp";
+import testimonialImg1 from "@/assets/sluzby/30/50.webp";
+import testimonialImg2 from "@/assets/sluzby/30/54.webp";
+import testimonialImg3 from "@/assets/sluzby/30/55.webp";
 
 const testimonials = [
   {

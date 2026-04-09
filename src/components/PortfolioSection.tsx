@@ -2,11 +2,11 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import kk20 from "@/assets/sluzby/kk20.png";
-import portfolio3 from "@/assets/sluzby/mockupkk.png";
+import kk20 from "@/assets/sluzby/kk20.webp";
+import portfolio3 from "@/assets/sluzby/mockupkk.webp";
 import newportfolio5 from "@/assets/newportfolio5.webp";
 import newportfolio6 from "@/assets/newportfolio6.webp";
-import sturm2 from "@/assets/sluzby/sturm2.png";
+import sturm2 from "@/assets/sluzby/sturm2.webp";
 
 const projects = [
   {

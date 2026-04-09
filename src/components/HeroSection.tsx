@@ -1,11 +1,11 @@
 "use client";
 
 import { useEffect, useRef, useState, useCallback } from "react";
-import brandingCard from "@/assets/sluzby/branding.png";
-import webdesignCard from "@/assets/sluzby/webdesign.png";
-import marketingCard from "@/assets/sluzby/marketing2.png";
-import grafikaCard from "@/assets/sluzby/Grafika.png";
-import aplikaceCard from "@/assets/sluzby/aplikace2.png";
+import brandingCard from "@/assets/sluzby/branding.webp";
+import webdesignCard from "@/assets/sluzby/webdesign.webp";
+import marketingCard from "@/assets/sluzby/marketing2.webp";
+import grafikaCard from "@/assets/sluzby/Grafika.webp";
+import aplikaceCard from "@/assets/sluzby/aplikace2.webp";
 
 const ServiceCard = ({ service }: { service: { id: string; name: string; description: string; image: string; href?: string } }) => {
   const cardRef = useRef<HTMLAnchorElement>(null);
