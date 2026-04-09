@@ -1,4 +1,7 @@
-import { Link, useLocation, useNavigate } from "react-router-dom";
+"use client";
+
+import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 
 const services = [
   { name: "Webdesign & Vývoj", path: "/webdesign" },
@@ -9,9 +12,9 @@ const services = [
 ];
 
 const Footer = () => {
-  const location = useLocation();
-  const navigate = useNavigate();
-  const isHomePage = location.pathname === "/";
+  const pathname = usePathname();
+  const router = useRouter();
+  const isHomePage = pathname === "/";
 
   const handleNavClick = (sectionId: string) => {
     if (isHomePage) {
@@ -20,7 +23,7 @@ const Footer = () => {
         element.scrollIntoView({ behavior: "smooth" });
       }
     } else {
-      navigate(`/#${sectionId}`);
+      router.push(`/#${sectionId}`);
     }
   };
 
@@ -32,7 +35,7 @@ const Footer = () => {
           {/* Logo */}
           <div>
             <Link 
-              to="/"
+              href="/"
               className="font-heading text-3xl md:text-4xl font-black text-white block"
             >
               CURIA
@@ -74,7 +77,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    to="/blog"
+                    href="/blog"
                     className="font-heading text-gray-400 hover:text-white transition-colors"
                   >
                     Archiv poznatků
@@ -90,7 +93,7 @@ const Footer = () => {
                 {services.map((service) => (
                   <li key={service.path}>
                     <Link
-                      to={service.path}
+                      href={service.path}
                       className="font-heading text-gray-400 hover:text-white transition-colors"
                     >
                       {service.name}

@@ -1,5 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const blogPosts = [
   {
@@ -61,7 +61,7 @@ const BlogSection = () => {
           {blogPosts.map((post) => (
             <Link
               key={post.id}
-              to={post.slug}
+              href={post.slug}
               className="bg-gray-50 group cursor-pointer hover:bg-gray-100 transition-colors overflow-hidden rounded-2xl"
             >
               <div className="aspect-video overflow-hidden">

@@ -1,379 +1,283 @@
-import { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
-import cometaVideo from "@/assets/cometaportfolio.mp4";
-import cometaVideoWebm from "@/assets/cometaportfolio.webm";
-import portfolio1 from "@/assets/portfolionew1.webp";
-import portfolio3 from "@/assets/portfolionew3.webp";
-import newportfolio11 from "@/assets/newportfolio11.mp4";
-import newportfolio11Webm from "@/assets/newportfolio11.webm";
+"use client";
+
+import { useState } from "react";
+import Link from "next/link";
+import kk20 from "@/assets/sluzby/kk20.webp";
+import portfolio3 from "@/assets/sluzby/mockupkk.webp";
 import newportfolio5 from "@/assets/newportfolio5.webp";
 import newportfolio6 from "@/assets/newportfolio6.webp";
+import sturm2 from "@/assets/sluzby/sturm2.webp";
+
+const projects = [
+  {
+    id: "comet",
+    name: "Comet",
+    subtitle: "Architektura průmyslové identity",
+    type: "video" as const,
+    src: "/videos/cometaportfolio.mp4",
+    webm: "/videos/cometaportfolio.webm",
+    href: "#",
+    popup: true,
+  },
+  {
+    id: "kk-logo",
+    name: "K+K Kačmáček",
+    subtitle: "Webový ekosystém a digitální prezentace",
+    type: "image" as const,
+    src: portfolio3.src,
+    href: "#",
+    popup: true,
+  },
+  {
+    id: "mados",
+    name: "Mados",
+    subtitle: "Architektura obchodního růstu",
+    type: "video" as const,
+    src: "/videos/newportfolio11.mp4",
+    webm: "/videos/newportfolio11.webm",
+    href: "/projekty/mados",
+    popup: false,
+  },
+  {
+    id: "aura",
+    name: "Aura",
+    subtitle: "Vizuální systém pro SaaS platformu",
+    type: "image" as const,
+    src: newportfolio5.src,
+    href: "#",
+    popup: true,
+  },
+  {
+    id: "hf",
+    name: "HF Stavby",
+    subtitle: "Digitální autorita v oblasti revitalizace",
+    type: "image" as const,
+    src: newportfolio6.src,
+    href: "#",
+    popup: true,
+  },
+  {
+    id: "vant",
+    name: "Vant",
+    subtitle: "Stavební materiály za lepší ceny, bez zbytečností",
+    type: "video" as const,
+    src: "/videos/vant.mp4",
+    webm: "/videos/vant.webm",
+    href: "#",
+    popup: true,
+  },
+  {
+    id: "sturm",
+    name: "Sturm",
+    subtitle: "Web pro finančního poradce, co budí důvěru",
+    type: "image" as const,
+    src: sturm2.src,
+    href: "#",
+    popup: true,
+  },
+  {
+    id: "printeria",
+    name: "Printeria",
+    subtitle: "Digitální tvář tiskařské firmy",
+    type: "video" as const,
+    src: "/videos/printeria.mp4",
+    webm: "/videos/printeria.webm",
+    href: "#",
+    popup: true,
+  },
+  {
+    id: "kk-web",
+    name: "K+K Kačmáček",
+    subtitle: "Kompletní vizuální identita pro autoservis",
+    type: "image" as const,
+    src: kk20.src,
+    href: "#",
+    popup: true,
+  },
+];
+
+// Grid layout: [colSpan, aspect, offsetTop]
+const gridLayout = [
+  { col: "col-span-7", aspect: "aspect-[4/3]", pt: "" },
+  { col: "col-span-5", aspect: "aspect-[3/4]", pt: "pt-24 lg:pt-32" },
+  { col: "col-span-5", aspect: "aspect-[3/4]", pt: "" },
+  { col: "col-span-7", aspect: "aspect-[4/3]", pt: "pt-24 lg:pt-32" },
+  { col: "col-span-7", aspect: "aspect-[4/3]", pt: "" },
+  { col: "col-span-5", aspect: "aspect-[3/4]", pt: "pt-24 lg:pt-32" },
+  { col: "col-span-5", aspect: "aspect-[3/4]", pt: "" },
+  { col: "col-span-7", aspect: "aspect-[4/3]", pt: "pt-24 lg:pt-32" },
+  { col: "col-span-12", aspect: "aspect-[21/9]", pt: "" },
+];
 
 const PortfolioSection = () => {
-  const imageRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [showPopup, setShowPopup] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      // Only apply parallax on desktop/tablet (768px and up)
-      if (window.innerWidth < 768) return;
+  const renderMedia = (project: typeof projects[0], className: string) => {
+    if (project.type === "video") {
+      return project.webm ? (
+        <video autoPlay loop muted playsInline className={className}>
+          <source src={project.webm} type="video/webm" />
+          <source src={project.src} type="video/mp4" />
+        </video>
+      ) : (
+        <video src={project.src} autoPlay loop muted playsInline className={className} />
+      );
+    }
+    return <img src={project.src} alt={project.name} className={className} />;
+  };
 
-      imageRefs.current.forEach((img) => {
-        if (!img) return;
-        const rect = img.getBoundingClientRect();
-        const windowHeight = window.innerHeight;
-        
-        // Calculate how much of the element is visible
-        if (rect.top < windowHeight && rect.bottom > 0) {
-          const scrolled = windowHeight - rect.top;
-          const rate = scrolled * 0.1; // Parallax speed
-          img.style.transform = `translateY(${-rate}px)`;
-        }
-      });
-    };
+  const renderCard = (project: typeof projects[0], layout: typeof gridLayout[0]) => {
+    const inner = (
+      <>
+        <div className={`w-full ${layout.aspect} rounded-2xl overflow-hidden mb-4`}>
+          {renderMedia(project, "w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]")}
+        </div>
+        <h3 className="text-2xl lg:text-[1.7rem] font-semibold text-black leading-tight">
+          {project.name}
+        </h3>
+        <p className="text-base text-gray-500 mt-1 max-h-0 overflow-hidden opacity-0 transition-all duration-400 group-hover:max-h-10 group-hover:opacity-100">
+          {project.subtitle}
+        </p>
+      </>
+    );
 
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    window.addEventListener("resize", handleScroll);
-    handleScroll();
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("resize", handleScroll);
-    };
-  }, []);
+    if (project.popup) {
+      return (
+        <div className={`${layout.col} ${layout.pt}`} key={project.id}>
+          <button onClick={() => setShowPopup(true)} className="block w-full text-left group">
+            {inner}
+          </button>
+        </div>
+      );
+    }
+
+    return (
+      <div className={`${layout.col} ${layout.pt}`} key={project.id}>
+        <Link href={project.href} className="block w-full group">
+          {inner}
+        </Link>
+      </div>
+    );
+  };
 
   return (
     <>
-      {/* Desktop/Tablet */}
-      <section className="hidden md:block bg-white container mx-auto px-12 lg:px-16 pb-32">
-        {/* Section Title - visually hidden for SEO */}
-        <h2 className="sr-only">Naše projekty</h2>
-        
-        {/* Video Project */}
-        <div className="mb-32">
-          <div className="w-full aspect-[21/9] bg-white rounded-2xl overflow-hidden mb-8">
-            <video 
-              src={cometaVideo} 
-              autoPlay 
-              loop 
-              muted 
-              playsInline
-              className="w-full h-full object-cover"
-            />
-          </div>
-
-          <div className="flex items-start justify-between">
+      {/* Intro section - Desktop */}
+      <section className="hidden md:block bg-white pt-32 pb-20">
+        <div className="max-w-[1400px] mx-auto px-8 lg:px-12">
+          <div className="grid grid-cols-2 gap-20">
             <div>
-              <p className="text-sm text-gray-500 mb-2">IDENTITA</p>
-              <h3 className="text-3xl lg:text-4xl font-semibold text-black">
-                Comet. Architektura průmyslové identity.
-              </h3>
-            </div>
-            <button 
-              onClick={() => setShowPopup(true)}
-              className="flex items-center gap-2 text-black hover:opacity-70 transition-opacity"
-            >
-              <span className="text-base font-medium">Prozkoumat projekt</span>
-              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </button>
-          </div>
-        </div>
-
-        {/* Image Projects - Floating Layout */}
-        <div className="flex gap-16 lg:gap-20">
-          {/* Project 1 - Slack (Left, Higher) */}
-          <div className="flex-1 space-y-8">
-            <div ref={(el) => (imageRefs.current[0] = el)} className="w-full aspect-[4/3] bg-gray-100 rounded-2xl overflow-hidden transition-transform duration-100 ease-out">
-              <img 
-                src={portfolio1} 
-                alt="Slack project" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div>
-              <p className="text-sm text-gray-500 mb-2">SYMBOL</p>
-              <h3 className="text-3xl lg:text-4xl font-semibold text-black">
-                Vizuální identita pro globální technologický subjekt
-              </h3>
-            </div>
-          </div>
-
-          {/* Project 2 - STC Bank (Right, Lower) */}
-          <div className="flex-1 mt-64 space-y-8">
-            <div ref={(el) => (imageRefs.current[1] = el)} className="w-full max-w-lg rounded-2xl overflow-hidden transition-transform duration-100 ease-out">
-              <img 
-                src={portfolio3} 
-                alt="STC Bank project" 
-                className="w-full h-auto object-contain"
-              />
-            </div>
-            <div>
-              <p className="text-sm text-gray-500 mb-2">IDENTITA</p>
-              <h3 className="text-3xl lg:text-4xl font-semibold text-black">
-                K+K.Kačmáček. Architektura moderní tradice.
-              </h3>
-              <p className="text-base text-gray-600 mt-2">
-                Strategická transformace a redefinice vizuálního ekosystému pro lídra v oblasti mobility.
-              </p>
-              <button 
-                onClick={() => setShowPopup(true)}
-                className="flex items-center gap-2 text-black hover:opacity-70 transition-opacity mt-4"
-              >
-                <span className="text-base font-medium">Prozkoumat projekt</span>
-                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <h2 className="text-4xl lg:text-5xl xl:text-6xl font-heading font-bold text-black leading-tight">
+                Pro firmy, které to<br />myslí vážně
+              </h2>
+              <Link href="/projekty" className="inline-flex items-center gap-2 mt-6 text-black hover:opacity-70 transition-opacity">
+                <span className="text-base font-medium">Všechny projekty</span>
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
-              </button>
+              </Link>
+            </div>
+            <div className="flex items-end">
+              <p className="text-lg lg:text-xl text-gray-600 leading-relaxed">
+                Spolupracujeme s firmami a značkami bez ohledu na velikost. Od začínajících projektů po zavedené hráče, kteří chtějí posílit svou digitální přítomnost.
+              </p>
             </div>
           </div>
         </div>
+      </section>
 
-        {/* Second Video Project */}
-        <div className="mt-32">
-          <div className="w-full aspect-[21/9] bg-white rounded-2xl overflow-hidden mb-8">
-            <video 
-              autoPlay 
-              loop 
-              muted 
-              playsInline
-              className="w-full h-full object-cover"
-            >
-              <source src={newportfolio11Webm} type="video/webm" />
-              <source src={newportfolio11} type="video/mp4" />
-            </video>
+      {/* Intro section - Mobile */}
+      <section className="block md:hidden bg-white pt-24 pb-14 px-5">
+        <h2 className="text-3xl font-heading font-bold text-black leading-tight mb-4">
+          Pro firmy, které to myslí vážně
+        </h2>
+        <p className="text-base text-gray-600 leading-relaxed mb-5">
+          Spolupracujeme s firmami a značkami bez ohledu na velikost. Od začínajících projektů po zavedené hráče.
+        </p>
+        <Link href="/projekty" className="inline-flex items-center gap-2 text-black hover:opacity-70 transition-opacity">
+          <span className="text-sm font-medium">Všechny projekty</span>
+          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </Link>
+      </section>
+
+      {/* Desktop/Tablet */}
+      <section className="hidden md:block bg-white pb-32">
+        <h2 className="sr-only">Naše projekty</h2>
+
+        <div className="max-w-[1400px] mx-auto px-8 lg:px-12">
+          {/* Row 1 */}
+          <div className="grid grid-cols-12 gap-6 lg:gap-8 items-start">
+            {renderCard(projects[0], gridLayout[0])}
+            {renderCard(projects[1], gridLayout[1])}
           </div>
 
-          <div className="flex items-start justify-between">
-            <div>
-              <p className="text-sm text-gray-500 mb-2">PLATFORMA</p>
-              <h3 className="text-3xl lg:text-4xl font-semibold text-black">
-                Mados. Architektura obchodního růstu
-              </h3>
-              <p className="text-base text-gray-600 mt-2">
-                Implementace vysokovýkonného digitálního rozhraní pro lídra v segmentu stavebních systémů.
-              </p>
-            </div>
-            <Link to="/projekty/mados" className="flex items-center gap-2 text-black hover:opacity-70 transition-opacity">
-              <span className="text-base font-medium">Prozkoumat projekt</span>
-              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </Link>
-          </div>
-        </div>
-
-        {/* Third Set - Image Projects */}
-        <div className="mt-32 flex gap-16 lg:gap-20">
-          {/* Project 3 - Left, Higher */}
-          <div className="flex-1 space-y-8">
-            <div ref={(el) => (imageRefs.current[2] = el)} className="w-full aspect-[4/3] bg-gray-100 rounded-2xl overflow-hidden transition-transform duration-100 ease-out">
-              <img 
-                src={newportfolio5} 
-                alt="Project" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div>
-              <p className="text-sm text-gray-500 mb-2">SYMBOL</p>
-              <h3 className="text-3xl lg:text-4xl font-semibold text-black">
-                Aura. Vizuální systém pro SaaS platformu.
-              </h3>
-              <p className="text-base text-gray-600 mt-2">
-                Komplexní rebranding a definice nového vizuálního jazyka pro inovativní subjekt v oblasti digitálních služeb.
-              </p>
-            </div>
+          {/* Row 2 */}
+          <div className="grid grid-cols-12 gap-6 lg:gap-8 items-start mt-16 lg:mt-20">
+            {renderCard(projects[2], gridLayout[2])}
+            {renderCard(projects[3], gridLayout[3])}
           </div>
 
-          {/* Project 4 - Right, Lower */}
-          <div className="flex-1 mt-64 space-y-8">
-            <div ref={(el) => (imageRefs.current[3] = el)} className="w-full max-w-lg rounded-2xl overflow-hidden transition-transform duration-100 ease-out">
-              <img 
-                src={newportfolio6} 
-                alt="Project" 
-                className="w-full h-auto object-contain"
-              />
-            </div>
-            <div>
-              <p className="text-sm text-gray-500 mb-2">PLATFORMA</p>
-              <h3 className="text-3xl lg:text-4xl font-semibold text-black">
-                HF. Digitální autorita v oblasti revitalizace.
-              </h3>
-              <p className="text-base text-gray-600 mt-2">
-                Strategická realizace webového portálu pro lídra v segmentu modernizace bytového fondu a stavebních technologií.
-              </p>
-            </div>
+          {/* Row 3 */}
+          <div className="grid grid-cols-12 gap-6 lg:gap-8 items-start mt-16 lg:mt-20">
+            {renderCard(projects[4], gridLayout[4])}
+            {renderCard(projects[5], gridLayout[5])}
+          </div>
+
+          {/* Row 4 */}
+          <div className="grid grid-cols-12 gap-6 lg:gap-8 items-start mt-16 lg:mt-20">
+            {renderCard(projects[6], gridLayout[6])}
+            {renderCard(projects[7], gridLayout[7])}
+          </div>
+
+          {/* Row 5 - full width */}
+          <div className="grid grid-cols-12 gap-6 lg:gap-8 items-start mt-16 lg:mt-20">
+            {renderCard(projects[8], gridLayout[8])}
           </div>
         </div>
       </section>
 
       {/* Mobile */}
       <section className="block md:hidden bg-white pb-24">
-        {/* Section Title - visually hidden for SEO */}
         <h2 className="sr-only">Naše projekty</h2>
-        
-        {/* Video Project */}
-        <div className="mb-16">
-          <div className="w-full aspect-[16/9] bg-white overflow-hidden mb-6">
-            <video 
-              autoPlay 
-              loop 
-              muted 
-              playsInline
-              className="w-full h-full object-cover"
-            >
-              <source src={cometaVideoWebm} type="video/webm" />
-              <source src={cometaVideo} type="video/mp4" />
-            </video>
-          </div>
 
-          <div className="px-6">
-            <p className="text-sm text-gray-500 mb-2">IDENTITA</p>
-            <h3 className="text-2xl font-semibold text-black mb-4">
-              Comet. Architektura průmyslové identity.
-            </h3>
-            <button 
-              onClick={() => setShowPopup(true)}
-              className="flex items-center gap-2 text-black hover:opacity-70 transition-opacity"
-            >
-              <span className="text-base font-medium">Prozkoumat projekt</span>
-              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </button>
-          </div>
-        </div>
+        <div className="px-5 space-y-10">
+          {projects.map((project) => {
+            const inner = (
+              <>
+                <div className="w-full aspect-[4/3] rounded-xl overflow-hidden mb-3">
+                  {renderMedia(project, "w-full h-full object-cover")}
+                </div>
+                <h3 className="text-xl font-semibold text-black">{project.name}</h3>
+                <p className="text-sm text-gray-500 mt-0.5">{project.subtitle}</p>
+              </>
+            );
 
-        {/* Image Project 1 */}
-        <div className="mb-16">
-          <div className="w-full aspect-square bg-gray-100 overflow-hidden mb-6">
-            <img 
-              src={portfolio1} 
-              alt="Slack project" 
-              className="w-full h-full object-cover"
-            />
-          </div>
+            if (project.popup) {
+              return (
+                <button key={project.id} onClick={() => setShowPopup(true)} className="block w-full text-left">
+                  {inner}
+                </button>
+              );
+            }
 
-          <div className="px-6">
-            <p className="text-sm text-gray-500 mb-2">SYMBOL</p>
-            <h3 className="text-2xl font-semibold text-black mb-3">
-              Vizuální identita pro globální technologický subjekt
-            </h3>
-          </div>
-        </div>
-
-        {/* Image Project 2 */}
-        <div className="mb-16">
-          <div className="w-full bg-gray-100 overflow-hidden mb-6">
-            <img 
-              src={portfolio3} 
-              alt="STC Bank project" 
-              className="w-full h-auto object-contain"
-            />
-          </div>
-
-          <div className="px-6">
-            <p className="text-sm text-gray-500 mb-2">IDENTITA</p>
-            <h3 className="text-2xl font-semibold text-black mb-3">
-              K+K.Kačmáček. Architektura moderní tradice.
-            </h3>
-            <p className="text-sm text-gray-600 mb-4">
-              Strategická transformace a redefinice vizuálního ekosystému pro lídra v oblasti mobility.
-            </p>
-            <button 
-              onClick={() => setShowPopup(true)}
-              className="flex items-center gap-2 text-black hover:opacity-70 transition-opacity"
-            >
-              <span className="text-base font-medium">Prozkoumat projekt</span>
-              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </button>
-          </div>
-        </div>
-
-        {/* Second Video Project - Mobile */}
-        <div className="mt-16">
-          <div className="w-full aspect-[16/9] bg-white overflow-hidden mb-6">
-            <video 
-              autoPlay 
-              loop 
-              muted 
-              playsInline
-              className="w-full h-full object-cover"
-            >
-              <source src={newportfolio11Webm} type="video/webm" />
-              <source src={newportfolio11} type="video/mp4" />
-            </video>
-          </div>
-
-          <div className="px-6">
-            <p className="text-sm text-gray-500 mb-2">PLATFORMA</p>
-            <h3 className="text-2xl font-semibold text-black mb-4">
-              Mados. Architektura obchodního růstu
-            </h3>
-            <p className="text-sm text-gray-600 mb-4">
-              Implementace vysokovýkonného digitálního rozhraní pro lídra v segmentu stavebních systémů.
-            </p>
-            <Link to="/projekty/mados" className="flex items-center gap-2 text-black hover:opacity-70 transition-opacity">
-              <span className="text-base font-medium">Prozkoumat projekt</span>
-              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </Link>
-          </div>
-        </div>
-
-        {/* Third Image Project - Mobile */}
-        <div className="mt-16">
-          <div className="w-full aspect-square bg-gray-100 overflow-hidden mb-6">
-            <img 
-              src={newportfolio5} 
-              alt="Project" 
-              className="w-full h-full object-cover"
-            />
-          </div>
-
-          <div className="px-6">
-            <p className="text-sm text-gray-500 mb-2">SYMBOL</p>
-            <h3 className="text-2xl font-semibold text-black mb-3">
-              Aura. Vizuální systém pro SaaS platformu.
-            </h3>
-            <p className="text-sm text-gray-600 mb-4">
-              Komplexní rebranding a definice nového vizuálního jazyka pro inovativní subjekt v oblasti digitálních služeb.
-            </p>
-          </div>
-        </div>
-
-        {/* Fourth Image Project - Mobile */}
-        <div className="mt-16">
-          <div className="w-full aspect-square bg-gray-100 overflow-hidden mb-6">
-            <img 
-              src={newportfolio6} 
-              alt="Project" 
-              className="w-full h-full object-cover"
-            />
-          </div>
-
-          <div className="px-6">
-            <p className="text-sm text-gray-500 mb-2">PLATFORMA</p>
-            <h3 className="text-2xl font-semibold text-black mb-3">
-              HF. Digitální autorita v oblasti revitalizace.
-            </h3>
-            <p className="text-sm text-gray-600 mb-4">
-              Strategická realizace webového portálu pro lídra v segmentu modernizace bytového fondu a stavebních technologií.
-            </p>
-          </div>
+            return (
+              <Link key={project.id} href={project.href} className="block w-full">
+                {inner}
+              </Link>
+            );
+          })}
         </div>
       </section>
 
       {/* Popup */}
       {showPopup && (
-        <div 
+        <div
           className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-6"
           onClick={() => setShowPopup(false)}
         >
-          <div 
+          <div
             className="bg-white rounded-2xl p-8 md:p-12 max-w-md w-full shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >

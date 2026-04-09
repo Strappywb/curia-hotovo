@@ -1,5 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import webdesignImg from "@/assets/webdesign.webp";
 import brandingImg from "@/assets/CURIAbranding.webp";
 import marketingImg from "@/assets/marketinghero.webp";
@@ -12,7 +12,7 @@ const BentoSection = () => {
       <div className="max-w-7xl mx-auto">
       {/* WEBY & UI/UX - Full width like AirPods Pro card */}
       <div className="relative w-full bg-[#0047CC] min-h-[450px] md:min-h-[500px] lg:min-h-[600px] flex flex-col justify-between items-center p-6 pt-10 pb-8 md:p-12 md:pt-16 md:pb-10 lg:p-16 lg:pt-20 lg:pb-12 group rounded-3xl md:rounded-[2.5rem] overflow-hidden ring-4 ring-white">
-        <Link to="/webdesign" className="absolute top-6 right-6 md:top-8 md:right-8 hover:scale-110 transition-transform">
+        <Link href="/webdesign" className="absolute top-6 right-6 md:top-8 md:right-8 hover:scale-110 transition-transform">
           <ArrowUpRight className="w-6 h-6 md:w-8 md:h-8 text-white" />
         </Link>
         <div className="text-center">
@@ -24,7 +24,7 @@ const BentoSection = () => {
           </p>
         </div>
         <img 
-          src={webdesignImg} 
+          src={webdesignImg.src} 
           alt="Web design" 
           className="max-w-[90%] md:max-w-[60%] lg:max-w-[50%] h-auto object-contain"
         />
@@ -32,7 +32,7 @@ const BentoSection = () => {
 
       {/* 2x2 Grid - Rounded style */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-4 mt-4 md:mt-4">
-        <Link to="/branding" className="relative bg-[#0047CC] min-h-[400px] md:min-h-[450px] lg:min-h-[500px] flex flex-col justify-between items-center p-6 pt-10 pb-8 md:p-12 md:pt-14 md:pb-10 lg:p-16 lg:pt-16 lg:pb-12 group rounded-3xl md:rounded-[2.5rem] overflow-hidden ring-4 ring-white">
+        <Link href="/branding" className="relative bg-[#0047CC] min-h-[400px] md:min-h-[450px] lg:min-h-[500px] flex flex-col justify-between items-center p-6 pt-10 pb-8 md:p-12 md:pt-14 md:pb-10 lg:p-16 lg:pt-16 lg:pb-12 group rounded-3xl md:rounded-[2.5rem] overflow-hidden ring-4 ring-white">
           <ArrowUpRight className="absolute top-6 right-6 md:top-8 md:right-8 w-6 h-6 md:w-8 md:h-8 text-white group-hover:scale-110 transition-transform" />
           <div className="text-center">
             <h3 className="font-heading text-2xl md:text-4xl lg:text-5xl text-white">
@@ -43,13 +43,13 @@ const BentoSection = () => {
             </p>
           </div>
           <img 
-            src={brandingImg} 
+            src={brandingImg.src} 
             alt="Branding" 
             className="max-w-[70%] md:max-w-[60%] h-auto object-contain mt-6 md:mt-8 rounded-xl md:rounded-2xl"
           />
         </Link>
 
-        <Link to="/marketing" className="relative bg-[#0047CC] min-h-[400px] md:min-h-[450px] lg:min-h-[500px] flex flex-col justify-between items-center p-6 pt-10 pb-8 md:p-12 md:pt-14 md:pb-10 lg:p-16 lg:pt-16 lg:pb-12 group rounded-3xl md:rounded-[2.5rem] overflow-hidden ring-4 ring-white">
+        <Link href="/marketing" className="relative bg-[#0047CC] min-h-[400px] md:min-h-[450px] lg:min-h-[500px] flex flex-col justify-between items-center p-6 pt-10 pb-8 md:p-12 md:pt-14 md:pb-10 lg:p-16 lg:pt-16 lg:pb-12 group rounded-3xl md:rounded-[2.5rem] overflow-hidden ring-4 ring-white">
           <ArrowUpRight className="absolute top-6 right-6 md:top-8 md:right-8 w-6 h-6 md:w-8 md:h-8 text-white group-hover:scale-110 transition-transform" />
           <div className="text-center">
             <h3 className="font-heading text-2xl md:text-4xl lg:text-5xl text-white">
@@ -60,13 +60,13 @@ const BentoSection = () => {
             </p>
           </div>
           <img 
-            src={marketingImg} 
+            src={marketingImg.src} 
             alt="Marketing" 
             className="max-w-full md:max-w-[90%] h-auto object-contain rounded-lg md:rounded-xl -mt-4 md:-mt-6"
           />
         </Link>
 
-        <Link to="/grafika" className="relative bg-[#0047CC] min-h-[400px] md:min-h-[450px] lg:min-h-[500px] flex flex-col justify-between items-center p-6 pt-10 pb-8 md:p-12 md:pt-14 md:pb-10 lg:p-16 lg:pt-16 lg:pb-12 group rounded-3xl md:rounded-[2.5rem] overflow-hidden ring-4 ring-white">
+        <Link href="/grafika" className="relative bg-[#0047CC] min-h-[400px] md:min-h-[450px] lg:min-h-[500px] flex flex-col justify-between items-center p-6 pt-10 pb-8 md:p-12 md:pt-14 md:pb-10 lg:p-16 lg:pt-16 lg:pb-12 group rounded-3xl md:rounded-[2.5rem] overflow-hidden ring-4 ring-white">
           <ArrowUpRight className="absolute top-6 right-6 md:top-8 md:right-8 w-6 h-6 md:w-8 md:h-8 text-white group-hover:scale-110 transition-transform" />
           <div className="text-center">
             <h3 className="font-heading text-2xl md:text-4xl lg:text-5xl text-white">
@@ -77,13 +77,13 @@ const BentoSection = () => {
             </p>
           </div>
           <img 
-            src={grafikaImg} 
+            src={grafikaImg.src} 
             alt="Grafika" 
             className="max-w-[70%] md:max-w-[60%] h-auto object-contain"
           />
         </Link>
 
-        <Link to="/aplikace" className="relative bg-[#0047CC] min-h-[400px] md:min-h-[450px] lg:min-h-[500px] flex flex-col justify-between items-center p-6 pt-10 pb-8 md:p-12 md:pt-14 md:pb-10 lg:p-16 lg:pt-16 lg:pb-12 group rounded-3xl md:rounded-[2.5rem] overflow-hidden ring-4 ring-white">
+        <Link href="/aplikace" className="relative bg-[#0047CC] min-h-[400px] md:min-h-[450px] lg:min-h-[500px] flex flex-col justify-between items-center p-6 pt-10 pb-8 md:p-12 md:pt-14 md:pb-10 lg:p-16 lg:pt-16 lg:pb-12 group rounded-3xl md:rounded-[2.5rem] overflow-hidden ring-4 ring-white">
           <ArrowUpRight className="absolute top-6 right-6 md:top-8 md:right-8 w-6 h-6 md:w-8 md:h-8 text-white group-hover:scale-110 transition-transform" />
           <div className="text-center">
             <h3 className="font-heading text-2xl md:text-4xl lg:text-5xl text-white">
@@ -94,7 +94,7 @@ const BentoSection = () => {
             </p>
           </div>
           <img 
-            src={aplikaceImg} 
+            src={aplikaceImg.src} 
             alt="Aplikace" 
             className="max-w-[70%] md:max-w-[60%] h-auto object-contain"
           />

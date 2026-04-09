@@ -1,5 +1,7 @@
+"use client";
+
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { Plus, Minus, ArrowRight } from "lucide-react";
 
 const faqs = [
@@ -77,7 +79,7 @@ const FAQSection = () => {
         </div>
 
         <Link 
-          to="/faq"
+          href="/faq"
           className="inline-flex items-center gap-3 mt-10 group"
         >
           <span className="font-heading text-lg text-black group-hover:underline">
