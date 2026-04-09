@@ -5,27 +5,27 @@ import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import Footer from "@/components/FooterNew";
 import TalkCtaSection from "@/components/TalkCtaSection";
-import webdesignCard from "@/assets/sluzby/webdesign.webp";
-import brandingCard from "@/assets/sluzby/branding.webp";
-import marketingCard from "@/assets/sluzby/marketing2.webp";
-import grafikaCard from "@/assets/sluzby/Grafika.webp";
-import aplikaceCard from "@/assets/sluzby/aplikace2.webp";
+import webdesignCard from "@/assets/sluzby/webdesign.png";
+import brandingCard from "@/assets/sluzby/branding.png";
+import marketingCard from "@/assets/sluzby/marketing2.png";
+import grafikaCard from "@/assets/sluzby/Grafika.png";
+import aplikaceCard from "@/assets/sluzby/aplikace2.png";
 
-import img1 from "@/assets/sluzby/30/grafika/1.webp";
-import img2 from "@/assets/sluzby/30/grafika/2.webp";
-import img3 from "@/assets/sluzby/30/grafika/3.webp";
-import img4 from "@/assets/sluzby/30/grafika/4.webp";
-import img5 from "@/assets/sluzby/30/grafika/5.webp";
-import img6 from "@/assets/sluzby/30/grafika/6.webp";
-import img7 from "@/assets/sluzby/30/grafika/7.webp";
-import img8 from "@/assets/sluzby/30/grafika/8.webp";
-import img9 from "@/assets/sluzby/30/grafika/9.webp";
-import img10 from "@/assets/sluzby/30/grafika/10.webp";
-import img11 from "@/assets/sluzby/30/grafika/11.webp";
-import img12 from "@/assets/sluzby/30/grafika/12.webp";
-import img13 from "@/assets/sluzby/30/grafika/13.webp";
-import img14 from "@/assets/sluzby/30/grafika/14.webp";
-import img15 from "@/assets/sluzby/30/grafika/15.webp";
+import img1 from "@/assets/sluzby/30/grafika/1.png";
+import img2 from "@/assets/sluzby/30/grafika/2.png";
+import img3 from "@/assets/sluzby/30/grafika/3.png";
+import img4 from "@/assets/sluzby/30/grafika/4.png";
+import img5 from "@/assets/sluzby/30/grafika/5.png";
+import img6 from "@/assets/sluzby/30/grafika/6.png";
+import img7 from "@/assets/sluzby/30/grafika/7.png";
+import img8 from "@/assets/sluzby/30/grafika/8.png";
+import img9 from "@/assets/sluzby/30/grafika/9.png";
+import img10 from "@/assets/sluzby/30/grafika/10.png";
+import img11 from "@/assets/sluzby/30/grafika/11.png";
+import img12 from "@/assets/sluzby/30/grafika/12.png";
+import img13 from "@/assets/sluzby/30/grafika/13.png";
+import img14 from "@/assets/sluzby/30/grafika/14.jpg";
+import img15 from "@/assets/sluzby/30/grafika/15.jpg";
 
 const portfolioItems = [
   { img: img1.src, name: "VANT Studio" },

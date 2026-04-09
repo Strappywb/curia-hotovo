@@ -1,11 +1,11 @@
 "use client";
 
 import { useEffect, useRef, useState, useCallback } from "react";
-import brandingCard from "@/assets/sluzby/branding.webp";
-import webdesignCard from "@/assets/sluzby/webdesign.webp";
-import marketingCard from "@/assets/sluzby/marketing2.webp";
-import grafikaCard from "@/assets/sluzby/Grafika.webp";
-import aplikaceCard from "@/assets/sluzby/aplikace2.webp";
+import brandingCard from "@/assets/sluzby/branding.png";
+import webdesignCard from "@/assets/sluzby/webdesign.png";
+import marketingCard from "@/assets/sluzby/marketing2.png";
+import grafikaCard from "@/assets/sluzby/Grafika.png";
+import aplikaceCard from "@/assets/sluzby/aplikace2.png";
 
 const ServiceCard = ({ service }: { service: { id: string; name: string; description: string; image: string; href?: string } }) => {
   const cardRef = useRef<HTMLAnchorElement>(null);
@@ -215,15 +215,13 @@ const HeroSection = () => {
           }}
         >
           <video 
+            src={"/videos/herovideocuria2.mp4"} 
             autoPlay 
             loop 
             muted 
             playsInline
             className="w-full h-full object-cover"
-          >
-            <source src={"/videos/herovideocuria2.webm"} type="video/webm" />
-            <source src={"/videos/herovideocuria2.mp4"} type="video/mp4" />
-          </video>
+          />
         </div>
       </div>
 

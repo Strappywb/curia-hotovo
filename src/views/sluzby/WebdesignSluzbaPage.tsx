@@ -6,13 +6,13 @@ import Header from "@/components/Header";
 import Footer from "@/components/FooterNew";
 import TalkCtaSection from "@/components/TalkCtaSection";
 import ClientsSection from "@/components/ClientsSection";
-import webdesignCard from "@/assets/sluzby/webdesign.webp";
-import webdesign2Img from "@/assets/sluzby/webdesign2.webp";
-import webdesign4Img from "@/assets/sluzby/30/webdesign4.webp";
-import brandingCard from "@/assets/sluzby/branding.webp";
-import marketingCard from "@/assets/sluzby/marketing2.webp";
-import grafikaCard from "@/assets/sluzby/Grafika.webp";
-import aplikaceCard from "@/assets/sluzby/aplikace2.webp";
+import webdesignCard from "@/assets/sluzby/webdesign.png";
+import webdesign2Img from "@/assets/sluzby/webdesign2.png";
+import webdesign4Img from "@/assets/sluzby/30/webdesign4.png";
+import brandingCard from "@/assets/sluzby/branding.png";
+import marketingCard from "@/assets/sluzby/marketing2.png";
+import grafikaCard from "@/assets/sluzby/Grafika.png";
+import aplikaceCard from "@/assets/sluzby/aplikace2.png";
 import { useState, useRef, useCallback } from "react";
 
 const faqItems = [
@@ -325,15 +325,13 @@ const WebdesignSluzbaPage = () => {
             className="rounded-2xl md:rounded-3xl overflow-hidden"
           >
             <video
+              src="/videos/webdesign3.mp4"
               autoPlay
               muted
               loop
               playsInline
               className="w-full h-auto object-cover"
-            >
-              <source src="/videos/webdesign3.webm" type="video/webm" />
-              <source src="/videos/webdesign3.mp4" type="video/mp4" />
-            </video>
+            />
           </motion.div>
         </section>
 

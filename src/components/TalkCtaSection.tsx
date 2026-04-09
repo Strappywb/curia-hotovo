@@ -37,7 +37,6 @@ const TalkCtaSection = () => {
               playsInline
               className="w-full aspect-[16/10] object-cover rounded-2xl md:rounded-3xl"
             >
-              <source src="/videos/printeria.webm" type="video/webm" />
               <source src="/videos/printeria.mp4" type="video/mp4" />
             </video>
           </div>

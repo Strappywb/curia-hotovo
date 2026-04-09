@@ -6,21 +6,21 @@ import Header from "@/components/Header";
 import Footer from "@/components/FooterNew";
 import TalkCtaSection from "@/components/TalkCtaSection";
 import ClientsSection from "@/components/ClientsSection";
-import webdesignCard from "@/assets/sluzby/webdesign.webp";
-import brandingCard from "@/assets/sluzby/branding.webp";
-import marketingCard from "@/assets/sluzby/marketing2.webp";
-import grafikaCard from "@/assets/sluzby/Grafika.webp";
-import aplikaceCard from "@/assets/sluzby/aplikace2.webp";
+import webdesignCard from "@/assets/sluzby/webdesign.png";
+import brandingCard from "@/assets/sluzby/branding.png";
+import marketingCard from "@/assets/sluzby/marketing2.png";
+import grafikaCard from "@/assets/sluzby/Grafika.png";
+import aplikaceCard from "@/assets/sluzby/aplikace2.png";
 
-import brandingImg from "@/assets/sluzby/30/50.webp";
-import branding2Img from "@/assets/sluzby/30/51.webp";
-import curiaLogoImg from "@/assets/sluzby/30/52.webp";
-import featureImg1 from "@/assets/sluzby/30/56.webp";
-import featureImg2 from "@/assets/sluzby/30/57.webp";
-import featureImg3 from "@/assets/sluzby/30/58.webp";
-import testimonialImg1 from "@/assets/sluzby/30/50.webp";
-import testimonialImg2 from "@/assets/sluzby/30/54.webp";
-import testimonialImg3 from "@/assets/sluzby/30/55.webp";
+import brandingImg from "@/assets/sluzby/30/50.png";
+import branding2Img from "@/assets/sluzby/30/51.png";
+import curiaLogoImg from "@/assets/sluzby/30/52.png";
+import featureImg1 from "@/assets/sluzby/30/56.png";
+import featureImg2 from "@/assets/sluzby/30/57.png";
+import featureImg3 from "@/assets/sluzby/30/58.png";
+import testimonialImg1 from "@/assets/sluzby/30/50.png";
+import testimonialImg2 from "@/assets/sluzby/30/54.png";
+import testimonialImg3 from "@/assets/sluzby/30/55.png";
 
 const testimonials = [
   {
@@ -131,15 +131,13 @@ const BrandingSluzbaPage = () => {
           <div className="flex w-full md:w-[40%] items-center justify-center relative px-8 py-16 md:px-12 lg:px-20 md:py-0">
             <div className="relative w-[280px] sm:w-[320px] lg:w-[380px] aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
               <video
+                src="/videos/webdesign3.mp4"
                 autoPlay
                 muted
                 loop
                 playsInline
                 className="w-full h-full object-cover"
-              >
-                <source src="/videos/webdesign3.webm" type="video/webm" />
-                <source src="/videos/webdesign3.mp4" type="video/mp4" />
-              </video>
+              />
             </div>
           </div>
 

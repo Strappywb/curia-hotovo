@@ -2,11 +2,11 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import kk20 from "@/assets/sluzby/kk20.webp";
-import portfolio3 from "@/assets/sluzby/mockupkk.webp";
+import kk20 from "@/assets/sluzby/kk20.png";
+import portfolio3 from "@/assets/sluzby/mockupkk.png";
 import newportfolio5 from "@/assets/newportfolio5.webp";
 import newportfolio6 from "@/assets/newportfolio6.webp";
-import sturm2 from "@/assets/sluzby/sturm2.webp";
+import sturm2 from "@/assets/sluzby/sturm2.png";
 
 const projects = [
   {
@@ -15,7 +15,6 @@ const projects = [
     subtitle: "Architektura průmyslové identity",
     type: "video" as const,
     src: "/videos/cometaportfolio.mp4",
-    webm: "/videos/cometaportfolio.webm",
     href: "#",
     popup: true,
   },
@@ -62,7 +61,6 @@ const projects = [
     subtitle: "Stavební materiály za lepší ceny, bez zbytečností",
     type: "video" as const,
     src: "/videos/vant.mp4",
-    webm: "/videos/vant.webm",
     href: "#",
     popup: true,
   },
@@ -81,7 +79,6 @@ const projects = [
     subtitle: "Digitální tvář tiskařské firmy",
     type: "video" as const,
     src: "/videos/printeria.mp4",
-    webm: "/videos/printeria.webm",
     href: "#",
     popup: true,
   },
