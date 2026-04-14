@@ -6,6 +6,24 @@ import Link from "next/link";
 
 const blogPosts = [
   {
+    id: 6,
+    title: "Jak dostat web do Googlu: Kompletní průvodce indexací",
+    excerpt: "Máte web, ale Google ho nezná? Indexace je první krok k viditelnosti. Search Console, sitemap, robots.txt — vše, co potřebujete vědět.",
+    date: "14. 4. 2026",
+    category: "SEO",
+    image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&h=400&fit=crop",
+    slug: "/blog/indexace-google"
+  },
+  {
+    id: 7,
+    title: "Technické SEO: Základ, bez kterého vás Google ignoruje",
+    excerpt: "Core Web Vitals, HTTPS, mobile-first indexing, URL struktura a heading hierarchie. Kompletní průvodce technickým SEO pro rok 2026.",
+    date: "14. 4. 2026",
+    category: "SEO",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+    slug: "/blog/technicke-seo"
+  },
+  {
     id: 1,
     title: "Aplikace na míru: Kdy se vyplatí a jak na to",
     excerpt: "Hotová řešení mají limity. Custom aplikace dávají kontrolu. Návod, kdy se vyplatí investovat do vlastního řešení a jak zajistit úspěch projektu.",

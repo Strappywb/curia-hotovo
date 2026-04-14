@@ -4,7 +4,7 @@ import { useEffect, useRef, useState, useCallback } from "react";
 import brandingCard from "@/assets/sluzby/branding.webp";
 import webdesignCard from "@/assets/sluzby/webdesign.webp";
 import marketingCard from "@/assets/sluzby/marketing2.webp";
-import grafikaCard from "@/assets/sluzby/Grafika.webp";
+import grafikaCard from "@/assets/sluzby/30/grafika2.webp";
 import aplikaceCard from "@/assets/sluzby/aplikace2.webp";
 
 const ServiceCard = ({ service }: { service: { id: string; name: string; description: string; image: string; href?: string } }) => {
@@ -136,7 +136,15 @@ const HeroSection = () => {
           <div className="lg:col-span-7">
             <h1 className="text-5xl lg:text-6xl xl:text-7xl 2xl:text-[5.8rem] font-heading font-bold leading-[1.05] tracking-tight text-black">
               <span
-                className="font-heading font-bold bg-gradient-to-r from-blue-950 via-blue-800 to-blue-600 bg-clip-text text-transparent"
+                className="font-heading font-black inline-block text-6xl lg:text-7xl xl:text-8xl 2xl:text-[7rem] tracking-[-0.02em]"
+                style={{
+                  background: "radial-gradient(ellipse 60% 50% at 20% 30%, #00d2ff 0%, transparent 45%), radial-gradient(ellipse 55% 65% at 78% 20%, #7c3aed 0%, transparent 40%), radial-gradient(ellipse 70% 55% at 50% 75%, #2563eb 0%, transparent 42%), radial-gradient(ellipse 40% 40% at 75% 65%, #a855f7 0%, transparent 35%), radial-gradient(ellipse 30% 25% at 40% 40%, rgba(255,255,255,0.25) 0%, transparent 30%), radial-gradient(ellipse 100% 100% at 50% 50%, #1e3a8a 0%, #0c1535 100%)",
+                  backgroundSize: "200% 200%",
+                  WebkitBackgroundClip: "text",
+                  backgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  animation: "liquidGradient 8s ease infinite",
+                }}
               >CURIA</span>
               <br /><span className="block">KONSTITUCE</span>
               <span className="block">DIGITÁLNÍ IDENTITY</span>
@@ -146,14 +154,18 @@ const HeroSection = () => {
             <div className="mt-12 flex items-center gap-5">
               <a
                 href="/kontakt"
-                className="group flex items-center gap-3 px-8 py-4 rounded-full text-white text-[15px] font-semibold transition-all duration-300 hover:scale-[1.03] hover:shadow-xl"
+                className="group relative flex items-center gap-3 px-8 py-4 rounded-full text-white text-[15px] font-semibold transition-all duration-300 hover:scale-[1.03] overflow-hidden"
                 style={{
-                  background: "linear-gradient(135deg, #0c1e4a 0%, #1e3a8a 40%, #2563eb 100%)",
-                  boxShadow: "0 8px 32px rgba(30,58,138,0.4), 0 0 48px rgba(37,99,235,0.15), inset 0 1px 0 rgba(255,255,255,0.12)",
+                  backgroundColor: "#1e40af",
+                  backgroundImage: "radial-gradient(ellipse 130% 90% at 15% 50%, rgba(56,189,248,0.7) 0%, transparent 55%), radial-gradient(ellipse 110% 100% at 85% 20%, rgba(124,58,237,0.6) 0%, transparent 50%), radial-gradient(ellipse 90% 110% at 55% 85%, rgba(59,130,246,0.8) 0%, transparent 45%), radial-gradient(ellipse 60% 60% at 40% 30%, rgba(96,165,250,0.5) 0%, transparent 50%)",
+                  border: "1px solid rgba(255,255,255,0.18)",
+                  boxShadow: "0 8px 32px rgba(56,189,248,0.3), 0 4px 20px rgba(124,58,237,0.3), 0 0 60px rgba(59,130,246,0.2), inset 0 1px 0 rgba(255,255,255,0.2)",
                 }}
               >
-                PROMLUVME SI
-                <svg className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <span className="absolute inset-0 rounded-full opacity-[0.03]" style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")" }} />
+                <span className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-[1px] bg-gradient-to-r from-transparent via-white/30 to-transparent" />
+                <span className="relative z-10">PROMLUVME SI</span>
+                <svg className="relative z-10 w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </a>
@@ -174,7 +186,17 @@ const HeroSection = () => {
         {/* Centered heading */}
         <div className="text-center">
           <h1 className="text-[2.5rem] font-heading font-bold leading-[1.08] tracking-tight text-black">
-            <span className="bg-gradient-to-r from-blue-950 via-blue-800 to-blue-600 bg-clip-text text-transparent">CURIA</span>
+            <span
+              className="font-heading font-black inline-block text-[3.2rem] tracking-[-0.02em]"
+              style={{
+                background: "radial-gradient(ellipse 60% 50% at 20% 30%, #00d2ff 0%, transparent 45%), radial-gradient(ellipse 55% 65% at 78% 20%, #7c3aed 0%, transparent 40%), radial-gradient(ellipse 70% 55% at 50% 75%, #2563eb 0%, transparent 42%), radial-gradient(ellipse 40% 40% at 75% 65%, #a855f7 0%, transparent 35%), radial-gradient(ellipse 30% 25% at 40% 40%, rgba(255,255,255,0.25) 0%, transparent 30%), radial-gradient(ellipse 100% 100% at 50% 50%, #1e3a8a 0%, #0c1535 100%)",
+                backgroundSize: "200% 200%",
+                WebkitBackgroundClip: "text",
+                backgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                animation: "liquidGradient 8s ease infinite",
+              }}
+            >CURIA</span>
             <br /><span className="block">KONSTITUCE</span>
             <span className="block">DIGITÁLNÍ IDENTITY</span>
           </h1>
@@ -189,14 +211,18 @@ const HeroSection = () => {
         <div className="mt-8 px-2">
           <a
             href="/kontakt"
-            className="w-full flex items-center justify-between px-8 py-4.5 rounded-full text-white text-base font-semibold"
+            className="relative w-full flex items-center justify-between px-8 py-4.5 rounded-full text-white text-base font-semibold overflow-hidden"
             style={{
-              background: "linear-gradient(135deg, #0c1e4a 0%, #1e3a8a 40%, #2563eb 100%)",
-              boxShadow: "0 8px 32px rgba(30,58,138,0.4), 0 0 48px rgba(37,99,235,0.15), inset 0 1px 0 rgba(255,255,255,0.12)",
+              backgroundColor: "#1e40af",
+              backgroundImage: "radial-gradient(ellipse 130% 90% at 15% 50%, rgba(56,189,248,0.7) 0%, transparent 55%), radial-gradient(ellipse 110% 100% at 85% 20%, rgba(124,58,237,0.6) 0%, transparent 50%), radial-gradient(ellipse 90% 110% at 55% 85%, rgba(59,130,246,0.8) 0%, transparent 45%), radial-gradient(ellipse 60% 60% at 40% 30%, rgba(96,165,250,0.5) 0%, transparent 50%)",
+              border: "1px solid rgba(255,255,255,0.18)",
+              boxShadow: "0 8px 32px rgba(56,189,248,0.3), 0 4px 20px rgba(124,58,237,0.3), 0 0 60px rgba(59,130,246,0.2), inset 0 1px 0 rgba(255,255,255,0.2)",
             }}
           >
-            <span>PROMLUVME SI</span>
-            <span className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
+            <span className="absolute inset-0 rounded-full opacity-[0.03]" style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")" }} />
+            <span className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-[1px] bg-gradient-to-r from-transparent via-white/30 to-transparent" />
+            <span className="relative z-10">PROMLUVME SI</span>
+            <span className="relative z-10 w-10 h-10 rounded-full bg-white/15 backdrop-blur-sm flex items-center justify-center border border-white/10">
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
@@ -259,35 +285,42 @@ const HeroSection = () => {
 
       {/* Manifest Section - MOBILE */}
       <div className="block md:hidden container mx-auto px-6 pb-24">
-        <h2 className="text-2xl font-heading font-bold leading-tight text-black text-center">
+        <h2 className="text-[1.75rem] font-heading font-black leading-[1.15] tracking-tight text-black text-center">
           CURIA. VÍME, CO FUNGUJE.
           <br />
           ZBYTEK NEDĚLÁME.
         </h2>
       </div>
 
-      {/* Services Grid - MOBILE */}
-      <div className="block md:hidden px-5 pb-24">
-        <div className="grid grid-cols-1 gap-4">
-          {services.map((service) => (
-            <a
-              key={service.id}
-              href={service.href || "/sluzby"}
-              className="group relative rounded-xl overflow-hidden aspect-[4/3] block"
-            >
-              <img
-                src={service.image}
-                alt={service.name}
-                className="absolute inset-0 w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-              <div className="absolute bottom-0 left-0 right-0 p-5">
-                <h3 className="text-xl font-bold text-white mb-1">
-                  {service.name}
-                </h3>
-                <p className="text-sm text-white/80 leading-relaxed">
-                  {service.description}
-                </p>
+      {/* Services Rozcestník - MOBILE (horizontal scroll) */}
+      <div className="block md:hidden pb-24">
+        <div className="flex gap-3 overflow-x-auto pl-5 pr-5 pb-4" style={{ scrollbarWidth: "none" }}>
+          <a href={services[0].href || "/sluzby"} className="flex-shrink-0 w-[75vw] h-[380px] group rounded-2xl overflow-hidden block relative">
+            <img src={services[0].image} alt={services[0].name} className="w-full h-full object-cover absolute inset-0" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-4">
+              <h3 className="text-base font-heading font-bold text-white mb-0.5">{services[0].name}</h3>
+              <p className="text-xs text-white/70 leading-relaxed line-clamp-2">{services[0].description}</p>
+            </div>
+          </a>
+          <div className="flex-shrink-0 w-[52vw] h-[380px] flex flex-col gap-2">
+            {[1, 2].map((idx) => (
+              <a key={idx} href={services[idx].href || "/sluzby"} className="flex-1 group rounded-2xl overflow-hidden block relative">
+                <img src={services[idx].image} alt={services[idx].name} className="w-full h-full object-cover absolute inset-0" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-3">
+                  <h3 className="text-sm font-heading font-bold text-white">{services[idx].name}</h3>
+                </div>
+              </a>
+            ))}
+          </div>
+          {[3, 4].map((idx) => (
+            <a key={idx} href={services[idx]?.href || "/sluzby"} className="flex-shrink-0 w-[52vw] h-[380px] group rounded-2xl overflow-hidden block relative">
+              <img src={services[idx]?.image} alt={services[idx]?.name} className="w-full h-full object-cover absolute inset-0" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-3">
+                <h3 className="text-sm font-heading font-bold text-white mb-0.5">{services[idx]?.name}</h3>
+                <p className="text-xs text-white/70 leading-relaxed line-clamp-2">{services[idx]?.description}</p>
               </div>
             </a>
           ))}

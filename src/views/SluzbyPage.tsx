@@ -7,7 +7,7 @@ import Footer from "@/components/FooterNew";
 import brandingCard from "@/assets/sluzby/branding.webp";
 import webdesignCard from "@/assets/sluzby/webdesign.webp";
 import marketingCard from "@/assets/sluzby/marketing2.webp";
-import grafikaCard from "@/assets/sluzby/Grafika.webp";
+import grafikaCard from "@/assets/sluzby/30/grafika2.webp";
 import aplikaceCard from "@/assets/sluzby/aplikace2.webp";
 
 const services = [
@@ -348,7 +348,17 @@ const SluzbyPage = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20">
               <div>
                 <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold text-black leading-[1.02]">
-                  <span className="bg-gradient-to-r from-blue-950 via-blue-800 to-blue-600 bg-clip-text text-transparent">
+                  <span
+                    className="inline-block font-heading font-black"
+                    style={{
+                      background: "radial-gradient(ellipse 60% 50% at 20% 30%, #00d2ff 0%, transparent 45%), radial-gradient(ellipse 55% 65% at 78% 20%, #7c3aed 0%, transparent 40%), radial-gradient(ellipse 70% 55% at 50% 75%, #2563eb 0%, transparent 42%), radial-gradient(ellipse 40% 40% at 75% 65%, #a855f7 0%, transparent 35%), radial-gradient(ellipse 30% 25% at 40% 40%, rgba(255,255,255,0.25) 0%, transparent 30%), radial-gradient(ellipse 100% 100% at 50% 50%, #1e3a8a 0%, #0c1535 100%)",
+                      backgroundSize: "200% 200%",
+                      WebkitBackgroundClip: "text",
+                      backgroundClip: "text",
+                      WebkitTextFillColor: "transparent",
+                      animation: "liquidGradient 8s ease infinite",
+                    }}
+                  >
                     V čem
                   </span>
                   <br />
@@ -363,12 +373,12 @@ const SluzbyPage = () => {
                   </p>
                   <a
                     href="/kontakt"
-                    className="inline-flex items-center gap-3 mt-8 px-8 py-4 rounded-full text-white font-semibold text-[15px] transition-all duration-300 hover:scale-[1.03] hover:shadow-xl"
+                    className="relative inline-flex items-center gap-3 mt-8 px-8 py-4 rounded-full text-white font-semibold text-[15px] transition-all duration-300 hover:scale-[1.03] overflow-hidden"
                     style={{
-                      background:
-                        "linear-gradient(135deg, #0c1e4a 0%, #1e3a8a 40%, #2563eb 100%)",
-                      boxShadow:
-                        "0 8px 32px rgba(30,58,138,0.4), 0 0 48px rgba(37,99,235,0.15), inset 0 1px 0 rgba(255,255,255,0.12)",
+                      backgroundColor: "#1e40af",
+                      backgroundImage: "radial-gradient(ellipse 130% 90% at 15% 50%, rgba(56,189,248,0.7) 0%, transparent 55%), radial-gradient(ellipse 110% 100% at 85% 20%, rgba(124,58,237,0.6) 0%, transparent 50%), radial-gradient(ellipse 90% 110% at 55% 85%, rgba(59,130,246,0.8) 0%, transparent 45%), radial-gradient(ellipse 60% 60% at 40% 30%, rgba(96,165,250,0.5) 0%, transparent 50%)",
+                      border: "1px solid rgba(255,255,255,0.18)",
+                      boxShadow: "0 8px 32px rgba(56,189,248,0.3), 0 4px 20px rgba(124,58,237,0.3), 0 0 60px rgba(59,130,246,0.2), inset 0 1px 0 rgba(255,255,255,0.2)",
                     }}
                   >
                     PROMLUVME SI

@@ -8,7 +8,7 @@ import TalkCtaSection from "@/components/TalkCtaSection";
 import webdesignCard from "@/assets/sluzby/webdesign.webp";
 import brandingCard from "@/assets/sluzby/branding.webp";
 import marketingCard from "@/assets/sluzby/marketing2.webp";
-import grafikaCard from "@/assets/sluzby/Grafika.webp";
+import grafikaCard from "@/assets/sluzby/30/grafika2.webp";
 import aplikaceCard from "@/assets/sluzby/aplikace2.webp";
 
 import img1 from "@/assets/sluzby/30/grafika/1.webp";

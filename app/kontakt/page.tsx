@@ -28,7 +28,17 @@ export default function KontaktPage() {
           <div className="max-w-3xl mx-auto px-6 text-center">
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold tracking-tight text-black leading-[1.05]">
               Pojďme si{" "}
-              <span className="bg-gradient-to-r from-blue-950 via-blue-800 to-blue-600 bg-clip-text text-transparent">
+              <span
+                className="inline-block font-heading font-black"
+                style={{
+                  background: "radial-gradient(ellipse 60% 50% at 20% 30%, #00d2ff 0%, transparent 45%), radial-gradient(ellipse 55% 65% at 78% 20%, #7c3aed 0%, transparent 40%), radial-gradient(ellipse 70% 55% at 50% 75%, #2563eb 0%, transparent 42%), radial-gradient(ellipse 40% 40% at 75% 65%, #a855f7 0%, transparent 35%), radial-gradient(ellipse 30% 25% at 40% 40%, rgba(255,255,255,0.25) 0%, transparent 30%), radial-gradient(ellipse 100% 100% at 50% 50%, #1e3a8a 0%, #0c1535 100%)",
+                  backgroundSize: "200% 200%",
+                  WebkitBackgroundClip: "text",
+                  backgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  animation: "liquidGradient 8s ease infinite",
+                }}
+              >
                 promluvit!
               </span>
             </h1>

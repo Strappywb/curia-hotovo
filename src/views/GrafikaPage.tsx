@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { ArrowUpRight, ChevronDown } from "lucide-react";
-import grafikaImg from "@/assets/grafika.webp";
+import grafikaImg from "@/assets/sluzby/30/grafika2.webp";
 import logaaImg from "@/assets/logaa.webp";
 import marketin10Img from "@/assets/marketin10.webp";
 import bannerImg from "@/assets/banner.webp";

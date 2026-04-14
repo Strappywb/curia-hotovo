@@ -59,7 +59,7 @@ const TransformSection = () => {
             <img
               src={procmy1.src}
               alt=""
-              className="absolute inset-0 w-full h-full object-cover"
+              className="absolute inset-0 w-full h-full object-cover md:object-center object-[60%_center] md:scale-100 scale-[1.05]"
             />
             {/* Dark overlay for text readability */}
             <div className="absolute inset-0 bg-black/40" />

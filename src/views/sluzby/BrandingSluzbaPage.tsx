@@ -9,15 +9,15 @@ import ClientsSection from "@/components/ClientsSection";
 import webdesignCard from "@/assets/sluzby/webdesign.webp";
 import brandingCard from "@/assets/sluzby/branding.webp";
 import marketingCard from "@/assets/sluzby/marketing2.webp";
-import grafikaCard from "@/assets/sluzby/Grafika.webp";
+import grafikaCard from "@/assets/sluzby/30/grafika2.webp";
 import aplikaceCard from "@/assets/sluzby/aplikace2.webp";
 
 import brandingImg from "@/assets/sluzby/30/50.webp";
 import branding2Img from "@/assets/sluzby/30/51.webp";
 import curiaLogoImg from "@/assets/sluzby/30/52.webp";
-import featureImg1 from "@/assets/sluzby/30/56.webp";
-import featureImg2 from "@/assets/sluzby/30/57.webp";
-import featureImg3 from "@/assets/sluzby/30/58.webp";
+import featureImg1 from "@/assets/sluzby/30/strategieadata.png";
+import featureImg2 from "@/assets/sluzby/30/vykonanavratnost.png";
+import featureImg3 from "@/assets/sluzby/30/system.png";
 import testimonialImg1 from "@/assets/sluzby/30/50.webp";
 import testimonialImg2 from "@/assets/sluzby/30/54.webp";
 import testimonialImg3 from "@/assets/sluzby/30/55.webp";
@@ -128,8 +128,8 @@ const BrandingSluzbaPage = () => {
         {/* Split Section — image left, text right */}
         <section className="relative min-h-[80vh] md:min-h-screen flex flex-col md:flex-row">
           {/* Left — overlapping cards */}
-          <div className="flex w-full md:w-[40%] items-center justify-center relative px-8 py-16 md:px-12 lg:px-20 md:py-0">
-            <div className="relative w-[280px] sm:w-[320px] lg:w-[380px] aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
+          <div className="flex w-full md:w-[40%] items-center justify-center relative px-5 py-16 md:px-12 lg:px-20 md:py-0">
+            <div className="relative w-full sm:w-[90%] md:w-[280px] lg:w-[380px] aspect-[16/10] sm:aspect-[16/10] md:aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
               <video
                 src="/videos/webdesign3.mp4"
                 autoPlay
@@ -155,10 +155,12 @@ const BrandingSluzbaPage = () => {
               </p>
               <a
                 href="/kontakt"
-                className="inline-flex items-center px-8 py-4 rounded-full text-white font-heading font-bold text-sm md:text-base transition-all duration-300 hover:scale-[1.03]"
+                className="relative inline-flex items-center px-8 py-4 rounded-full text-white font-heading font-bold text-sm md:text-base transition-all duration-300 hover:scale-[1.03] overflow-hidden"
                 style={{
-                  background: "linear-gradient(135deg, #0c1e4a 0%, #1e3a8a 40%, #2563eb 100%)",
-                  boxShadow: "0 8px 32px rgba(30,58,138,0.35)",
+                  backgroundColor: "#1e40af",
+                  backgroundImage: "radial-gradient(ellipse 130% 90% at 15% 50%, rgba(56,189,248,0.7) 0%, transparent 55%), radial-gradient(ellipse 110% 100% at 85% 20%, rgba(124,58,237,0.6) 0%, transparent 50%), radial-gradient(ellipse 90% 110% at 55% 85%, rgba(59,130,246,0.8) 0%, transparent 45%), radial-gradient(ellipse 60% 60% at 40% 30%, rgba(96,165,250,0.5) 0%, transparent 50%)",
+                  border: "1px solid rgba(255,255,255,0.18)",
+                  boxShadow: "0 8px 32px rgba(56,189,248,0.3), 0 4px 20px rgba(124,58,237,0.3), 0 0 60px rgba(59,130,246,0.2), inset 0 1px 0 rgba(255,255,255,0.2)",
                 }}
               >
                 POJĎME RŮST SPOLEČNĚ
@@ -268,7 +270,7 @@ const BrandingSluzbaPage = () => {
                   },
                 ].map((item) => (
                   <div key={item.title} className="flex flex-col sm:flex-row gap-8 md:gap-12 items-center py-16 md:py-20 first:pt-0">
-                    <div className="shrink-0 w-full sm:w-[28%] aspect-[4/3] rounded-xl overflow-hidden">
+                    <div className="shrink-0 w-[85%] sm:w-[28%] aspect-[4/3] rounded-xl overflow-hidden">
                       <img
                         src={item.img}
                         alt={item.title}

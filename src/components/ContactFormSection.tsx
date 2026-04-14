@@ -108,7 +108,13 @@ const ContactFormSection = () => {
 
               <button
                 type="submit"
-                className="group relative bg-blue-500 text-white px-14 py-5 text-lg font-medium hover:bg-blue-600 transition-all duration-300 mt-4 rounded-full"
+                className="group relative text-white px-14 py-5 text-lg font-medium transition-all duration-300 mt-4 rounded-full hover:scale-[1.03] overflow-hidden"
+                style={{
+                  backgroundColor: "#1e40af",
+                  backgroundImage: "radial-gradient(ellipse 130% 90% at 15% 50%, rgba(56,189,248,0.7) 0%, transparent 55%), radial-gradient(ellipse 110% 100% at 85% 20%, rgba(124,58,237,0.6) 0%, transparent 50%), radial-gradient(ellipse 90% 110% at 55% 85%, rgba(59,130,246,0.8) 0%, transparent 45%), radial-gradient(ellipse 60% 60% at 40% 30%, rgba(96,165,250,0.5) 0%, transparent 50%)",
+                  border: "1px solid rgba(255,255,255,0.18)",
+                  boxShadow: "0 8px 32px rgba(56,189,248,0.3), 0 4px 20px rgba(124,58,237,0.3), 0 0 60px rgba(59,130,246,0.2), inset 0 1px 0 rgba(255,255,255,0.2)",
+                }}
               >
                 <span className="flex items-center gap-3">
                   Odeslat zprávu
@@ -198,7 +204,13 @@ const ContactFormSection = () => {
 
             <button
               type="submit"
-              className="w-full bg-blue-500 text-white px-8 py-5 text-base font-medium hover:bg-blue-600 transition-all duration-300 mt-4 rounded-full"
+              className="w-full relative text-white px-8 py-5 text-base font-medium transition-all duration-300 mt-4 rounded-full hover:scale-[1.03] overflow-hidden"
+              style={{
+                backgroundColor: "#1e40af",
+                backgroundImage: "radial-gradient(ellipse 130% 90% at 15% 50%, rgba(56,189,248,0.7) 0%, transparent 55%), radial-gradient(ellipse 110% 100% at 85% 20%, rgba(124,58,237,0.6) 0%, transparent 50%), radial-gradient(ellipse 90% 110% at 55% 85%, rgba(59,130,246,0.8) 0%, transparent 45%), radial-gradient(ellipse 60% 60% at 40% 30%, rgba(96,165,250,0.5) 0%, transparent 50%)",
+                border: "1px solid rgba(255,255,255,0.18)",
+                boxShadow: "0 8px 32px rgba(56,189,248,0.3), 0 4px 20px rgba(124,58,237,0.3), 0 0 60px rgba(59,130,246,0.2), inset 0 1px 0 rgba(255,255,255,0.2)",
+              }}
             >
               Odeslat zprávu
             </button>

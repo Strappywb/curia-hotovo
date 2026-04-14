@@ -19,10 +19,12 @@ const FooterNew = () => {
               <div className="flex items-center gap-4">
                 <Link
                   href="/kontakt"
-                  className="inline-flex items-center px-6 py-3 rounded-full text-white text-sm font-semibold transition-all duration-300 hover:scale-[1.03]"
+                  className="relative inline-flex items-center px-6 py-3 rounded-full text-white text-sm font-semibold transition-all duration-300 hover:scale-[1.03] overflow-hidden"
                   style={{
-                    background: "linear-gradient(135deg, #0c1e4a 0%, #1e3a8a 40%, #2563eb 100%)",
-                    boxShadow: "0 4px 20px rgba(30,58,138,0.3)",
+                    backgroundColor: "#1e40af",
+                    backgroundImage: "radial-gradient(ellipse 130% 90% at 15% 50%, rgba(56,189,248,0.7) 0%, transparent 55%), radial-gradient(ellipse 110% 100% at 85% 20%, rgba(124,58,237,0.6) 0%, transparent 50%), radial-gradient(ellipse 90% 110% at 55% 85%, rgba(59,130,246,0.8) 0%, transparent 45%), radial-gradient(ellipse 60% 60% at 40% 30%, rgba(96,165,250,0.5) 0%, transparent 50%)",
+                    border: "1px solid rgba(255,255,255,0.18)",
+                    boxShadow: "0 8px 32px rgba(56,189,248,0.3), 0 4px 20px rgba(124,58,237,0.3), 0 0 60px rgba(59,130,246,0.2), inset 0 1px 0 rgba(255,255,255,0.2)",
                   }}
                 >
                   KONTAKTUJTE NÁS
@@ -104,9 +106,12 @@ const FooterNew = () => {
         </p>
         <Link
           href="/kontakt"
-          className="inline-flex items-center px-5 py-2.5 rounded-full text-white text-sm font-semibold mb-12"
+          className="relative inline-flex items-center px-5 py-2.5 rounded-full text-white text-sm font-semibold mb-12 overflow-hidden"
           style={{
-            background: "linear-gradient(135deg, #0c1e4a 0%, #1e3a8a 40%, #2563eb 100%)",
+            backgroundColor: "#1e40af",
+            backgroundImage: "radial-gradient(ellipse 130% 90% at 15% 50%, rgba(56,189,248,0.7) 0%, transparent 55%), radial-gradient(ellipse 110% 100% at 85% 20%, rgba(124,58,237,0.6) 0%, transparent 50%), radial-gradient(ellipse 90% 110% at 55% 85%, rgba(59,130,246,0.8) 0%, transparent 45%), radial-gradient(ellipse 60% 60% at 40% 30%, rgba(96,165,250,0.5) 0%, transparent 50%)",
+            border: "1px solid rgba(255,255,255,0.18)",
+            boxShadow: "0 8px 32px rgba(56,189,248,0.3), 0 4px 20px rgba(124,58,237,0.3), 0 0 60px rgba(59,130,246,0.2), inset 0 1px 0 rgba(255,255,255,0.2)",
           }}
         >
           KONTAKTUJTE NÁS

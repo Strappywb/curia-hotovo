@@ -74,6 +74,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/blog/indexace-google`,
+      lastModified: '2026-04-14',
+      changeFrequency: 'yearly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/blog/technicke-seo`,
+      lastModified: '2026-04-14',
+      changeFrequency: 'yearly',
+      priority: 0.7,
+    },
+    {
       url: `${baseUrl}/blog/web-ktery-prodava`,
       lastModified: '2024-01-15',
       changeFrequency: 'yearly',

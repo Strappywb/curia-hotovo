@@ -3,7 +3,7 @@ import Link from "next/link";
 import webdesignImg from "@/assets/webdesign.webp";
 import brandingImg from "@/assets/CURIAbranding.webp";
 import marketingImg from "@/assets/marketinghero.webp";
-import grafikaImg from "@/assets/grafika.webp";
+import grafikaImg from "@/assets/sluzby/30/grafika2.webp";
 import aplikaceImg from "@/assets/aplikace.webp";
 
 const BentoSection = () => {
