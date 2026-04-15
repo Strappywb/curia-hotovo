@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Aplikace na míru: Kdy se vyplatí a jak na to | CURIA Blog',
     description: 'Hotová řešení mají limity. Custom aplikace dávají kontrolu. Návod, kdy se vyplatí investovat do vlastního řešení a jak zajistit úspěch projektu.',
+    type: 'article',
+    url: 'https://curia.cz/blog/aplikace-na-miru',
+    images: [{ url: '/og-image.webp' }],
   },
 }
 
@@ -21,7 +24,9 @@ const articleSchema = {
   "author": {"@type": "Organization", "name": "CURIA"},
   "publisher": {"@type": "Organization", "name": "CURIA", "logo": {"@type": "ImageObject", "url": "https://curia.cz/favicon.svg"}},
   "datePublished": "2026-01-20",
+  "dateModified": "2026-04-10",
   "mainEntityOfPage": "https://curia.cz/blog/aplikace-na-miru",
+  "image": "https://curia.cz/og-image.webp",
 }
 
 export default function Page() {

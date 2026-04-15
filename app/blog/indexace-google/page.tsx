@@ -22,6 +22,7 @@ const articleSchema = {
   "author": {"@type": "Organization", "name": "CURIA"},
   "publisher": {"@type": "Organization", "name": "CURIA", "logo": {"@type": "ImageObject", "url": "https://curia.cz/favicon.svg"}},
   "datePublished": "2026-04-14",
+  "dateModified": "2026-04-14",
   "mainEntityOfPage": "https://curia.cz/blog/indexace-google",
   "image": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=1200&h=630&fit=crop",
 }

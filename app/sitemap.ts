@@ -87,19 +87,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/blog/web-ktery-prodava`,
-      lastModified: '2024-01-15',
+      lastModified: '2026-03-10',
       changeFrequency: 'yearly',
       priority: 0.7,
     },
     {
       url: `${baseUrl}/blog/strategicky-marketing`,
-      lastModified: '2024-01-10',
+      lastModified: '2026-03-10',
       changeFrequency: 'yearly',
       priority: 0.7,
     },
     {
       url: `${baseUrl}/blog/budovani-znacky`,
-      lastModified: '2024-01-05',
+      lastModified: '2026-03-10',
       changeFrequency: 'yearly',
       priority: 0.7,
     },

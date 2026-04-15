@@ -24,7 +24,9 @@ const articleSchema = {
   "author": {"@type": "Organization", "name": "CURIA"},
   "publisher": {"@type": "Organization", "name": "CURIA", "logo": {"@type": "ImageObject", "url": "https://curia.cz/favicon.svg"}},
   "datePublished": "2026-01-15",
+  "dateModified": "2026-04-10",
   "mainEntityOfPage": "https://curia.cz/blog/grafika-a-logo",
+  "image": "https://curia.cz/og-image.webp",
 }
 
 export default function Page() {

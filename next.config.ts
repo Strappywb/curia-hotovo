@@ -8,11 +8,11 @@ const nextConfig: NextConfig = {
 
   async redirects() {
     return [
-      { source: '/webdesign', destination: '/sluzby', permanent: true },
-      { source: '/branding', destination: '/sluzby', permanent: true },
-      { source: '/marketing', destination: '/sluzby', permanent: true },
-      { source: '/grafika', destination: '/sluzby', permanent: true },
-      { source: '/aplikace', destination: '/sluzby', permanent: true },
+      { source: '/webdesign', destination: '/sluzby/webdesign', permanent: true },
+      { source: '/branding', destination: '/sluzby/branding', permanent: true },
+      { source: '/marketing', destination: '/sluzby/marketing', permanent: true },
+      { source: '/grafika', destination: '/sluzby/grafika', permanent: true },
+      { source: '/aplikace', destination: '/sluzby/aplikace', permanent: true },
       { source: '/faq', destination: '/', permanent: true },
     ]
   },
