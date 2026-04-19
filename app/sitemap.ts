@@ -74,6 +74,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/blog/cena-webu`,
+      lastModified: '2026-04-19',
+      changeFrequency: 'yearly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/blog/jak-vybrat-webovou-agenturu`,
+      lastModified: '2026-04-19',
+      changeFrequency: 'yearly',
+      priority: 0.7,
+    },
+    {
       url: `${baseUrl}/blog/indexace-google`,
       lastModified: '2026-04-14',
       changeFrequency: 'yearly',

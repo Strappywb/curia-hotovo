@@ -6,6 +6,24 @@ import Link from "next/link";
 
 const blogPosts = [
   {
+    id: 8,
+    title: "Kolik stojí web v roce 2026: Reálné ceny a co za ně dostanete",
+    excerpt: "Cena webu od 15 000 Kč po statisíce. Kompletní přehled cen webových stránek podle typu — vizitka, firemní web, e-shop, aplikace. Co ovlivňuje cenu.",
+    date: "19. 4. 2026",
+    category: "WEBDESIGN",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop",
+    slug: "/blog/cena-webu"
+  },
+  {
+    id: 9,
+    title: "Jak vybrat webovou agenturu: 10 kritérií, která rozhodují",
+    excerpt: "Praktický návod, jak poznat profesionály od amatérů. Portfolio, reference, cena, technologie, SEO a další kritéria pro výběr agentury.",
+    date: "19. 4. 2026",
+    category: "STRATEGIE",
+    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=400&fit=crop",
+    slug: "/blog/jak-vybrat-webovou-agenturu"
+  },
+  {
     id: 6,
     title: "Jak dostat web do Googlu: Kompletní průvodce indexací",
     excerpt: "Máte web, ale Google ho nezná? Indexace je první krok k viditelnosti. Search Console, sitemap, robots.txt — vše, co potřebujete vědět.",
