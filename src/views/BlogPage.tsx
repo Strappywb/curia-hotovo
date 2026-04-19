@@ -6,6 +6,15 @@ import Link from "next/link";
 
 const blogPosts = [
   {
+    id: 10,
+    title: "MADOS: Jak jsme z produktového chaosu udělali prodejní stroj",
+    excerpt: "Case study — digitální transformace výrobce hliníkových fasád. Custom Product Engine, inteligentní kvalifikace poptávek, +217 % relevantních leadů.",
+    date: "19. 4. 2026",
+    category: "CASE STUDY",
+    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=400&fit=crop",
+    slug: "/blog/mados-case-study"
+  },
+  {
     id: 8,
     title: "Kolik stojí web v roce 2026: Reálné ceny a co za ně dostanete",
     excerpt: "Cena webu od 15 000 Kč po statisíce. Kompletní přehled cen webových stránek podle typu — vizitka, firemní web, e-shop, aplikace. Co ovlivňuje cenu.",

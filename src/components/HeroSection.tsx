@@ -246,6 +246,7 @@ const HeroSection = () => {
             loop 
             muted 
             playsInline
+            preload="auto"
             className="w-full h-full object-cover"
           />
         </div>
@@ -275,6 +276,7 @@ const HeroSection = () => {
             loop 
             muted 
             playsInline
+            preload="auto"
             className="w-full h-full object-cover"
           >
             <source src={"/videos/herovideocuria2.webm"} type="video/webm" />

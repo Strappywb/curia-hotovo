@@ -112,12 +112,12 @@ const PortfolioSection = () => {
   const renderMedia = (project: typeof projects[0], className: string) => {
     if (project.type === "video") {
       return project.webm ? (
-        <video autoPlay loop muted playsInline className={className}>
+        <video autoPlay loop muted playsInline preload="none" className={className}>
           <source src={project.webm} type="video/webm" />
           <source src={project.src} type="video/mp4" />
         </video>
       ) : (
-        <video src={project.src} autoPlay loop muted playsInline className={className} />
+        <video src={project.src} autoPlay loop muted playsInline preload="none" className={className} />
       );
     }
     return <img src={project.src} alt={project.name} className={className} />;
