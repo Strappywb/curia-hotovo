@@ -241,14 +241,16 @@ const HeroSection = () => {
           }}
         >
           <video 
-            src={"/videos/herovideocuria2.mp4"} 
             autoPlay 
             loop 
             muted 
             playsInline
-            preload="auto"
+            preload="metadata"
             className="w-full h-full object-cover"
-          />
+          >
+            <source src="/videos/herovideocuria2.webm" type="video/webm" />
+            <source src="/videos/herovideocuria2.mp4" type="video/mp4" />
+          </video>
         </div>
       </div>
 
@@ -276,11 +278,11 @@ const HeroSection = () => {
             loop 
             muted 
             playsInline
-            preload="auto"
+            preload="metadata"
             className="w-full h-full object-cover"
           >
-            <source src={"/videos/herovideocuria2.webm"} type="video/webm" />
-            <source src={"/videos/herovideocuria2.mp4"} type="video/mp4" />
+            <source src="/videos/herovideocuria2.webm" type="video/webm" />
+            <source src="/videos/herovideocuria2.mp4" type="video/mp4" />
           </video>
         </div>
       </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import kk20 from "@/assets/sluzby/kk20.webp";
 import portfolio3 from "@/assets/sluzby/mockupkk.webp";
@@ -106,19 +106,40 @@ const gridLayout = [
   { col: "col-span-12", aspect: "aspect-[21/9]", pt: "" },
 ];
 
+const LazyVideo = ({ src, webm, className }: { src: string; webm?: string; className: string }) => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [shouldLoad, setShouldLoad] = useState(false);
+
+  useEffect(() => {
+    const el = videoRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setShouldLoad(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "200px" }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <video ref={videoRef} autoPlay loop muted playsInline preload={shouldLoad ? "auto" : "none"} className={className}>
+      {shouldLoad && webm && <source src={webm} type="video/webm" />}
+      {shouldLoad && <source src={src} type="video/mp4" />}
+    </video>
+  );
+};
+
 const PortfolioSection = () => {
   const [showPopup, setShowPopup] = useState(false);
 
   const renderMedia = (project: typeof projects[0], className: string) => {
     if (project.type === "video") {
-      return project.webm ? (
-        <video autoPlay loop muted playsInline preload="none" className={className}>
-          <source src={project.webm} type="video/webm" />
-          <source src={project.src} type="video/mp4" />
-        </video>
-      ) : (
-        <video src={project.src} autoPlay loop muted playsInline preload="none" className={className} />
-      );
+      return <LazyVideo src={project.src} webm={project.webm} className={className} />;
     }
     return <img src={project.src} alt={project.name} className={className} />;
   };
